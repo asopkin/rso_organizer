@@ -1,4 +1,4 @@
-# Demo server code for MP4
+# Server code for Organization Project
 You should be able to do
 `npm install` and `nodemon server.js`
 
