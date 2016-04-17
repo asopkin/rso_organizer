@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var router = express.Router();
 
 //replace this with your Mongolab URL
-mongoose.connect('mongodb://xuan:50337653@ds025239.mlab.com:25239/cs498taskmanager');
+mongoose.connect('mongodb://CS498web:CS498web@ds011291.mlab.com:11291/498final');
 
 // Create our Express application
 var app = express();
@@ -36,27 +36,27 @@ app.use('/api', router);
 //Define routes here
 
 
-var user = require('./api/users');
 
-var task = require('./api/tasks');
-
-router.get('/users', user.getAll);
-router.post('/users', user.create);
-router.options('/users', user.options);
-
-router.get('/users/:id', user.getOne);
-router.put('/users/:id', user.replace);
-router.delete('/users/:id', user.deleteOne);
+var event = require('./api/event');
+router.get('/events', event.getAll);
+router.post('/events', event.create);
+router.get('/events/:id', event.getOne);
+router.put('/events/:id', event.replace);
+router.delete('/events/:id', event.deleteOne);
 
 
-router.get('/tasks', task.getAll);
-router.post('/tasks', task.create);
-router.options('/tasks', task.options);
+var student = require('./api/student');
+router.get('/students', student.getAll);
+router.post('/students', student.create);
+router.get('/students/:id', student.getOne);
+router.put('/students/:id', student.replace);
 
-router.get('/tasks/:id', task.getOne);
-router.put('/tasks/:id', task.replace);
-router.delete('/tasks/:id', task.deleteOne);
 
+var organization = require('./api/organization');
+router.get('/organizations', organization.getAll);
+router.post('/organizations', organization.create);
+router.get('/organizations/:id', organization.getOne);
+router.put('/organizations/:id', organization.replace);
 
 
 //End routes here
