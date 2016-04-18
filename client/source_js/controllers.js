@@ -1,0 +1,48 @@
+var fp498Controllers = angular.module('fp498Controllers', []);
+
+fp498Controllers.controller('FirstController', ['$scope', 'CommonData'  , function($scope, CommonData) {
+  $scope.data = "";
+   $scope.displayText = ""
+
+  $scope.setData = function(){
+    CommonData.setData($scope.data);
+    $scope.displayText = "Data set"
+
+  };
+
+}]);
+
+fp498Controllers.controller('SecondController', ['$scope', 'CommonData' , function($scope, CommonData) {
+  $scope.data = "";
+
+  $scope.getData = function(){
+    $scope.data = CommonData.getData();
+
+  };
+
+}]);
+
+
+fp498Controllers.controller('EventListController', ['$scope', '$http', 'Events', '$window' , function($scope, $http,  Events, $window) {
+
+  Events.get().success(function(data){
+    $scope.events = data;
+  });
+
+    $scope.search = function (row) {
+      return !!((row.name.indexOf($scope.query || '') !== -1 || row.description.indexOf($scope.query || '') !== -1 || row.date.indexOf($scope.query || '') !== -1));
+  };
+
+
+}]);
+
+fp498Controllers.controller('SettingsController', ['$scope' , '$window' , function($scope, $window) {
+  $scope.url = $window.sessionStorage.baseurl;
+
+  $scope.setUrl = function(){
+    $window.sessionStorage.baseurl = $scope.url;
+    $scope.displayText = "URL set";
+
+  };
+
+}]);
