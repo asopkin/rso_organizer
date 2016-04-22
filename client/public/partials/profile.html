@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/logout" class="button small" ng-show="profile">Logout</a>
+    </div>
+
+    <div class="row">
+        <!-- PROFILE INFORMATION -->
+            <div class="well" ng-show="profile">
+                <h3><span class="fa fa-user"></span> Profile</h3>
+
+                    <p>
+                        <strong>id</strong>: {{user._id}}<br>
+                        <strong>email</strong>: {{user.local.email}}<br>
+                        <strong>password</strong>: {{user.local.password}}
+                    </p>
+            </div>
+            <div class="jumbotron text-center" ng-hide="profile">
+                <a href="/login.html" class="button">Login</a>
+                <a href="/signup.html" class="button">Signup</a>
+            </div>
+
+</div>

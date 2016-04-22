@@ -4,6 +4,14 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var router = express.Router();
 
+/** passport stuff **/
+var passport = require('passport');
+var morgan = require('morgan');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+var configDB = require('./config/database.js');
+
+
 //replace this with your Mongolab URL
 mongoose.connect('mongodb://CS498web:CS498web@ds011291.mlab.com:11291/498final');
 
@@ -22,6 +30,14 @@ var allowCrossDomain = function(req, res, next) {
   next();
 };
 app.use(allowCrossDomain);
+
+app.use(morgan('dev'));
+app.use(cookieParser());
+
+app.use(session({ secret: 'passport demo' })); //credentials saved in session
+app.use(passport.initialize());
+app.use(passport.session());
+require('./routes.js')(app, passport);
 
 // Use the body-parser package in our application
 app.use(bodyParser.json());

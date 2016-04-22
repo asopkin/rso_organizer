@@ -14,3 +14,21 @@ function highlightThis(event) {
     alert(this.className);
     this.style.backgroundColor=backgroundColor;
 }
+
+/** slider **/
+
+// Write any custom javascript functions here
+$(document).ready(function () {
+    $('.crsl').slick({
+        centerMode: true,
+        centerPadding: '3px',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true, /* Just changed this to get the bottom dots navigation */
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        arrows: true
+    });
+});

@@ -1,0 +1,28 @@
+<div class="list">		
+<center>
+<div class="row">
+<div ng-repeat="org in organizations" class="org-grid">
+ 	<div class="large-12 columns" id="org-bucket">
+ 	<div><span>{{ org.name }}</span></div><div id="share">Share:</div>
+ 	<div class="options">
+ 	<label>
+ 	<input type="radio" ng-model="option.name" class="radio-button">
+ 	Email</label>
+ 	</div>
+ 	<div class="options">
+ 	<label>
+ 	<input type="radio" ng-model="option.name" class="radio-button">
+ 	Phone</label>
+ 	</div>
+ 	<div class="options">
+ 	<label>
+ 	<input type="radio" ng-model="option.name" class="radio-button">
+ 	Dorm/Apartment</label>
+ 	</div>
+ 	<div class="options" id="leave-button">
+ 	Leave
+ 	</div>
+ 	</div>
+</div>
+</center>
+</div>

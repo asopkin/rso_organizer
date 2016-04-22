@@ -4164,6 +4164,113 @@ table.hover tr:nth-of-type(even):hover {
 .list {
   margin: 0 auto; }
 
+/* line 6, ../../source_sass/_base.scss */
+.search-bar {
+  overflow: hidden;
+  padding-right: .5em; }
+
+/* line 10, ../../source_sass/_base.scss */
+.fi-magnifying-glass {
+  float: right;
+  padding-top: 3px; }
+
+/** list of organizations **/
+/* line 16, ../../source_sass/_base.scss */
+.org-list {
+  list-style: none; }
+  /* line 18, ../../source_sass/_base.scss */
+  .org-list h2 {
+    font-size: 18px;
+    text-transform: uppercase; }
+  /* line 22, ../../source_sass/_base.scss */
+  .org-list li {
+    /* margins and padding */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
+    width: 70%;
+    /* border */
+    border: 2px solid #2199E8;
+    box-shadow: 2px 2px 1px #888888; }
+
+/** organization grid**/
+/* line 37, ../../source_sass/_base.scss */
+#org-bucket {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 100px;
+  /** share **/
+  /** radio buttons **/ }
+  /* line 46, ../../source_sass/_base.scss */
+  #org-bucket #share {
+    margin-bottom: 2px;
+    vertical-align: top; }
+  /* line 52, ../../source_sass/_base.scss */
+  #org-bucket .options {
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 5px;
+    margin: 0 auto; }
+  /* line 59, ../../source_sass/_base.scss */
+  #org-bucket #leave-button {
+    float: right; }
+
+/* line 63, ../../source_sass/_base.scss */
+.org-grid {
+  margin: 0 auto;
+  width: 80%; }
+
+/* line 69, ../../source_sass/_base.scss */
+#stud-bucket {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  border: 1px solid black;
+  height: 100px;
+  text-align: center;
+  line-height: 100px; }
+
+/* line 78, ../../source_sass/_base.scss */
+.stud-grid {
+  margin: 0 auto;
+  width: 80%; }
+
+/* line 83, ../../source_sass/_base.scss */
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; }
+
+/** slider **/
+/* line 89, ../../source_sass/_base.scss */
+.crsl {
+  /* dimensions */
+  /* margins */
+  margin: 0px auto;
+  width: 80%;
+  /* colors */
+  background-color: white;
+  /* margins */
+  margin-bottom: 150px;
+  margin-top: 150px; }
+  /* line 103, ../../source_sass/_base.scss */
+  .crsl img {
+    margin: auto;
+    width: 400px;
+    height: 400px; }
+  /* line 109, ../../source_sass/_base.scss */
+  .crsl div {
+    width: 100%;
+    /* positioning */
+    margin: 0px auto;
+    text-align: center; }
+  /* line 117, ../../source_sass/_base.scss */
+  .crsl .slick-prev:before, .crsl .slick-next:before {
+    color: white; }
+
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles
   in _base.scss
