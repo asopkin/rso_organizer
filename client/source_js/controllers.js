@@ -43,10 +43,26 @@ fp498Controllers.controller('StudentListController', ['$scope' , '$http', 'Stude
 }]);
 
 /** Event list controller **/
-fp498Controllers.controller('EventListController', ['$scope', '$http', 'Events', 'Organizations', '$window' , function($scope, $http, Events, Organizations, $window) {
+fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' , function($scope, $http, $timeout, Events, Organizations, $window) {
 
   Events.get().success(function(data){
     $scope.events = data;
+    console.log("here");
+    $timeout(function() {
+    console.log(data);
+      $('.crsl').slick({
+        centerMode: true,
+        centerPadding: '3px',
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: true, /* Just changed this to get the bottom dots navigation */
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        arrows: true
+    });
+      }, 200);
   });
 
   Organizations.get().success(function(data){
@@ -62,25 +78,23 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', 'Events',
   };
 
   /** slider **/
-  $(document).ready(function () {
-    $('.crsl').slick({
-        centerMode: true,
-        centerPadding: '3px',
-        autoplay: true,
-        autoplaySpeed: 1000,
-        dots: true, /* Just changed this to get the bottom dots navigation */
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 2,
-        arrows: true
-    });
-  });
+
 
 
 }]);
 
+/** profile **/
+fp498Controllers.controller('profileController', ['$scope', '$http', function($scope, $http) {
+   $scope.profile = false;
+   $http.get('/profile').success(function(data) {
+    console.log(data);
+    if(!data.error) {
+      $scope.profile = true;
+      $scope.user = data.user;
+    }
 
+   });
+ }]);
 
 
 fp498Controllers.controller('SettingsController', ['$scope' , '$window' , function($scope, $window) {
