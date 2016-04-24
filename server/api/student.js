@@ -65,7 +65,7 @@ var student = {
           Organization.findById(data.followOrganizationID ,function(err, organization){ 
              remove_student_from_organizations(organization.members,req.params.id);
              remove_student_from_organizations(organization.leaders,req.params.id);
-             organization.save(function(err){});
+             organization.save().exec();  
           });                                         
           res.json(data);
        });

@@ -1,4 +1,16 @@
 var Organization = require('../models/organization');
+
+// helper
+var remove_organization_from_student = function(followingorgIDs, orgID) {
+    var found = followingorgIDs.indexOf(orgID);
+
+    while (found !== -1) {
+        followingorgIDs.splice(found, 1);
+        found = followingorgIDs.indexOf(orgID);
+    }
+};
+
+
 // Wrap all the methods in an object
 
 var organization = {
@@ -51,9 +63,13 @@ var organization = {
           // remove event[] from Event
           for( var i=0 ; i<data.events.length ; i++){
             Event.findByIdAndRemove(data.events[i],function(err){ });
-          }                           
+          }
+          // remove org from student.followingOrg                          
           for( var i=0 ; i<data.members[i].length ; i++){
-            Student.findByIdAndRemove(data.members[i],function(err){ });
+            Student.findById(data.members[i],function(err,student_obj){
+             remove_organization_from_student(student_obj.followOrganizationID,req.params.id);
+             student_obj.save().exec();              
+            });
           }                          
           res.json(data);
        });

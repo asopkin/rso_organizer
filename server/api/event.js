@@ -69,7 +69,7 @@ var event = {
           // remove event from Organization
           Organization.findById(data.organizationID,function(err, organization){ 
              remove_event_from_events(organization.events,req.params.id);
-             organization.save(function(err){});
+             organization.save().exec();  
           });                                         
           res.json(data);
        });
