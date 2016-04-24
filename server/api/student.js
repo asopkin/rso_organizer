@@ -62,7 +62,7 @@ var student = {
  
       Student.findByIdAndRemove(req.params.id,function(err,data){
           // remove student from Organization
-          Organization.findById(data. followOrganizationID ,function(err, organization){ 
+          Organization.findById(data.followOrganizationID ,function(err, organization){ 
              remove_student_from_organizations(organization.members,req.params.id);
              remove_student_from_organizations(organization.leaders,req.params.id);
              organization.save(function(err){});
