@@ -1,6 +1,6 @@
 <div class="list">		
 <center>
-<div class="row">
+<div class="row" id="search-content">
 	<i class="fi-magnifying-glass"></i>
 	<div class="search-bar">
     <input class="span4 pull-right" id="search-input" type="text" placeholder="Search for organization by name" ng-model="query">
@@ -18,7 +18,11 @@
 	  <div class="slide-container">
 	  <div class="crsl" >
 	  	<div ng-repeat="event in events">
-	  	<div>{{event.name }}</div>
+	  	<div class="event-content">
+	  	<div>{{ event.name }}</div>
+	  	<div>{{ event.description }}</div>
+	  	<div>{{ event.date }}</div>
+	  	</div>
 	  	</div>
 	  </div>
 	  </div>

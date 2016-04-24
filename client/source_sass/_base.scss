@@ -1,6 +1,41 @@
 // Add any custom Sass & CSS here
 .list{
+	margin-top: 20px;
 	margin: 0 auto;
+}
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/** navigation **/
+.nav{
+	top: 0px;
+	float: right;
+	background-color: $base-color;
+	margin-bottom: 40px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+	ul{
+	list-style-type: none;
+    margin: 0;
+    border-top-left-radius: 5px;
+  	border-bottom-left-radius: 5px;
+  	border-top-right-radius: 5px;
+  	border-bottom-left-radius: 5px;
+	}
+	li{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px 10px 10px 10px;
+	color: white;
+	font-size: 25px;
+	border-right: 3px solid $complement-color;
+	}
+	a{
+	color: white;
+	}
 }
 
 .search-bar{
@@ -13,6 +48,11 @@
 }
 
 /** list of organizations **/
+
+#search-content{
+	margin-top: 40px;
+	clear: both;
+}
 .org-list{
 	list-style: none;
 	h2{
@@ -21,7 +61,7 @@
 	}
 	li{
 	/* margins and padding */
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 	padding: 5px 5px 5px 5px;
 	width: 70%;
@@ -38,7 +78,7 @@
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 10px;
-	border: 1px solid black;
+	border: 3px solid $base-color;
 	text-align: center;
 	line-height: 100px;
 
@@ -62,22 +102,28 @@
 }
 .org-grid{
 	margin: 0 auto;
-	width: 80%;
+	width: 100%;
 }
 
-
+/** student grid **/
 #stud-bucket{
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-top: 10px;
-	border: 1px solid black;
+	border: 3px solid $base-color;
 	height: 100px;
 	text-align: center;
 	line-height: 100px;
 }
-.stud-grid{
+#student-page{
+	clear: both;
 	margin: 0 auto;
-	width: 80%;
+}
+.stud-grid{
+	margin-top: 50px;
+	margin: 0 auto;
+	margin-left: 100px;
+	width: 100%;
 }
 
 span{
@@ -86,12 +132,16 @@ span{
   line-height: normal;      
 }
 /** slider **/
+.event-content{
+	border-top: 2px solid $melon-color;
+	border-bottom: 2px solid $melon-color;
+}
 .crsl{
 	/* dimensions */
 
 	/* margins */
 	margin: 0px auto;
-	width: 80%;
+	width: 100%;
 
 	/* colors */
 	background-color: white;

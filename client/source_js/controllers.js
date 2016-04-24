@@ -86,6 +86,7 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
 /** profile **/
 fp498Controllers.controller('profileController', ['$scope', '$http', function($scope, $http) {
    $scope.profile = false;
+   console.log("profile");
    $http.get('/profile').success(function(data) {
     console.log(data);
     if(!data.error) {
@@ -98,10 +99,10 @@ fp498Controllers.controller('profileController', ['$scope', '$http', function($s
 
 
 fp498Controllers.controller('SettingsController', ['$scope' , '$window' , function($scope, $window) {
-  $scope.url = $window.sessionStorage.baseurl;
+  $scope.url = "http://localhost:4000";
 
   $scope.setUrl = function(){
-    $window.sessionStorage.baseurl = $scope.url;
+    $window.sessionStorage.baseurl = "http://localhost:4000";
     $scope.displayText = "URL set";
 
   };
