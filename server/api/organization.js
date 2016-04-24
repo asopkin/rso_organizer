@@ -43,6 +43,20 @@ var organization = {
               res.json(data);
           }
       );
+  },
+  
+  deleteOne: function(req, res){   
+ 
+      Organization.findByIdAndRemove(req.params.id,function(err,data){
+          // remove event[] from Event
+          for( var i=0 ; i<data.events.length ; i++){
+            Event.findByIdAndRemove(data.events[i],function(err){ });
+          }                           
+          for( var i=0 ; i<data.members[i].length ; i++){
+            Student.findByIdAndRemove(data.members[i],function(err){ });
+          }                          
+          res.json(data);
+       });
   }
 
 
