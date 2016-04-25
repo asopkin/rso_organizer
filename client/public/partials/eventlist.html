@@ -9,9 +9,9 @@
 <div class="row">
 	<div class="org-list">
 	<li ng-repeat="org in organizations | filter: searchOrganizations">
-	<panel>
+	<div class="panel">
 	<h2>Name: {{ org.name }}</h2> 
-	</panel>
+	</div>
 	</li>
 	</div>
     <!-- slider -->
@@ -19,9 +19,9 @@
 	  <div class="crsl" >
 	  	<div ng-repeat="event in events">
 	  	<div class="event-content">
-	  	<div>{{ event.name }}</div>
-	  	<div>{{ event.description }}</div>
-	  	<div>{{ event.date }}</div>
+	  	<div>{{ event.name }}</div><br>
+	  	<div>{{ event.description }}</div><br>
+	  	<div>{{ event.date }}</div><br>
 	  	</div>
 	  	</div>
 	  </div>

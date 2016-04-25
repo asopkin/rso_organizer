@@ -1,4 +1,4 @@
-var fp498Controllers = angular.module('fp498Controllers', []);
+var fp498Controllers = angular.module('fp498Controllers', ['720kb.datepicker']);
 
 fp498Controllers.controller('FirstController', ['$scope', 'CommonData'  , function($scope, CommonData) {
   $scope.data = "";
