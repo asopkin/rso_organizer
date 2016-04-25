@@ -33,6 +33,7 @@ fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '
  };
 
 }]);
+
 /** Member List **/
 fp498Controllers.controller('StudentListController', ['$scope' , '$http', 'Students', '$window' , function($scope, $http, Students, $window) {
 
@@ -41,6 +42,24 @@ fp498Controllers.controller('StudentListController', ['$scope' , '$http', 'Stude
   });
 
 }]);
+
+/* Filter for netids */
+fp498Controllers.filter('netIdFilter', function() {
+    return function(input) {
+        return input.replace(/ /g, '_');
+    }
+});
+
+/** Add Student List **/
+fp498Controllers.controller('StudentAddController', ['$scope' , '$http', 'Students', '$window' , function($scope, $http, Students, $window) {
+
+ Students.get().success(function(data){
+    $scope.students = data;
+  });
+
+}]);
+
+
 
 /** Event list controller **/
 fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' , function($scope, $http, $timeout, Events, Organizations, $window) {

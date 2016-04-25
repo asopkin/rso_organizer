@@ -171,13 +171,32 @@ body{
 	margin-right: 5px;
 	margin-top: 10px;
 	border: 3px solid $base-color;
-	height: 100px;
+	min-height: 125px;
 	text-align: center;
-	line-height: 100px;
+	line-height: 60px;
 }
 #student-page{
 	clear: both;
 	margin: 0 auto;
+
+	#add-button{
+	/* placement */
+	margin: 0 auto;
+	margin-right: 47%;
+	padding: 2px 2px 2px 2px;
+	text-align: center;
+	line-height: 30px;
+	margin-bottom: 20px;
+
+	/* size */
+	height: 35px;
+	width: 140px;
+
+	/* text */
+	color: white;
+	font-size: 18px;
+	background-color: $cranberry-color;
+	}
 }
 .stud-grid{
 	margin-top: 50px;
@@ -252,3 +271,53 @@ span{
     	color: white;
     }
 }
+
+/** Add student **/
+.add-student-view{
+   h1{
+   	text-align: center;
+   	font-weight: bold;
+   	font-size: 20px;
+   	text-transform: uppercase;
+   	color: $cranberry-color;
+   	margin: auto;
+   	clear: both;
+   }
+   /* button */
+   	#submit-button{
+	/* placement */
+	margin: auto;
+	width: 100px;
+	padding: 2px 2px 2px 2px;
+	margin-top: 15px;
+	clear: both;
+
+	/* text */
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	background-color: $cranberry-color;
+	}
+  /* form styling */
+  .required:after { content:"*"; color: red; display: inline; clear: both;}
+  .required{
+  	input{
+  	background-color: rgba(255,0,0,0.1);
+  	color: black;
+  	}
+  }
+  input{
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+  label{
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-right: 20px;
+  }
+  }

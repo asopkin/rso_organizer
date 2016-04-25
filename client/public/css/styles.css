@@ -4320,30 +4320,46 @@ body {
   margin-right: 5px;
   margin-top: 10px;
   border: 3px solid #8BCBC8;
-  height: 100px;
+  min-height: 125px;
   text-align: center;
-  line-height: 100px; }
+  line-height: 60px; }
 
 /* line 178, ../../source_sass/_base.scss */
 #student-page {
   clear: both;
   margin: 0 auto; }
+  /* line 182, ../../source_sass/_base.scss */
+  #student-page #add-button {
+    /* placement */
+    margin: 0 auto;
+    margin-right: 47%;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+    /* size */
+    height: 35px;
+    width: 140px;
+    /* text */
+    color: white;
+    font-size: 18px;
+    background-color: #3C2E3D; }
 
-/* line 182, ../../source_sass/_base.scss */
+/* line 201, ../../source_sass/_base.scss */
 .stud-grid {
   margin-top: 50px;
   margin: 0 auto;
   margin-left: 100px;
   width: 100%; }
 
-/* line 189, ../../source_sass/_base.scss */
+/* line 208, ../../source_sass/_base.scss */
 span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal; }
 
 /** slider **/
-/* line 195, ../../source_sass/_base.scss */
+/* line 214, ../../source_sass/_base.scss */
 .event-content {
   /* borders */
   border-top: 3px solid #FDAE84;
@@ -4358,7 +4374,7 @@ span {
   background-color: white;
   color: black; }
 
-/* line 212, ../../source_sass/_base.scss */
+/* line 231, ../../source_sass/_base.scss */
 .event-content :after {
   content: "";
   display: block;
@@ -4371,7 +4387,7 @@ span {
   border-top: 3px solid #ECC7C0;
   border-bottom: 3px solid #ECC7C0; }
 
-/* line 224, ../../source_sass/_base.scss */
+/* line 243, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
@@ -4381,20 +4397,72 @@ span {
   /* margins */
   margin-bottom: 150px;
   margin-top: 150px; }
-  /* line 237, ../../source_sass/_base.scss */
+  /* line 256, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-  /* line 243, ../../source_sass/_base.scss */
+  /* line 262, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-  /* line 251, ../../source_sass/_base.scss */
+  /* line 270, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
+
+/** Add student **/
+/* line 276, ../../source_sass/_base.scss */
+.add-student-view {
+  /* button */
+  /* form styling */ }
+  /* line 277, ../../source_sass/_base.scss */
+  .add-student-view h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #3C2E3D;
+    margin: auto;
+    clear: both; }
+  /* line 287, ../../source_sass/_base.scss */
+  .add-student-view #submit-button {
+    /* placement */
+    margin: auto;
+    width: 100px;
+    padding: 2px 2px 2px 2px;
+    margin-top: 15px;
+    clear: both;
+    /* text */
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: #3C2E3D; }
+  /* line 302, ../../source_sass/_base.scss */
+  .add-student-view .required:after {
+    content: "*";
+    color: red;
+    display: inline;
+    clear: both; }
+  /* line 304, ../../source_sass/_base.scss */
+  .add-student-view .required input {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: black; }
+  /* line 309, ../../source_sass/_base.scss */
+  .add-student-view input {
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  /* line 317, ../../source_sass/_base.scss */
+  .add-student-view label {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-right: 20px; }
 
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles

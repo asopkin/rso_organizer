@@ -26,6 +26,10 @@ app.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'partials/studentlist.html',
     controller: 'StudentListController'
   }).
+  when('/addstudent', {
+    templateUrl: 'partials/addstudent.html',
+    controller: 'StudentAddController'
+  }).
   when('/profile', {
     templateUrl: 'partials/profile.html',
     controller: 'profileController'
