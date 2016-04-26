@@ -23,11 +23,22 @@ fp498Controllers.controller('SecondController', ['$scope', 'CommonData' , functi
 }]);
 
 /** Organization list **/
-fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', 'Organizations', '$window' , function($scope, $http, Organizations, $window) {
-
+fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '$timeout', 'Organizations', '$window' , function($scope, $http, $timeout, Organizations, $window) {
+ $scope.categories = [];
  Organizations.get().success(function(data){
     $scope.organizations = data;
+      for(var k in $scope.organizations){
+        for(var l in $scope.organizations[k].category){
+          if($scope.categories.indexOf($scope.organizations[k].category[l])==-1){
+            $scope.categories.push($scope.organizations[k].category[l]);
+          }
+        }
+      }
   });
+  $scope.catFilter = function(value){
+      $scope.myFilter = {category: value};
+    }
+
  $scope.option = {
   name: 'member'
  };
@@ -46,7 +57,9 @@ fp498Controllers.controller('StudentListController', ['$scope' , '$http', 'Stude
 /* Filter for netids */
 fp498Controllers.filter('netIdFilter', function() {
     return function(input) {
-        return input.replace(/ /g, '_');
+        if(input!=null){
+          return input.replace(/ /g, '_');
+        }
     }
 });
 

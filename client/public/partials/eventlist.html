@@ -6,11 +6,13 @@
     <input class="span4 pull-right" id="search-input" type="text" placeholder="Search for organization by name" ng-model="query">
     </div>
 </div>
+
 <div class="row">
 	<div class="org-list">
 	<li ng-repeat="org in organizations | filter: searchOrganizations">
 	<div class="panel">
 	<h2>Name: {{ org.name }}</h2> 
+	<h2>{{ org.description }}</h2>
 	</div>
 	</li>
 	</div>

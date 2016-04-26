@@ -1,7 +1,24 @@
-<div class="list">		
+<div class="orgs">		
+
+<!-- Used Angular specification for filters https://docs.angularjs.org/api/ng/filter/filter -->
+<div class="category-titles">
+<ul>
+<li><div ng-click="myFilter = undefined" class="category-tag">All</div></li>
+<!--<li><div ng-click="myFilter = {category: 'study'}" class="category-tag">Study</div></li>
+<li><div ng-click="myFilter = {category: 'play'}" class="category-tag">Play</div></li>
+<li><div ng-click="myFilter = {category: 'drinking'}" class="category-tag">Drinking</div></li> -->
+<li ng-repeat="cat in categories track by $index">
+<div ng-click="catFilter(cat)" class="category-tag-mid">{{ cat }}</div>
+</li> 
+<!--<li><div ng-click="myFilter = undefined" class="category-tag">All</div> </li>
+<li><div ng-click="myFilter = {category: 'Study'}" class="category-tag">Study</div></li>
+<li><div ng-click="myFilter = {category: 'Play'}" class="category-tag">Play</div></li>-->
+</ul>
+</div>
+
 <center>
 <div class="row">
-<div ng-repeat="org in organizations" class="org-grid">
+<div ng-repeat="org in organizations | filter:myFilter" class="org-grid">
  	<div class="large-12 columns" id="org-bucket">
  	<div><span>{{ org.name }}</span></div><div id="share">Share:</div>
  	<div class="radio-buttons">

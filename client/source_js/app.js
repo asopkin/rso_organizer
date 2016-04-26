@@ -35,6 +35,6 @@ app.config(['$routeProvider', function($routeProvider) {
     controller: 'profileController'
   }).
   otherwise({
-    redirectTo: '/settings'
+    redirectTo: '/eventlist'
   });
 }]);

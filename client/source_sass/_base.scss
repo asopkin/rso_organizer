@@ -63,18 +63,58 @@ body{
 /** search **/
 .search-bar{
 	overflow: hidden; 
-	padding-right: .5em;
+	margin-top: 30px;
+	margin: 0 auto;
+	width: 90%;
+	padding-right: 0.2em;
+	padding-left: 0.4em;
+	z-index: 2;
 }
 .fi-magnifying-glass{
+/**	float: right; **/
 	float: right;
+	margin-right:38px;
 	padding-top: 3px;
+	font-size: 25px;
 }
+
+
 
 /** list of organizations **/
 
 #search-content{
-	margin-top: 40px;
+	margin-top: 50px;
 	clear: both;
+/*	height: 120px;*/
+}
+
+
+
+/** category searching for organizations */
+.category-titles{
+	margin-top: 20px;
+	text-align: center;
+	clear: both;
+	ul{
+		list-style: none;
+	}
+	/** styling **/
+	.category-tag-mid{
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+	li{
+		display: inline-block;
+		padding: 10px 10px 10px 10px;
+		margin-left: 2px;
+		margin-right: 2px;
+
+		cursor: pointer;
+		/* text */
+		color: white;
+		font-size: 18px;
+		background-color: $cranberry-color;
+	}
 }
 .org-list{
 	list-style: none;
@@ -101,7 +141,7 @@ body{
 
 }
 .panel{
-	margin-top: 35px;
+	margin-top: 20px;
 }
 
 /** organization grid **/
