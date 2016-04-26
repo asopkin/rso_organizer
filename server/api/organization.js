@@ -16,8 +16,23 @@ var remove_organization_from_student = function(followingorgIDs, orgID) {
 var organization = {
 
   getAll: function(req, res){
-      Organization.find().exec(function(err,data){
+      var where=eval("("+req.query.where+")");
+      Organization.find(where).exec(function(err,data){
           res.json(data);
+      });
+  },
+
+  getOneCategory:function(req, res){
+      Organization.find().exec(function(err,data){
+          var back=[];
+          var kind = req.params.category;
+          for(var index=0;index<data.length;index++){
+              var one =data[index];
+              if((one.category.indexOf(kind) != -1)){
+                  back.push(one);
+              }
+          }
+          res.json(back);
       });
   },
 
@@ -25,6 +40,8 @@ var organization = {
 
     var organization = new Organization();
     organization.name=req.body.name;
+    organization.description=req.body.description;
+    organization.category=req.body.category;
     organization.leaders=req.body.leaders;
     organization.members=req.body.members;
     organization.events=req.body.events;
@@ -45,10 +62,12 @@ var organization = {
   replace: function(req, res){
       Organization.findByIdAndUpdate(req.params.id, {
               $set: {
-                  name      :   req.body.name,
-                  leaders   :   req.body.leaders,
-                  members   :   req.body.members,
-                  events    :   req.body.events
+                  name        :   req.body.name,
+                  description :   req.body.description,
+                  category    :   req.body.category,
+                  leaders     :   req.body.leaders,
+                  members     :   req.body.members,
+                  events      :   req.body.events
               }
           },
           function(err,data){

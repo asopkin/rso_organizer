@@ -70,6 +70,7 @@ router.delete('/students/:id', student.deleteOne);
 
 var organization = require('./api/organization');
 router.get('/organizations', organization.getAll);
+router.get('/organizations/oneCategory/:category', organization.getOneCategory);
 router.post('/organizations', organization.create);
 router.get('/organizations/:id', organization.getOne);
 router.put('/organizations/:id', organization.replace);

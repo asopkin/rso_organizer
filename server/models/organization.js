@@ -1,10 +1,12 @@
 var mongoose = require('mongoose');
 
 var schema = {
-	name     :  String,
-	leaders  :  [String],
-    members  :  [String],
-    events   :  [String]
+	name        :  String,
+    description : String,
+    category    :  [String],
+	leaders     :  [String],
+    members     :  [String],
+    events      :  [String]
 };
 
 
