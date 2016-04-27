@@ -3,7 +3,7 @@ var Student = require('./models/student');
 
 module.exports = function(passport) {
 	passport.serializeStudent(function(student, done) {
-		done(null, student.id);
+		done(null, student.netId);
 	});
 
 	passport.deserializeStudent(function(id, done) {
@@ -26,8 +26,8 @@ module.exports = function(passport) {
 			}
 			else{
 				var newStudent = new Student();
-				newStudent.local.email = email;
-				newStudent.local.password = newStudent.generateHash(password);
+				newStudent.netId = email;
+				newStudent.password = newStudent.generateHash(password);
 
 				newStudent.save(function(err){
 					if(err)
@@ -43,7 +43,7 @@ module.exports = function(passport) {
 		passwordField: 'password'
 	}, 
 	function(email, password, done){
-		Student.findOne({'local.netId': netId}, function(err, student){
+		Student.findOne({'netId': netId}, function(err, student){
 			if(err)
 				return done(err);
 			if(!student){

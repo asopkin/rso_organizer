@@ -1,11 +1,39 @@
 <div class="list">		
 <center>
+<<<<<<< HEAD
+<div class="row" id="search-content">
+=======
 <div id="searchRow" class="row">
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
 	<i class="fi-magnifying-glass"></i>
 	<div class="search-bar">
     <input class="span4 pull-right" id="search-input" type="text" placeholder="Search for organization by name" ng-model="query">
     </div>
 </div>
+<<<<<<< HEAD
+
+<div class="row">
+	<div class="org-list">
+	<li ng-repeat="org in organizations | filter: searchOrganizations">
+	<div class="panel">
+	<h2>Name: {{ org.name }}</h2> 
+	<h2>{{ org.description }}</h2>
+	</div>
+	</li>
+	</div>
+    <!-- slider -->
+	  <div class="slide-container">
+	  <div class="crsl" >
+	  	<div ng-repeat="event in events">
+	  	<div class="event-content">
+	  	<div>{{ event.name }}</div><br>
+	  	<div>{{ event.description }}</div><br>
+	  	<div>{{ event.date }}</div><br>
+	  	</div>
+	  	</div>
+	  </div>
+	  </div>
+=======
   
 <!-- slider -->
 <div class="slide-container">
@@ -36,6 +64,7 @@
       </div>
     </li>
   </ul>
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
 
 </div>
 </center>

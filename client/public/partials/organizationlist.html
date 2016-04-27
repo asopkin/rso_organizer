@@ -1,6 +1,26 @@
-<div class="list">		
+<div class="orgs">		
+
+<!-- Used Angular specification for filters https://docs.angularjs.org/api/ng/filter/filter -->
+<div class="category-titles">
+<ul>
+<li><div ng-click="myFilter = undefined" class="category-tag">All</div></li>
+<!--<li><div ng-click="myFilter = {category: 'study'}" class="category-tag">Study</div></li>
+<li><div ng-click="myFilter = {category: 'play'}" class="category-tag">Play</div></li>
+<li><div ng-click="myFilter = {category: 'drinking'}" class="category-tag">Drinking</div></li> -->
+<li ng-repeat="cat in categories track by $index">
+<div ng-click="catFilter(cat)" class="category-tag-mid">{{ cat }}</div>
+</li> 
+<!--<li><div ng-click="myFilter = undefined" class="category-tag">All</div> </li>
+<li><div ng-click="myFilter = {category: 'Study'}" class="category-tag">Study</div></li>
+<li><div ng-click="myFilter = {category: 'Play'}" class="category-tag">Play</div></li>-->
+</ul>
+</div>
+
 <center>
 <div class="row">
+<<<<<<< HEAD
+<div ng-repeat="org in organizations | filter:myFilter" class="org-grid">
+=======
   
   <ul class="mdl-grid">
     <li ng-repeat="org in organizations" class="mdl-list__item mdl-cell mdl-cell--4-col">
@@ -34,24 +54,18 @@
   </ul>
   
 <!--
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
  	<div class="large-12 columns" id="org-bucket">
  	<div><span>{{ org.name }}</span></div><div id="share">Share:</div>
- 	<div class="options">
- 	<label>
- 	<input type="radio" ng-model="option.name" class="radio-button">
- 	Email</label>
+ 	<div class="radio-buttons">
+ 	<div class="options"><label><input type="radio" ng-model="option.name" name="contact-option" class="radio-button">
+ 	Email</label></div>
+ 	<div class="options"><label><input type="radio" ng-model="option.name" name="contact-option" class="radio-button">
+ 	Phone</label></div>
+ 	<div class="options"><label><input type="radio" ng-model="option.name" name="contact-option" class="radio-button">
+ 	Dorm/Apartment</label></div>
  	</div>
- 	<div class="options">
- 	<label>
- 	<input type="radio" ng-model="option.name" class="radio-button">
- 	Phone</label>
- 	</div>
- 	<div class="options">
- 	<label>
- 	<input type="radio" ng-model="option.name" class="radio-button">
- 	Dorm/Apartment</label>
- 	</div>
- 	<div class="options" id="leave-button">
+ 	<div class="button" id="leave-button">
  	Leave
  	</div>
  	</div>

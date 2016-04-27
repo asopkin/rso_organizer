@@ -4166,82 +4166,333 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 7, ../../source_sass/_base.scss */
 .list {
+  margin-top: 20px;
   margin: 0 auto; }
 
+<<<<<<< HEAD
+/* line 6, ../../source_sass/_base.scss */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+/** top section **/
+/* line 11, ../../source_sass/_base.scss */
+.top-section {
+  border: 3px solid #8BCBC8;
+  height: 65px;
+  both: clear;
+  display: block; }
+
+/** navigation **/
+/* line 19, ../../source_sass/_base.scss */
+.nav {
+  top: 0px;
+  float: right;
+  background-color: #8BCBC8;
+  margin-bottom: 40px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  /* line 26, ../../source_sass/_base.scss */
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  /* line 34, ../../source_sass/_base.scss */
+  .nav li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-size: 25px;
+    border-right: 3px solid #DAE9E4; }
+  /* line 43, ../../source_sass/_base.scss */
+  .nav a {
+    color: white; }
+
+/** title **/
+/* line 49, ../../source_sass/_base.scss */
+.title {
+  /* position */
+  float: left;
+  /* colors */
+  color: #8BCBC8;
+  font-size: 33px;
+  font-weight: bold;
+  /* margins */
+  margin-left: 18px;
+  margin-top: 8px; }
+
+/** search **/
+/* line 64, ../../source_sass/_base.scss */
+=======
 /* line 11, ../../source_sass/_base.scss */
 #searchRow {
   margin: 15px; }
 
 /* line 15, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
 .search-bar {
   overflow: hidden;
-  padding-right: .5em; }
+  margin-top: 30px;
+  margin: 0 auto;
+  width: 90%;
+  padding-right: 0.2em;
+  padding-left: 0.4em;
+  z-index: 2; }
 
+<<<<<<< HEAD
+/* line 73, ../../source_sass/_base.scss */
+=======
 /* line 19, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
 .fi-magnifying-glass {
+  /**	float: right; **/
   float: right;
-  padding-top: 3px; }
+  margin-right: 38px;
+  padding-top: 3px;
+  font-size: 25px; }
 
 /** list of organizations **/
+<<<<<<< HEAD
+/* line 85, ../../source_sass/_base.scss */
+#search-content {
+  margin-top: 50px;
+  clear: both;
+  /*	height: 120px;*/ }
+
+/** category searching for organizations */
+/* line 94, ../../source_sass/_base.scss */
+.category-titles {
+  margin-top: 20px;
+  text-align: center;
+  clear: both;
+  /** styling **/ }
+  /* line 98, ../../source_sass/_base.scss */
+  .category-titles ul {
+    list-style: none; }
+  /* line 102, ../../source_sass/_base.scss */
+  .category-titles .category-tag-mid {
+    margin-left: 2px;
+    margin-right: 2px; }
+  /* line 106, ../../source_sass/_base.scss */
+  .category-titles li {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    /* text */
+    color: white;
+    font-size: 18px;
+    background-color: #3C2E3D; }
+
+/* line 119, ../../source_sass/_base.scss */
+.org-list {
+  list-style: none;
+  overflow: scroll;
+  height: 150px;
+  margin-top: 50px; }
+  /* line 125, ../../source_sass/_base.scss */
+  .org-list h2 {
+    font-size: 18px;
+    text-transform: uppercase; }
+  /* line 129, ../../source_sass/_base.scss */
+  .org-list li {
+    /* margins and padding */
+    margin-bottom: 10px;
+    width: 70%;
+    /* size */
+    min-height: 100px;
+    /* border */
+    border: 2px solid #8BCBC8;
+    box-shadow: 2px 2px 1px #888888; }
+
+/* line 143, ../../source_sass/_base.scss */
+.panel {
+  margin-top: 20px; }
+
+/** organization grid **/
+/* line 148, ../../source_sass/_base.scss */
+=======
 /** organization grid**/
 /* line 46, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
 #org-bucket {
+  /* font */
+  font-size: 18px;
+  /* placement */
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 10px;
-  border: 1px solid black;
+  /* border */
+  border: 3px solid #8BCBC8;
+  /* alignment */
   text-align: center;
-  line-height: 100px;
+  /* line height */
+  line-height: 60px;
   /** share **/
   /** radio buttons **/ }
+<<<<<<< HEAD
+  /* line 167, ../../source_sass/_base.scss */
+  #org-bucket #share {
+    margin-bottom: 2px;
+    vertical-align: top;
+    text-align: center; }
+  /* line 174, ../../source_sass/_base.scss */
+  #org-bucket .radio-buttons {
+    margin: 0 auto;
+    width: 80%; }
+  /* line 178, ../../source_sass/_base.scss */
+=======
   /* line 55, ../../source_sass/_base.scss */
   #org-bucket #share {
     margin-bottom: 2px;
     vertical-align: top; }
   /* line 61, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
   #org-bucket .options {
+    /* alignment */
     vertical-align: top;
     display: inline-block;
+    margin-left: 20px;
+    /* padding and margins */
     padding-left: 5px;
     margin: 0 auto; }
+<<<<<<< HEAD
+  /* line 189, ../../source_sass/_base.scss */
+=======
   /* line 68, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
   #org-bucket #leave-button {
-    float: right; }
+    /* placement */
+    margin-top: 5px;
+    float: right;
+    /* border */
+    border-radius: 70%;
+    /* text */
+    color: white;
+    font-size: 18px;
+    background-color: #3C2E3D; }
 
+<<<<<<< HEAD
+/* line 203, ../../source_sass/_base.scss */
+.org-grid {
+  margin: 0 auto;
+  width: 100%; }
+
+/** student grid **/
+/* line 209, ../../source_sass/_base.scss */
+=======
 /* line 77, ../../source_sass/_base.scss */
 .card {
   margin: 10px; }
 
 /* line 81, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
 #stud-bucket {
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 10px;
-  border: 1px solid black;
-  height: 100px;
+  border: 3px solid #8BCBC8;
+  min-height: 125px;
   text-align: center;
-  line-height: 100px; }
+  line-height: 60px; }
 
+/* line 218, ../../source_sass/_base.scss */
+#student-page {
+  clear: both;
+  margin: 0 auto; }
+  /* line 222, ../../source_sass/_base.scss */
+  #student-page #add-button {
+    /* placement */
+    margin: 0 auto;
+    margin-right: 47%;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+    /* size */
+    height: 35px;
+    width: 140px;
+    /* text */
+    color: white;
+    font-size: 18px;
+    background-color: #3C2E3D; }
+
+<<<<<<< HEAD
+/* line 241, ../../source_sass/_base.scss */
+=======
 /* line 90, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
 .stud-grid {
+  margin-top: 50px;
   margin: 0 auto;
-  width: 80%; }
+  margin-left: 100px;
+  width: 100%; }
 
+<<<<<<< HEAD
+/* line 248, ../../source_sass/_base.scss */
+=======
 /* line 95, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
 span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal; }
 
 /** slider **/
-/* line 101, ../../source_sass/_base.scss */
-.crsl {
-  /* dimensions */
-  /* margins */
-  margin: 0px auto;
-  width: 80%;
+<<<<<<< HEAD
+/* line 254, ../../source_sass/_base.scss */
+.event-content {
+  /* borders */
+  border-top: 3px solid #FDAE84;
+  border-bottom: 3px solid #FDAE84;
+  /* placement */
+  height: 180px;
+  margin-top: 90px;
+  padding-top: 15px;
+  z-index: 10;
+  position: relative;
   /* colors */
   background-color: white;
+  color: black; }
+
+/* line 271, ../../source_sass/_base.scss */
+.event-content :after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 2px;
+  left: 0px;
+  right: 0px;
+  bottom: 2px;
+  border-top: 3px solid #ECC7C0;
+  border-bottom: 3px solid #ECC7C0; }
+
+/* line 283, ../../source_sass/_base.scss */
+=======
+/* line 101, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
+.crsl {
+  /* margins */
+  margin: 0px auto;
+  width: 100%;
+  /* colors */
+  background-color: white;
+<<<<<<< HEAD
+  /* margins */
+  margin-bottom: 150px;
+  margin-top: 150px; }
+  /* line 296, ../../source_sass/_base.scss */
+  .crsl img {
+    margin: auto;
+    width: 400px;
+    height: 800px; }
+  /* line 302, ../../source_sass/_base.scss */
+=======
   /* margins */ }
   /* line 115, ../../source_sass/_base.scss */
   .crsl img {
@@ -4249,14 +4500,71 @@ span {
     width: 400px;
     height: 400px; }
   /* line 121, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
+<<<<<<< HEAD
+  /* line 310, ../../source_sass/_base.scss */
+=======
   /* line 129, ../../source_sass/_base.scss */
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
+
+/** Add student **/
+/* line 316, ../../source_sass/_base.scss */
+.add-student-view {
+  /* button */
+  /* form styling */ }
+  /* line 317, ../../source_sass/_base.scss */
+  .add-student-view h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #3C2E3D;
+    margin: auto;
+    clear: both; }
+  /* line 327, ../../source_sass/_base.scss */
+  .add-student-view #submit-button {
+    /* placement */
+    margin: auto;
+    width: 100px;
+    padding: 2px 2px 2px 2px;
+    margin-top: 15px;
+    clear: both;
+    /* text */
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: #3C2E3D; }
+  /* line 342, ../../source_sass/_base.scss */
+  .add-student-view .required:after {
+    content: "*";
+    color: red;
+    display: inline;
+    clear: both; }
+  /* line 344, ../../source_sass/_base.scss */
+  .add-student-view .required input {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: black; }
+  /* line 349, ../../source_sass/_base.scss */
+  .add-student-view input {
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  /* line 357, ../../source_sass/_base.scss */
+  .add-student-view label {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-right: 20px; }
 
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles

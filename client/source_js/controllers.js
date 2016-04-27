@@ -1,4 +1,4 @@
-var fp498Controllers = angular.module('fp498Controllers', []);
+var fp498Controllers = angular.module('fp498Controllers', ['720kb.datepicker']);
 
 fp498Controllers.controller('LoginController', ['$scope', 'CommonData'  , function($scope, CommonData) {
   $scope.data = "";
@@ -23,16 +23,28 @@ fp498Controllers.controller('SignupController', ['$scope', 'CommonData' , functi
 }]);
 
 /** Organization list **/
-fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', 'Organizations', '$window' , function($scope, $http, Organizations, $window) {
-
+fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '$timeout', 'Organizations', '$window' , function($scope, $http, $timeout, Organizations, $window) {
+ $scope.categories = [];
  Organizations.get().success(function(data){
     $scope.organizations = data;
+      for(var k in $scope.organizations){
+        for(var l in $scope.organizations[k].category){
+          if($scope.categories.indexOf($scope.organizations[k].category[l])==-1){
+            $scope.categories.push($scope.organizations[k].category[l]);
+          }
+        }
+      }
   });
+  $scope.catFilter = function(value){
+      $scope.myFilter = {category: value};
+    }
+
  $scope.option = {
   name: 'member'
  };
 
 }]);
+
 /** Member List **/
 fp498Controllers.controller('StudentListController', ['$scope' , '$http', 'Students', '$window' , function($scope, $http, Students, $window) {
 
@@ -41,6 +53,26 @@ fp498Controllers.controller('StudentListController', ['$scope' , '$http', 'Stude
   });
 
 }]);
+
+/* Filter for netids */
+fp498Controllers.filter('netIdFilter', function() {
+    return function(input) {
+        if(input!=null){
+          return input.replace(/ /g, '_');
+        }
+    }
+});
+
+/** Add Student List **/
+fp498Controllers.controller('StudentAddController', ['$scope' , '$http', 'Students', '$window' , function($scope, $http, Students, $window) {
+
+ Students.get().success(function(data){
+    $scope.students = data;
+  });
+
+}]);
+
+
 
 /** Event list controller **/
 fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' , function($scope, $http, $timeout, Events, Organizations, $window) {
@@ -86,6 +118,7 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
 /** profile **/
 fp498Controllers.controller('profileController', ['$scope', '$http', function($scope, $http) {
    $scope.profile = false;
+   console.log("profile");
    $http.get('/profile').success(function(data) {
     console.log(data);
     if(!data.error) {
@@ -98,10 +131,10 @@ fp498Controllers.controller('profileController', ['$scope', '$http', function($s
 
 
 fp498Controllers.controller('SettingsController', ['$scope' , '$window' , function($scope, $window) {
-  $scope.url = $window.sessionStorage.baseurl;
+  $scope.url = "http://localhost:4000";
 
   $scope.setUrl = function(){
-    $window.sessionStorage.baseurl = $scope.url;
+    $window.sessionStorage.baseurl = "http://localhost:4000";
     $scope.displayText = "URL set";
 
   };
