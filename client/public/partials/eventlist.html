@@ -1,29 +1,42 @@
 <div class="list">		
 <center>
-<div class="row">
+<div id="searchRow" class="row">
 	<i class="fi-magnifying-glass"></i>
 	<div class="search-bar">
     <input class="span4 pull-right" id="search-input" type="text" placeholder="Search for organization by name" ng-model="query">
     </div>
 </div>
-<div class="row">
-	<div class="org-list">
-	<li ng-repeat="org in organizations | filter: searchOrganizations">
-	<panel>
-	<h2>Name: {{ org.name }}</h2> 
-	</panel>
-	</li>
-	</div>
-    <!-- slider -->
-	  <div class="slide-container">
-	  <div class="crsl" >
-	  	<div ng-repeat="event in events">
-	  	<div>{{event.name }}</div>
-	  	</div>
-	  </div>
-	  </div>
+  
+<!-- slider -->
+<div class="slide-container">
+  <div class="crsl" >
+    <div ng-repeat="event in events">
+      <div>{{event.name }}</div>
+  </div>
+</div>
+<!-- end slider -->
 
-	<!-- end slider -->
+</div>
+<div class="row">
+  <ul class="mdl-grid">
+    <li ng-repeat="org in organizations | filter: searchOrganizations" class="mdl-list__item mdl-cell mdl-cell--4-col">
+      <div class="demo-card-square mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">{{ org.name }}</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Mauris sagittis pellentesque lacus eleifend lacinia...
+        </div>
+        <div class="mdl-card__menu">
+          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">share</i>
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+
 </div>
 </center>
 </div>

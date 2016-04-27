@@ -1,6 +1,15 @@
 // Add any custom Sass & CSS here
+
+#mainContent {
+  margin-top: 10px;
+}
+
 .list{
 	margin: 0 auto;
+}
+
+#searchRow {
+  margin: 15px;
 }
 
 .search-bar{
@@ -13,25 +22,25 @@
 }
 
 /** list of organizations **/
-.org-list{
-	list-style: none;
-	h2{
-	font-size: 18px;
-	text-transform: uppercase;
-	}
-	li{
-	/* margins and padding */
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 5px 5px 5px 5px;
-	width: 70%;
-
-	/* border */
-	border: 2px solid $base-color;
-	box-shadow: 2px 2px 1px #888888;
-	}
-
-}
+//.org-list{
+//	list-style: none;
+//	h2{
+//	font-size: 18px;
+//	text-transform: uppercase;
+//	}
+//	li{
+//	/* margins and padding */
+//	margin-top: 10px;
+//	margin-bottom: 10px;
+//	padding: 5px 5px 5px 5px;
+//	width: 70%;
+//
+//	/* border */
+//	border: 2px solid $base-color;
+//	box-shadow: 2px 2px 1px #888888;
+//	}
+//
+//}
 
 /** organization grid**/
 #org-bucket{
@@ -60,11 +69,14 @@
 		float: right;
 	}
 }
-.org-grid{
-	margin: 0 auto;
-	width: 80%;
-}
+//.org-grid{
+//	margin: 0 auto;
+//	width: 80%;
+//}
 
+.card {
+  margin: 10px;
+}
 
 #stud-bucket{
 	margin-left: 5px;
@@ -97,8 +109,8 @@ span{
 	background-color: white;
 
 	/* margins */
-	margin-bottom: 150px;
-	margin-top: 150px;
+//	margin-bottom: 150px;
+//	margin-top: 150px;
 
 	img{
 		margin: auto;
