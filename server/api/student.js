@@ -1,4 +1,17 @@
 var Student = require('../models/student');
+
+//helper function
+var remove_student_from_organizations = function(array, studentID) {
+    var found = array.indexOf(studentID);
+
+    while (found !== -1) {
+        array.splice(found, 1);
+        found = array.indexOf(studentID);
+    }
+};
+
+
+
 // Wrap all the methods in an object
 
 var student = {
@@ -43,6 +56,19 @@ var student = {
               res.json(data);
           }
       );
+  },
+  
+  deleteOne: function(req, res){   
+ 
+      Student.findByIdAndRemove(req.params.id,function(err,data){
+          // remove student from Organization
+          Organization.findById(data.followOrganizationID ,function(err, organization){ 
+             remove_student_from_organizations(organization.members,req.params.id);
+             remove_student_from_organizations(organization.leaders,req.params.id);
+             organization.save().exec();  
+          });                                         
+          res.json(data);
+       });
   }
 
 

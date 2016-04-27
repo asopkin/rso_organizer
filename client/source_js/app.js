@@ -2,13 +2,13 @@ var app = angular.module('mp4', ['ngRoute', 'fp498Controllers', 'fp498Services']
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-    when('/firstview', {
-    templateUrl: 'partials/firstview.html',
-    controller: 'FirstController'
+  when('/login', {
+    templateUrl: 'partials/login.html',
+    controller: 'LoginController'
   }).
-  when('/secondview', {
-    templateUrl: 'partials/secondview.html',
-    controller: 'SecondController'
+  when('/signup', {
+    templateUrl: 'partials/signup.html',
+    controller: 'SignupController'
   }).
   when('/settings', {
     templateUrl: 'partials/settings.html',

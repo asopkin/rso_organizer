@@ -6,19 +6,19 @@
     </div>
 
     <div class="row">
-        <!-- PROFILE INFORMATION -->
-            <div class="well" ng-show="profile">
-                <h3><span class="fa fa-user"></span> Profile</h3>
+      <!-- PROFILE INFORMATION -->
+      <div class="well" ng-show="profile">
+          <h3><span class="fa fa-user"></span> Profile</h3>
 
-                    <p>
-                        <strong>id</strong>: {{user._id}}<br>
-                        <strong>email</strong>: {{user.local.email}}<br>
-                        <strong>password</strong>: {{user.local.password}}
-                    </p>
-            </div>
-            <div class="jumbotron text-center" ng-hide="profile">
-                <a href="/login.html" class="button">Login</a>
-                <a href="/signup.html" class="button">Signup</a>
-            </div>
+              <p>
+                  <strong>id</strong>: {{user._id}}<br>
+                  <strong>email</strong>: {{user.local.email}}<br>
+                  <strong>password</strong>: {{user.local.password}}
+              </p>
+      </div>
+      <div class="jumbotron text-center" ng-hide="profile">
+          <a href="#/login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Login</a>
+          <a href="#/signup" class="mdl-button mdl-js-button mdl-button--primary">Signup</a>
+      </div>
 
 </div>

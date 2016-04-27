@@ -1,4 +1,17 @@
 var Event = require('../models/event');
+
+
+//helper function
+var remove_event_from_events = function(events, eventID) {
+    var found = events.indexOf(eventID);
+
+    while (found !== -1) {
+        events.splice(found, 1);
+        found = events.indexOf(events);
+    }
+};
+
+
 // Wrap all the methods in an object
 
 var event = {
@@ -50,10 +63,16 @@ var event = {
       );
   },
 
-  deleteOne: function(req, res){
+  deleteOne: function(req, res){   
+ 
       Event.findByIdAndRemove(req.params.id,function(err,data){
+          // remove event from Organization
+          Organization.findById(data.organizationID,function(err, organization){ 
+             remove_event_from_events(organization.events,req.params.id);
+             organization.save().exec();  
+          });                                         
           res.json(data);
-      });
+       });
   }
 };
 

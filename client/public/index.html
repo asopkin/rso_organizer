@@ -11,7 +11,15 @@
     <link rel="stylesheet" href="./foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick-theme.css"/>
+<<<<<<< HEAD
     <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">-->
+=======
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!--  Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.deep_orange-blue.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
     <!-- Angular Scripts -->
     <!-- NOTE: removing the ".min." can help debugging in the console-->
     <script src="./lib/angular/angular.min.js"></script>
@@ -23,6 +31,7 @@
 </head>
 
 <body ng-app="mp4">
+<<<<<<< HEAD
     <div class="top-section">
         <div class="nav">
             <ul>
@@ -37,6 +46,38 @@
     </div>
 
     <div ng-view class="content"></div>
+=======
+
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+      <span class="mdl-layout-title">RSO Organizer</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#/settings">Settings</a>
+          <a class="mdl-navigation__link" href="#/eventlist">Events</a>
+          <a class="mdl-navigation__link" href="#/organizations">Organizations</a>
+          <a class="mdl-navigation__link" href="#/profile">Profile</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Menu</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#/settings">Settings</a>
+        <a class="mdl-navigation__link" href="#/eventlist">Events</a>
+        <a class="mdl-navigation__link" href="#/organizations">Organizations</a>
+        <a class="mdl-navigation__link" href="#/profile">Profile</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div id="mainContent" ng-view></div>
+    </main>
+  </div>
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
 
     <!-- Scripts -->
     <script src="./lib/jquery-2.1.3.min/index.js"></script>
