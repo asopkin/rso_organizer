@@ -60,19 +60,19 @@ body{
 	font-size: 33px;
 	font-weight: bold;
 
-<<<<<<< HEAD
+
 	/* margins */
 	margin-left: 18px;
 	margin-top: 8px;
 }
 
 /** search **/
-=======
+
 #searchRow {
   margin: 15px;
 }
 
->>>>>>> c69774158b4f4ea915a84db62323ea514f839076
+
 .search-bar{
 	overflow: hidden; 
 	margin-top: 30px;
@@ -93,7 +93,7 @@ body{
 
 
 /** list of organizations **/
-<<<<<<< HEAD
+
 
 #search-content{
 	margin-top: 50px;
@@ -156,27 +156,27 @@ body{
 .panel{
 	margin-top: 20px;
 }
-=======
-//.org-list{
+
+/*//.org-list{
 //	list-style: none;
 //	h2{
 //	font-size: 18px;
 //	text-transform: uppercase;
 //	}
 //	li{
-//	/* margins and padding */
+//	
 //	margin-top: 10px;
 //	margin-bottom: 10px;
 //	padding: 5px 5px 5px 5px;
 //	width: 70%;
 //
-//	/* border */
+//	
 //	border: 2px solid $base-color;
 //	box-shadow: 2px 2px 1px #888888;
 //	}
 //
-//}
->>>>>>> c69774158b4f4ea915a84db62323ea514f839076
+//}*/
+
 
 /** organization grid **/
 #org-bucket{
@@ -234,24 +234,23 @@ body{
 		background-color: $cranberry-color;
 	}
 }
-<<<<<<< HEAD
+
 .org-grid{
 	margin: 0 auto;
 	width: 100%;
 }
 
 /** student grid **/
-=======
-//.org-grid{
+/*//.org-grid{
 //	margin: 0 auto;
 //	width: 80%;
-//}
+//}*/
 
 .card {
   margin: 10px;
 }
 
->>>>>>> c69774158b4f4ea915a84db62323ea514f839076
+
 #stud-bucket{
 	margin-left: 5px;
 	margin-right: 5px;

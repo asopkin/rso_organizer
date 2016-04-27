@@ -36,6 +36,7 @@ fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '
       }
   });
   $scope.catFilter = function(value){
+      console.log("cat filter");
       $scope.myFilter = {category: value};
     }
 
