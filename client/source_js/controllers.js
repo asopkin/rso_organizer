@@ -1,6 +1,6 @@
 var fp498Controllers = angular.module('fp498Controllers', []);
 
-fp498Controllers.controller('FirstController', ['$scope', 'CommonData'  , function($scope, CommonData) {
+fp498Controllers.controller('LoginController', ['$scope', 'CommonData'  , function($scope, CommonData) {
   $scope.data = "";
    $scope.displayText = ""
 
@@ -12,7 +12,7 @@ fp498Controllers.controller('FirstController', ['$scope', 'CommonData'  , functi
 
 }]);
 
-fp498Controllers.controller('SecondController', ['$scope', 'CommonData' , function($scope, CommonData) {
+fp498Controllers.controller('SignupController', ['$scope', 'CommonData' , function($scope, CommonData) {
   $scope.data = "";
 
   $scope.getData = function(){
