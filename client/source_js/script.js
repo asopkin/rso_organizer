@@ -6,6 +6,9 @@ for(var i=0; i<divs.length; i++) {
   divs[i].addEventListener("click", highlightThis, false);*/
 }
 
+/** change page **/
+
+
 function highlightThis(event) {
     //event.stopPropagation();
   
@@ -32,3 +35,8 @@ $(document).ready(function () {
         arrows: true
     });
 });
+
+/** calendar **/
+    $(document).ready(function(){
+        $("#calendar").kendoCalendar();
+    });

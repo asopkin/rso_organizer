@@ -4277,7 +4277,7 @@ body {
     /* text */
     color: white;
     font-size: 18px;
-    background-color: #3C2E3D; }
+    background-color: #FF5722; }
 
 /* line 132, ../../source_sass/_base.scss */
 .org-list {
@@ -4323,8 +4323,59 @@ body {
 //	}
 //
 //}*/
+/* line 179, ../../source_sass/_base.scss */
+.add-org-form {
+  margin: 0 auto;
+  width: 400px; }
+
+/* line 183, ../../source_sass/_base.scss */
+#addorg {
+  margin-top: 5px;
+  margin: 0 auto;
+  padding: 3px 3px 3px 3px;
+  width: 40px;
+  border-radius: 10%;
+  cursor: pointer;
+  /* text */
+  color: white;
+  font-size: 18px;
+  background-color: blue; }
+
+/* ==========  Select Field ========== */
+/* Style Select Field */
+/* line 199, ../../source_sass/_base.scss */
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: 4px 0;
+  font-size: 16px;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black; }
+
+/* Remove focus */
+/* line 211, ../../source_sass/_base.scss */
+select:focus {
+  outline: none; }
+
+/* Hide label */
+/* line 215, ../../source_sass/_base.scss */
+.mdl-selectfield label {
+  display: none; }
+
+/* Use custom arrow */
+/* line 218, ../../source_sass/_base.scss */
+.mdl-selectfield {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  position: relative; }
+  /* line 221, ../../source_sass/_base.scss */
+  .mdl-selectfield:after {
+    position: absolute;
+    top: 0.75em; }
+
 /** organization grid **/
-/* line 182, ../../source_sass/_base.scss */
+/* line 227, ../../source_sass/_base.scss */
 #org-bucket {
   /* font */
   font-size: 18px;
@@ -4340,16 +4391,16 @@ body {
   line-height: 60px;
   /** share **/
   /** radio buttons **/ }
-  /* line 201, ../../source_sass/_base.scss */
+  /* line 246, ../../source_sass/_base.scss */
   #org-bucket #share {
     margin-bottom: 2px;
     vertical-align: top;
     text-align: center; }
-  /* line 208, ../../source_sass/_base.scss */
+  /* line 253, ../../source_sass/_base.scss */
   #org-bucket .radio-buttons {
     margin: 0 auto;
     width: 80%; }
-  /* line 212, ../../source_sass/_base.scss */
+  /* line 257, ../../source_sass/_base.scss */
   #org-bucket .options {
     /* alignment */
     vertical-align: top;
@@ -4358,7 +4409,7 @@ body {
     /* padding and margins */
     padding-left: 5px;
     margin: 0 auto; }
-  /* line 223, ../../source_sass/_base.scss */
+  /* line 268, ../../source_sass/_base.scss */
   #org-bucket #leave-button {
     /* placement */
     margin-top: 5px;
@@ -4370,7 +4421,7 @@ body {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 238, ../../source_sass/_base.scss */
+/* line 283, ../../source_sass/_base.scss */
 .org-grid {
   margin: 0 auto;
   width: 100%; }
@@ -4380,11 +4431,11 @@ body {
 //	margin: 0 auto;
 //	width: 80%;
 //}*/
-/* line 249, ../../source_sass/_base.scss */
+/* line 294, ../../source_sass/_base.scss */
 .card {
   margin: 10px; }
 
-/* line 254, ../../source_sass/_base.scss */
+/* line 299, ../../source_sass/_base.scss */
 #stud-bucket {
   margin-left: 5px;
   margin-right: 5px;
@@ -4394,11 +4445,11 @@ body {
   text-align: center;
   line-height: 60px; }
 
-/* line 263, ../../source_sass/_base.scss */
+/* line 308, ../../source_sass/_base.scss */
 #student-page {
   clear: both;
   margin: 0 auto; }
-  /* line 267, ../../source_sass/_base.scss */
+  /* line 312, ../../source_sass/_base.scss */
   #student-page #add-button {
     /* placement */
     margin: 0 auto;
@@ -4415,21 +4466,21 @@ body {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 286, ../../source_sass/_base.scss */
+/* line 331, ../../source_sass/_base.scss */
 .stud-grid {
   margin-top: 50px;
   margin: 0 auto;
   margin-left: 100px;
   width: 100%; }
 
-/* line 293, ../../source_sass/_base.scss */
+/* line 338, ../../source_sass/_base.scss */
 span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal; }
 
 /** slider **/
-/* line 299, ../../source_sass/_base.scss */
+/* line 344, ../../source_sass/_base.scss */
 .event-content {
   /* borders */
   border-top: 3px solid #FDAE84;
@@ -4444,7 +4495,7 @@ span {
   background-color: white;
   color: black; }
 
-/* line 316, ../../source_sass/_base.scss */
+/* line 361, ../../source_sass/_base.scss */
 .event-content :after {
   content: "";
   display: block;
@@ -4457,7 +4508,7 @@ span {
   border-top: 3px solid #ECC7C0;
   border-bottom: 3px solid #ECC7C0; }
 
-/* line 328, ../../source_sass/_base.scss */
+/* line 373, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
@@ -4465,27 +4516,27 @@ span {
   /* colors */
   background-color: white;
   /* margins */ }
-  /* line 341, ../../source_sass/_base.scss */
+  /* line 386, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-  /* line 347, ../../source_sass/_base.scss */
+  /* line 392, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-  /* line 355, ../../source_sass/_base.scss */
+  /* line 400, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
 
 /** Add student **/
-/* line 361, ../../source_sass/_base.scss */
+/* line 406, ../../source_sass/_base.scss */
 .add-student-view {
   /* button */
   /* form styling */ }
-  /* line 362, ../../source_sass/_base.scss */
+  /* line 407, ../../source_sass/_base.scss */
   .add-student-view h1 {
     text-align: center;
     font-weight: bold;
@@ -4494,7 +4545,7 @@ span {
     color: #3C2E3D;
     margin: auto;
     clear: both; }
-  /* line 372, ../../source_sass/_base.scss */
+  /* line 417, ../../source_sass/_base.scss */
   .add-student-view #submit-button {
     /* placement */
     margin: auto;
@@ -4507,17 +4558,17 @@ span {
     text-align: center;
     font-size: 20px;
     background-color: #3C2E3D; }
-  /* line 387, ../../source_sass/_base.scss */
+  /* line 432, ../../source_sass/_base.scss */
   .add-student-view .required:after {
     content: "*";
     color: red;
     display: inline;
     clear: both; }
-  /* line 389, ../../source_sass/_base.scss */
+  /* line 434, ../../source_sass/_base.scss */
   .add-student-view .required input {
     background-color: rgba(255, 0, 0, 0.1);
     color: black; }
-  /* line 394, ../../source_sass/_base.scss */
+  /* line 439, ../../source_sass/_base.scss */
   .add-student-view input {
     width: 80%;
     margin: 0 auto;
@@ -4525,7 +4576,7 @@ span {
     vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 402, ../../source_sass/_base.scss */
+  /* line 447, ../../source_sass/_base.scss */
   .add-student-view label {
     display: inline-block;
     vertical-align: middle;

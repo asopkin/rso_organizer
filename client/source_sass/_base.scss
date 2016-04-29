@@ -126,7 +126,7 @@ body{
 		/* text */
 		color: white;
 		font-size: 18px;
-		background-color: $cranberry-color;
+		background-color: $orange-color;
 	}
 }
 .org-list{
@@ -176,8 +176,53 @@ body{
 //	}
 //
 //}*/
+.add-org-form{
+	margin: 0 auto;
+	width: 400px;
+}
+#addorg{
+	margin-top: 5px;
+	margin: 0 auto;
+	padding: 3px 3px 3px 3px;
+	width: 40px;
+	border-radius: 10%;
+	cursor: pointer;
+	/* text */
+	color: white;
+	font-size: 18px;
+	background-color: blue;
+}
 
+/* ==========  Select Field ========== */
 
+/* Style Select Field */
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: 4px 0;
+  font-size: 16px;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/* Remove focus */
+select:focus {
+  outline: none}
+
+/* Hide label */
+.mdl-selectfield label {display: none;}
+/* Use custom arrow */
+
+.mdl-selectfield {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  position: relative;
+    &:after {
+        position: absolute;
+        top: 0.75em;
+    }
+}
 /** organization grid **/
 #org-bucket{
 	/* font */

@@ -1,0 +1,35 @@
+<div class="add-org-form">
+<div class="mdl-layout mdl-js-layout mdl-color--white-100">
+  <main class="mdl-layout__content">
+    <div class="mdl-card mdl-shadow--6dp">
+      <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+        <h2 class="mdl-card__title-text">Add an Organization</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <form ng-submit="submitForm()" id="add-org-form">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="name" ng-model="newOrg.name"/>
+            <label class="mdl-textfield__label" for="name">Name</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="descrip" ng-model="newOrg.description"/>
+            <label class="mdl-textfield__label" for="descrip">Description</label>
+          </div>
+          <div class="mdl-selectfield">
+          <label>Standard Select</label>
+          <select class="browser-default" ng-model="newOrg.category">
+            <option value="" disabled selected>Category</option>
+            <option value="study">Study</option>
+            <option value="play">Play</option>
+            <option value="drinking">Drinking</option>
+          </select>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit">Submit</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+</div>

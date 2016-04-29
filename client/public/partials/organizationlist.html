@@ -4,17 +4,13 @@
 <div class="category-titles">
 <ul>
 <li><div ng-click="myFilter = undefined" class="category-tag">All</div></li>
-<!--<li><div ng-click="myFilter = {category: 'study'}" class="category-tag">Study</div></li>
-<li><div ng-click="myFilter = {category: 'play'}" class="category-tag">Play</div></li>
-<li><div ng-click="myFilter = {category: 'drinking'}" class="category-tag">Drinking</div></li> -->
 <li ng-repeat="cat in categories track by $index">
-<div ng-click="catFilter(cat)" class="category-tag">{{ cat }}</div>
+<div ng-click="catFilter(cat)" class="category-tag" demo-card-square mdl-card>{{ cat }}</div>
 </li> 
-<!--<li><div ng-click="myFilter = undefined" class="category-tag">All</div> </li>
-<li><div ng-click="myFilter = {category: 'Study'}" class="category-tag">Study</div></li>
-<li><div ng-click="myFilter = {category: 'Play'}" class="category-tag">Play</div></li>-->
 </ul>
 </div>
+
+<div class="add-button" id="addorg">Add</div>
 
 <center>
 <div class="row">

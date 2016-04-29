@@ -39,6 +39,7 @@ module.exports = function(passport) {
 	}));
 
 	passport.use('local-login', new LocalStrategy({
+		console.log("local login");
 		usernameField : 'netId',
 		passwordField: 'password'
 	}, 

@@ -34,6 +34,10 @@ app.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'partials/profile.html',
     controller: 'profileController'
   }).
+  when('/addorganization', {
+    templateUrl: 'partials/addorganization.html',
+    controller: 'AddOrganizationController'
+  }).
   otherwise({
     redirectTo: '/eventlist'
   });

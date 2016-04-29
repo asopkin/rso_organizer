@@ -1,4 +1,5 @@
 module.exports = function(app, passport) {
+	console.log("exports1");
 
 	// Define POST route for /signup endpoint
 	app.post('/signup', passport.authenticate('local-signup'), function(req, res){
@@ -16,10 +17,10 @@ module.exports = function(app, passport) {
 	app.get('/profile', isLoggedIn, function(req, res){
 		console.log("prof");
 		res.json({
-			user: req.user
+			student: req.student
 		});
 	});
-
+	console.log("ey");
 	// Define GET route for /logout endpoint
 	app.get('/logout', function(req, res){
 		req.logout();

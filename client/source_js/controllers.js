@@ -40,9 +40,39 @@ fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '
       $scope.myFilter = {category: value};
     }
 
+   document.getElementById("addorg").onclick = function () {
+          location.href = "/#/addorganization";
+    }
  $scope.option = {
   name: 'member'
  };
+
+}]);
+
+/** Add Organization **/
+fp498Controllers.controller('AddOrganizationController', ['$scope' , '$http', 'Organizations', '$window' , function($scope, $http, Organizations, $window) {
+   $scope.newOrg = {
+      name: "New Organization",
+      description: "web-programming",
+      category: [],
+      leaders: [],
+      members: [],
+      events: []
+    };
+
+  /** When form submitted, post the new user **/
+  $scope.submitForm = function(){
+    /** Post the user **/
+    console.log("submit form");
+    Organizations.post($scope.newOrg).success(function(data){
+      $scope.users = data.data;
+      var frm = document.getElementById("add-org-form");
+      frm.reset();
+    })
+    .error(function(err){
+      console.log(err);
+    })
+  } //end submit form function
 
 }]);
 
@@ -111,6 +141,9 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
   };
 
   /** slider **/
+    $(document).ready(function(){
+      $("#calendar").kendoCalendar();
+  });
 
 
 

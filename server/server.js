@@ -35,8 +35,11 @@ app.use(morgan('dev'));
 app.use(cookieParser());
 
 app.use(session({ secret: 'passport demo' })); //credentials saved in session
+app.use(express.static(__dirname + '/client'));
+
 app.use(passport.initialize());
 app.use(passport.session());
+
 require('./routes.js')(app, passport);
 
 // Use the body-parser package in our application
