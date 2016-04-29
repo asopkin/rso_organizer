@@ -34,6 +34,15 @@
   <div class="crsl" >
     <div ng-repeat="event in events">
       <div>{{event.name }}</div>
+      <addtocalendar
+      start-date="20150704T190000"
+      end-date="20150704T210000"
+      title="{{ event.name }}"
+      location="Battery Park City, New York, NY"
+      class-name="mui-dropdown_menu"
+      description="Celebrate the independence of the United States with fireworks in one of the greatest cities in the world."
+      btn-text="">
+      </addtocalendar>
   </div>
 </div>
 <!-- end slider -->
@@ -58,19 +67,8 @@
       </div>
     </li>
   </ul><br><br>
-  <h2>ADD</h2>
-  <addtocalendar
-    start-date="20150704T190000"
-    end-date="20150704T210000"
-    title="Fourth of July Fireworks"
-    location="Battery Park City, New York, NY"
-    class-name="btn btn-sm btn-default dropdown-toggle"
-    description="Celebrate the independence of the United States with fireworks in one of the greatest cities in the world."
-    btn-text="Add to calendar">
-</addtocalendar><br><br>
   <!-- date pick -->
-  <!--
-<iframe src="http://calendar.google.com/calendar/embed?src=v7pepmi7g8e2pbp1gicuej8h38%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="200" height="400" frameborder="0" scrolling="no"></iframe><br><br>-->
+<iframe src="http://calendar.google.com/calendar/embed?src=v7pepmi7g8e2pbp1gicuej8h38%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="200" height="400" frameborder="0" scrolling="no"></iframe><br><br>
 
 </div>
 </center>

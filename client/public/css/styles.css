@@ -4583,6 +4583,17 @@ span {
     text-transform: uppercase;
     margin-right: 20px; }
 
+/** calendar **/
+/* line 456, ../../source_sass/_base.scss */
+.dropdown-menu a {
+  background-color: #FF5722;
+  padding: 3px 3px 3px 3px;
+  border-radius: 10%;
+  color: white; }
+/* line 462, ../../source_sass/_base.scss */
+.dropdown-menu li {
+  color: red; }
+
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles
   in _base.scss

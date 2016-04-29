@@ -451,4 +451,15 @@ span{
   margin-right: 20px;
   }
   }
-
+/** calendar **/
+.dropdown-menu{
+	a{
+		background-color: $orange-color;
+		padding: 3px 3px 3px 3px;
+		border-radius: 10%;
+		color: white;
+	}
+	li{
+		color: red;
+	}
+}
