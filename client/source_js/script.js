@@ -37,6 +37,3 @@ $(document).ready(function () {
 });
 
 /** calendar **/
-    $(document).ready(function(){
-        $("#calendar").kendoCalendar();
-    });

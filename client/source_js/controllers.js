@@ -1,4 +1,4 @@
-var fp498Controllers = angular.module('fp498Controllers', ['720kb.datepicker']);
+var fp498Controllers = angular.module('fp498Controllers', ['720kb.datepicker', 'jshor.angular-addtocalendar']);
 
 fp498Controllers.controller('LoginController', ['$scope', 'CommonData'  , function($scope, CommonData) {
   $scope.data = "";
