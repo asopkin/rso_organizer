@@ -1,0 +1,13 @@
+<div class="add-student-view">
+<div class="row">
+    <form name="student-form" id="addstudentform" ng-submit="submitForm()">
+    <div class="student-info">
+      <h1> New User </h1><br>
+      <div class="required"><label for="nameinput">NAME:</label><input type="text" id="nameinput" name="name_input" ng-model="newUser.name" required></div>
+      <div class="required"><label for="emailinput">EMAIL:</label><input type="email" name="email" id="email" ng-model="newUser.email" validate-email required></div>
+      <div type="submit" class="btn" id="submit-button">Submit</div>
+      <div id="successmessage"></div>
+    </div>
+    </form>
+</div>
+</div>

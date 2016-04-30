@@ -1,0 +1,465 @@
+// Add any custom Sass & CSS here
+
+#mainContent {
+  margin-top: 10px;
+}
+
+.list{
+	margin-top: 20px;
+	margin: 0 auto;
+}
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/** top section **/
+.top-section{
+	border: 3px solid $base-color;
+	height: 65px;
+	both: clear;
+	display: block;
+}
+
+/** navigation **/
+.nav{
+	top: 0px;
+	float: right;
+	background-color: $base-color;
+	margin-bottom: 40px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+	ul{
+	list-style-type: none;
+    margin: 0;
+    border-top-left-radius: 5px;
+  	border-bottom-left-radius: 5px;
+  	border-top-right-radius: 5px;
+  	border-bottom-left-radius: 5px;
+	}
+	li{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px 10px 10px 10px;
+	color: white;
+	font-size: 25px;
+	border-right: 3px solid $complement-color;
+	}
+	a{
+	color: white;
+	}
+}
+
+/** title **/
+.title{
+	/* position */
+	float: left;
+
+	/* colors */
+	color: $base-color;
+	font-size: 33px;
+	font-weight: bold;
+
+
+	/* margins */
+	margin-left: 18px;
+	margin-top: 8px;
+}
+
+/** search **/
+
+#searchRow {
+  margin: 15px;
+}
+
+
+.search-bar{
+	overflow: hidden; 
+	margin-top: 30px;
+	margin: 0 auto;
+	width: 90%;
+	padding-right: 0.2em;
+	padding-left: 0.4em;
+	z-index: 2;
+}
+.fi-magnifying-glass{
+/**	float: right; **/
+	float: right;
+	margin-right:38px;
+	padding-top: 3px;
+	font-size: 25px;
+}
+
+
+
+/** list of organizations **/
+
+
+#search-content{
+	margin-top: 50px;
+	clear: both;
+/*	height: 120px;*/
+}
+
+
+
+/** category searching for organizations */
+.category-titles{
+	margin-top: 20px;
+	text-align: center;
+	clear: both;
+	ul{
+		list-style: none;
+	}
+	/** styling **/
+	.category-tag-mid{
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+	li{
+		display: inline-block;
+		padding: 10px 10px 10px 10px;
+		margin-left: 2px;
+		margin-right: 2px;
+
+		cursor: pointer;
+		/* text */
+		color: white;
+		font-size: 18px;
+		background-color: $orange-color;
+	}
+}
+.org-list{
+	list-style: none;
+	overflow: scroll;
+	height: 150px;
+	margin-top:50px;
+
+	h2{
+	font-size: 18px;
+	text-transform: uppercase;
+	}
+	li{
+	/* margins and padding */
+	margin-bottom: 10px;
+	width: 70%;
+
+	/* size */
+	min-height: 100px;
+
+	/* border */
+	border: 2px solid $base-color;
+	box-shadow: 2px 2px 1px #888888;
+	}
+
+}
+.panel{
+	margin-top: 20px;
+}
+
+/*//.org-list{
+//	list-style: none;
+//	h2{
+//	font-size: 18px;
+//	text-transform: uppercase;
+//	}
+//	li{
+//	
+//	margin-top: 10px;
+//	margin-bottom: 10px;
+//	padding: 5px 5px 5px 5px;
+//	width: 70%;
+//
+//	
+//	border: 2px solid $base-color;
+//	box-shadow: 2px 2px 1px #888888;
+//	}
+//
+//}*/
+.add-org-form{
+	margin: 0 auto;
+	width: 400px;
+}
+#addorg{
+	margin-top: 5px;
+	margin: 0 auto;
+	padding: 3px 3px 3px 3px;
+	width: 40px;
+	border-radius: 10%;
+	cursor: pointer;
+	/* text */
+	color: white;
+	font-size: 18px;
+	background-color: blue;
+}
+
+/* ==========  Select Field ========== */
+
+/* Style Select Field */
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: 4px 0;
+  font-size: 16px;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/* Remove focus */
+select:focus {
+  outline: none}
+
+/* Hide label */
+.mdl-selectfield label {display: none;}
+/* Use custom arrow */
+
+.mdl-selectfield {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  position: relative;
+    &:after {
+        position: absolute;
+        top: 0.75em;
+    }
+}
+/** organization grid **/
+#org-bucket{
+	/* font */
+	font-size: 18px;
+
+	/* placement */
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+
+	/* border */
+	border: 3px solid $base-color;
+
+	/* alignment */
+	text-align: center;
+
+	/* line height */
+	line-height: 60px;
+
+	/** share **/
+	#share{
+		margin-bottom: 2px;
+		vertical-align: top;
+		text-align: center;
+	}
+
+	/** radio buttons **/
+	.radio-buttons{
+	margin: 0 auto;
+	width: 80%;
+	}
+	.options{
+	/* alignment */
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 20px;
+
+	/* padding and margins */
+	padding-left: 5px;
+	margin: 0 auto;
+	}
+
+	#leave-button{
+		/* placement */
+		margin-top: 5px;
+		float: right;
+
+		/* border */
+		border-radius: 70%;
+
+		/* text */
+		color: white;
+		font-size: 18px;
+		background-color: $cranberry-color;
+	}
+}
+
+.org-grid{
+	margin: 0 auto;
+	width: 100%;
+}
+
+/** student grid **/
+/*//.org-grid{
+//	margin: 0 auto;
+//	width: 80%;
+//}*/
+
+.card {
+  margin: 10px;
+}
+
+
+#stud-bucket{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	border: 3px solid $base-color;
+	min-height: 125px;
+	text-align: center;
+	line-height: 60px;
+}
+#student-page{
+	clear: both;
+	margin: 0 auto;
+
+	#add-button{
+	/* placement */
+	margin: 0 auto;
+	margin-right: 47%;
+	padding: 2px 2px 2px 2px;
+	text-align: center;
+	line-height: 30px;
+	margin-bottom: 20px;
+
+	/* size */
+	height: 35px;
+	width: 140px;
+
+	/* text */
+	color: white;
+	font-size: 18px;
+	background-color: $cranberry-color;
+	}
+}
+.stud-grid{
+	margin-top: 50px;
+	margin: 0 auto;
+	margin-left: 100px;
+	width: 100%;
+}
+
+span{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;      
+}
+/** slider **/
+.event-content{
+	/* borders */
+	border-top: 3px solid $melon-color;
+	border-bottom: 3px solid $melon-color;
+	
+	/* placement */
+	height: 180px;
+	margin-top: 90px;
+	padding-top: 15px;
+	z-index: 10;
+	position: relative;
+
+	/* colors */
+	background-color: white;
+	color: black;
+
+}
+.event-content :after{
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:-1;
+    top:2px;
+    left:0px;
+    right:0px;
+    bottom:2px;
+    border-top:3px solid $pink-color;
+    border-bottom:3px solid $pink-color;
+}
+.crsl{
+
+	/* margins */
+	margin: 0px auto;
+	width: 100%;
+
+	/* colors */
+	background-color: white;
+
+	/* margins */
+//	margin-bottom: 150px;
+//	margin-top: 150px;
+
+	img{
+		margin: auto;
+		width: 400px;
+		height: 800px;
+	}
+
+	div{
+		width: 100%;
+
+		/* positioning */
+		margin: 0px auto;
+		text-align: center;
+		
+	}
+	.slick-prev:before, .slick-next:before{
+    	color: white;
+    }
+}
+
+/** Add student **/
+.add-student-view{
+   h1{
+   	text-align: center;
+   	font-weight: bold;
+   	font-size: 20px;
+   	text-transform: uppercase;
+   	color: $cranberry-color;
+   	margin: auto;
+   	clear: both;
+   }
+   /* button */
+   	#submit-button{
+	/* placement */
+	margin: auto;
+	width: 100px;
+	padding: 2px 2px 2px 2px;
+	margin-top: 15px;
+	clear: both;
+
+	/* text */
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	background-color: $cranberry-color;
+	}
+  /* form styling */
+  .required:after { content:"*"; color: red; display: inline; clear: both;}
+  .required{
+  	input{
+  	background-color: rgba(255,0,0,0.1);
+  	color: black;
+  	}
+  }
+  input{
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+  label{
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-right: 20px;
+  }
+  }
+/** calendar **/
+.dropdown-menu{
+	a{
+		background-color: $orange-color;
+		padding: 3px 3px 3px 3px;
+		border-radius: 10%;
+		color: white;
+	}
+	li{
+		color: red;
+	}
+}

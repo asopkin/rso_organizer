@@ -1,0 +1,70 @@
+<div class="orgs">		
+
+<!-- Used Angular specification for filters https://docs.angularjs.org/api/ng/filter/filter -->
+<div class="category-titles">
+<ul>
+<li><div ng-click="myFilter = undefined" class="category-tag">All</div></li>
+<li ng-repeat="cat in categories track by $index">
+<div ng-click="catFilter(cat)" class="category-tag" demo-card-square mdl-card>{{ cat }}</div>
+</li> 
+</ul>
+</div>
+
+<div class="add-button" id="addorg">Add</div>
+
+<center>
+<div class="row">
+<!--
+<div ng-repeat="org in organizations | filter:myFilter" class="org-grid"> -->
+  
+  <ul class="mdl-grid">
+    <li ng-repeat="org in organizations | filter: myFilter" class="mdl-list__item mdl-cell mdl-cell--4-col">
+      <div class="demo-card-square mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">{{ org.name }}</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+            <input type="checkbox" ng-model="org.name" class="mdl-checkbox__input" checked>
+            <span class="mdl-checkbox__label">Email</span>
+          </label>
+
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+            <input type="checkbox" ng-model="org.phone" class="mdl-checkbox__input" checked>
+            <span class="mdl-checkbox__label">Phone</span>
+          </label>
+
+          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+            <input type="checkbox" ng-model="org.dorm" class="mdl-checkbox__input" checked>
+            <span class="mdl-checkbox__label">Dorm</span>
+          </label>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            Leave
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
+<!--
+>>>>>>> c69774158b4f4ea915a84db62323ea514f839076
+ 	<div class="large-12 columns" id="org-bucket">
+ 	<div><span>{{ org.name }}</span></div><div id="share">Share:</div>
+ 	<div class="radio-buttons">
+ 	<div class="options"><label><input type="radio" ng-model="option.name" name="contact-option" class="radio-button">
+ 	Email</label></div>
+ 	<div class="options"><label><input type="radio" ng-model="option.name" name="contact-option" class="radio-button">
+ 	Phone</label></div>
+ 	<div class="options"><label><input type="radio" ng-model="option.name" name="contact-option" class="radio-button">
+ 	Dorm/Apartment</label></div>
+ 	</div>
+ 	<div class="button" id="leave-button">
+ 	Leave
+ 	</div>
+ 	</div>
+-->
+</div>
+</center>
+</div>
