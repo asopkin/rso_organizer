@@ -33,7 +33,10 @@
 <div class="slide-container">
   <div class="crsl" >
     <div ng-repeat="event in events">
+      <div class="event-info">
       <div>{{event.name }}</div>
+      <div class="date">{{ event.date | date:'MM/dd/yyyy' }}</div>
+      </div>
       <addtocalendar
       start-date="20150704T190000"
       end-date="20150704T210000"
@@ -68,7 +71,7 @@
     </li>
   </ul><br><br>
   <!-- date pick -->
-<iframe src="http://calendar.google.com/calendar/embed?src=v7pepmi7g8e2pbp1gicuej8h38%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="200" height="400" frameborder="0" scrolling="no"></iframe><br><br>
+<!--<iframe src="http://calendar.google.com/calendar/embed?src=v7pepmi7g8e2pbp1gicuej8h38%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="200" height="400" frameborder="0" scrolling="no"></iframe><br><br>-->
 
 </div>
 </center>

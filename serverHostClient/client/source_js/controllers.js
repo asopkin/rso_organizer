@@ -110,7 +110,6 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
 
   Events.get().success(function(data){
     $scope.events = data;
-    console.log("here");
     $timeout(function() {
     console.log(data);
       $('.crsl').slick({
@@ -149,11 +148,21 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
 
 }]);
 
+$scope.dateParse = function(value) {
+  console.log('ey');
+  var dateObject = new Date(value);
+  console.log(dateObject);
+  console.log("gimme");
+  return dateObject.getMonth();
+};
+
+
+
 /** profile **/
 fp498Controllers.controller('profileController', ['$scope', '$http', function($scope, $http) {
    $scope.profile = false;
    console.log("profile");
-   $http.get('http://localhost:4000/profile').success(function(data) {
+   $http.get('/profile').success(function(data) {
     console.log(data);
     if(!data.error) {
       $scope.profile = true;

@@ -14,8 +14,8 @@ var LocalStrategy = require('passport-local').Strategy;
 var bcrypt = require('bcrypt-nodejs');
 //var mongoose2 = require('mongoose');
 //replace this with your Mongolab URL
-//mongoose.connect('mongodb://CS498web:CS498web@ds011291.mlab.com:11291/498final');
-mongoose.connect('mongodb://localhost/passport-demo'); // db connection
+mongoose.connect('mongodb://CS498web:CS498web@ds011291.mlab.com:11291/498final');
+//mongoose.connect('mongodb://localhost/passport-demo'); // db connection
 
 // Create our Express application
 var app = express();
@@ -128,10 +128,6 @@ passport.use('local-login', new LocalStrategy({
 
 
 
-
-
-
-
 // Use the body-parser package in our application
 //app.use(bodyParser.urlencoded({
 //  extended: true
@@ -173,7 +169,7 @@ router.delete('/organizations/:id', organization.deleteOne);
 //passport stuff
 app.post('/signup', passport.authenticate('local-signup'), function(req, res) {
     console.log("come to signup");
-	res.redirect('partials/profile.html');
+	res.redirect('/profile');
 });
 
 app.post('/login', passport.authenticate('local-login'), function(req, res) {
@@ -181,7 +177,7 @@ app.post('/login', passport.authenticate('local-login'), function(req, res) {
     console.log(req.session);
 
 //    req.session.save();
-	res.redirect('partials/profile.html');
+	res.redirect('/profile');
 });
 
 app.get('/profile', isLoggedIn, function(req, res) {
@@ -190,6 +186,7 @@ app.get('/profile', isLoggedIn, function(req, res) {
 		user: req.user
 	});
 });
+
 
 app.get('/logout', function(req, res) {
 	req.logout();
