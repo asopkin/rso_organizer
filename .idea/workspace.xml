@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20033c9d-e688-42f0-8420-ef7db050038c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/config/database.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/config/passport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/.bin/semver" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/async/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/async/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/async/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/async/dist/async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/async/dist/async.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/async/lib/async.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/async/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/lib/read.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/lib/types/json.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/lib/types/raw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/lib/types/text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/lib/types/urlencoded.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bson/alternate_parsers/bson.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bson/alternate_parsers/faster_bson.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bson/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bson/deserializer_bak.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/parser/calculate_size.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/parser/deserializer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/parser/serializer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/regexp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/bytes/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/dist/es6-promise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/dist/es6-promise.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise.umd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/-internal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/asap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/enumerator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/polyfill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/promise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/promise/all.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/promise/race.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/promise/reject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/promise/resolve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/lib/es6-promise/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/es6-promise/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/hooks-fixed/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/hooks-fixed/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/hooks-fixed/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/hooks-fixed/hooks.alt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/hooks-fixed/hooks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/hooks-fixed/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/hooks-fixed/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/http-errors/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/http-errors/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/http-errors/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/http-errors/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/http-errors/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/Changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/dbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/dbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/internal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/sbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/sbcs-data-generated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/sbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/tables/big5-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/tables/cp936.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/tables/cp949.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/tables/cp950.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/tables/eucjp.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/tables/gbk-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/tables/shiftjis.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/utf16.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/encodings/utf7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/lib/bom-handling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/lib/extend-node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/lib/streams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/iconv-lite/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/isarray/build/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/docs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/test/examples.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/test/post.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/test/pre.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/kareem/test/wrap.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/.coveralls.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/TESTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/conf.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/auth/gssapi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/auth/mongocr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/auth/plain.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/auth/scram.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/auth/sspi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/auth/x509.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/connection/commands.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/connection/connection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/connection/logger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/connection/pool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/connection/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/error.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/tools/smoke_plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/topologies/command_result.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/topologies/mongos.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/topologies/read_preference.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/topologies/replset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/topologies/replset_state.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/topologies/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/topologies/session.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/topologies/strategies/ping.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/wireprotocol/2_4_support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/wireprotocol/2_6_support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/wireprotocol/3_2_support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/wireprotocol/commands.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/lib/wireprotocol/shared.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb-core/simple_2_document_limit_toArray.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/.coveralls.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/conf.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/admin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/aggregation_cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/apm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/bulk/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/bulk/ordered.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/bulk/unordered.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/collection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/command_cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/db.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/gridfs-stream/download.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/gridfs-stream/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/gridfs-stream/upload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/gridfs/chunk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/gridfs/grid_store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/mongo_client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/mongos.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/read_preference.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/replset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/topology_base.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/url_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/.eslintrc.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/ES6Promise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/browserDocument.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/cast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/document_provider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/browser/ReadPreference.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/browser/binary.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/browser/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/browser/objectid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/ReadPreference.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/browserMissingSchema.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/objectExpected.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/strict.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/promise_provider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/embedded.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/operators/bitwise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/services/updateValidators.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/subdocument.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mpath/bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mpath/bench.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mpath/bench.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mpath/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/lib/sliced.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/mquery/node_modules/sliced/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/dist/qs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/lib/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/lib/stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/test/parse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/test/stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/qs/test/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/node_modules/bytes/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/node_modules/bytes/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/node_modules/bytes/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/node_modules/bytes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/node_modules/bytes/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/require_optional/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/require_optional/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/require_optional/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/require_optional/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/require_optional/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/require_optional/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/require_optional/test/require_optional_tests.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/resolve-from/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/resolve-from/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/resolve-from/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/resolve-from/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/bin/semver" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/range.bnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/semver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/test/big-numbers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/test/clean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/test/gtr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/test/ltr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/node_modules/semver/test/major-minor-patch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/routes.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/README.md" afterPath="$PROJECT_DIR$/server/node_modules/mongodb/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/node_modules/qs/README.md" afterPath="$PROJECT_DIR$/server/node_modules/qs/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_accordion-menu.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_accordion-menu.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_accordion.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_accordion.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_alignment.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_alignment.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/1d404468a1dda0c59d7e81d3bf462a9a9e7a57da/_alternating-rows-and-columns.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/1d404468a1dda0c59d7e81d3bf462a9a9e7a57da/_alternating-rows-and-columns.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_animation.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_animation.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_background-clip.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_background-clip.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_background-origin.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_background-origin.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_background-size.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_background-size.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_badge.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_badge.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/11d5babe5405feea54f3952a21500ceec9c46928/_base.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/11d5babe5405feea54f3952a21500ceec9c46928/_base.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/29bd9d0976a1eba56b7076d8c2b3cb3a8a91268e/_base.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/29bd9d0976a1eba56b7076d8c2b3cb3a8a91268e/_base.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_base.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_base.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_border-radius.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_border-radius.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/1d404468a1dda0c59d7e81d3bf462a9a9e7a57da/_borders.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/1d404468a1dda0c59d7e81d3bf462a9a9e7a57da/_borders.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_box-shadow.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_box-shadow.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_box-sizing.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_box-sizing.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_breadcrumbs.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_breadcrumbs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_breakpoint.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_breakpoint.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/cdb5b7d7f213a7ffdda634d96aa3120ec4e5532c/_brightness.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/cdb5b7d7f213a7ffdda634d96aa3120ec4e5532c/_brightness.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/2dcb14730bcff2b21e0022f539e84554b8ae112f/_bullets.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/2dcb14730bcff2b21e0022f539e84554b8ae112f/_bullets.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_button-group.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_button-group.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_button.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_button.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_callout.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_callout.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_checkbox.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_checkbox.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_classes.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_classes.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_clearfix.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_clearfix.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_close-button.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_close-button.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_color.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_color.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_column.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_column.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/cdb5b7d7f213a7ffdda634d96aa3120ec4e5532c/_contrast.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/cdb5b7d7f213a7ffdda634d96aa3120ec4e5532c/_contrast.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_deprecated-support.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_deprecated-support.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_drilldown.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_drilldown.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_dropdown-menu.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_dropdown-menu.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_dropdown.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_dropdown.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_error.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_error.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_fieldset.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_fieldset.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_filter.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_filter.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_flex-grid.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_flex-grid.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_flex-video.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_flex-video.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_flexbox.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_flexbox.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_float.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_float.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_float.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_float.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_font-face.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_font-face.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/0f6d9be876d71348096b3969a7d4c8b3d48e904f/_force-wrap.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/0f6d9be876d71348096b3969a7d4c8b3d48e904f/_force-wrap.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_forms.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_forms.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/23275fd7aeff0a8831383a21152c9f935a1237a9/_general.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/23275fd7aeff0a8831383a21152c9f935a1237a9/_general.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7669e5b52966e32511ee0e46500825b21e4bc55e/_global.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7669e5b52966e32511ee0e46500825b21e4bc55e/_global.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/30fa77f3401905bae32047f2c282e87cb2f7c903/_grid-background.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/30fa77f3401905bae32047f2c282e87cb2f7c903/_grid-background.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_grid.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_grid.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_gutter.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_gutter.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_hacks.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_hacks.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_help-text.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_help-text.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_helpers.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_helpers.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/2dcb14730bcff2b21e0022f539e84554b8ae112f/_horizontal-list.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/2dcb14730bcff2b21e0022f539e84554b8ae112f/_horizontal-list.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/abf70da5cde950a2d59136791e8103e11705c7e2/_hover-link.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/abf70da5cde950a2d59136791e8103e11705c7e2/_hover-link.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_hyphenation.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_hyphenation.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_images.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_images.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/2dcb14730bcff2b21e0022f539e84554b8ae112f/_inline-block-list.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/2dcb14730bcff2b21e0022f539e84554b8ae112f/_inline-block-list.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_inline-block.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_inline-block.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/2dcb14730bcff2b21e0022f539e84554b8ae112f/_inline-list.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/2dcb14730bcff2b21e0022f539e84554b8ae112f/_inline-list.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_input-group.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_input-group.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_label.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_label.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_label.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_label.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_layout.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_layout.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/abf70da5cde950a2d59136791e8103e11705c7e2/_link-colors.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/abf70da5cde950a2d59136791e8103e11705c7e2/_link-colors.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_media-object.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_media-object.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_menu.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_menu.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_min.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_min.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_mixins.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_mixins.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_off-canvas.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_off-canvas.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_opacity.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_opacity.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_orbit.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_orbit.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_position.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_position.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_print.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_print.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_progress-bar.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_progress-bar.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_regions.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_regions.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/0f6d9be876d71348096b3969a7d4c8b3d48e904f/_replacement.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/0f6d9be876d71348096b3969a7d4c8b3d48e904f/_replacement.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_reveal.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_reveal.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_row.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_row.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/1d404468a1dda0c59d7e81d3bf462a9a9e7a57da/_scaffolding.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/1d404468a1dda0c59d7e81d3bf462a9a9e7a57da/_scaffolding.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_select.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_select.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_selector.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_selector.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/794fab87f2d91114b32a24e0ef39365c1a6c738b/_settings.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/794fab87f2d91114b32a24e0ef39365c1a6c738b/_settings.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_size.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/c52bd5bf9badc960b1105c0bede9d46e7e50b7b7/_size.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_slider.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_slider.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/11d5babe5405feea54f3952a21500ceec9c46928/_sprite-img.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/11d5babe5405feea54f3952a21500ceec9c46928/_sprite-img.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_sticky.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_sticky.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/5be6be0baca563e00f409ed4046f98699a7af477/_support.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/5be6be0baca563e00f409ed4046f98699a7af477/_support.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_switch.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_switch.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_table.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_table.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_tabs.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_tabs.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_tag-cloud.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_tag-cloud.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_text-shadow.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_text-shadow.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_text.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ee6af5e4be2be062f054aa675e0671accb2773a3/_text.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_thumbnail.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_thumbnail.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_title-bar.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_title-bar.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_tooltip.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_tooltip.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_top-bar.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_top-bar.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_transform.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_transform.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_transition.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_transition.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_unit.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_unit.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_units.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_units.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/abf70da5cde950a2d59136791e8103e11705c7e2/_unstyled-link.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/abf70da5cde950a2d59136791e8103e11705c7e2/_unstyled-link.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_user-interface.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_user-interface.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_util.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_util.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/19b4028e242ba3965fd21b2895e0e19daa7344d1/_utilities.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/19b4028e242ba3965fd21b2895e0e19daa7344d1/_utilities.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/5be6be0baca563e00f409ed4046f98699a7af477/_utilities.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/5be6be0baca563e00f409ed4046f98699a7af477/_utilities.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_value.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/ae3cc9d28b6a1374c6ef2d0298e172079a45f2f0/_value.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/29bd9d0976a1eba56b7076d8c2b3cb3a8a91268e/_variables.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/29bd9d0976a1eba56b7076d8c2b3cb3a8a91268e/_variables.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_vertical_rhythm.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_vertical_rhythm.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_visibility.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_visibility.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/29bd9d0976a1eba56b7076d8c2b3cb3a8a91268e/styles.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/29bd9d0976a1eba56b7076d8c2b3cb3a8a91268e/styles.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/.npmignore" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpromise/.npmignore" afterPath="$PROJECT_DIR$/server/node_modules/mpromise/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/qs/.npmignore" afterPath="$PROJECT_DIR$/server/node_modules/qs/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/.travis.yml" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpath/.travis.yml" afterPath="$PROJECT_DIR$/server/node_modules/mpath/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/HISTORY.md" afterPath="$PROJECT_DIR$/server/node_modules/body-parser/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/HISTORY.md" afterPath="$PROJECT_DIR$/server/node_modules/raw-body/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bson/HISTORY" afterPath="$PROJECT_DIR$/server/node_modules/bson/HISTORY" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bytes/History.md" afterPath="$PROJECT_DIR$/server/node_modules/bytes/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/History.md" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpath/History.md" afterPath="$PROJECT_DIR$/server/node_modules/mpath/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpromise/History.md" afterPath="$PROJECT_DIR$/server/node_modules/mpromise/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/sliced/History.md" afterPath="$PROJECT_DIR$/server/node_modules/sliced/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/LICENSE" afterPath="$PROJECT_DIR$/server/node_modules/mongodb/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/readable-stream/LICENSE" afterPath="$PROJECT_DIR$/server/node_modules/readable-stream/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/Makefile" afterPath="$PROJECT_DIR$/server/node_modules/mongodb/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpath/Makefile" afterPath="$PROJECT_DIR$/server/node_modules/mpath/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/README.md" afterPath="$PROJECT_DIR$/server/node_modules/body-parser/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bson/README.md" afterPath="$PROJECT_DIR$/server/node_modules/bson/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/isarray/README.md" afterPath="$PROJECT_DIR$/server/node_modules/isarray/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/README.md" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/README.md" afterPath="$PROJECT_DIR$/server/node_modules/raw-body/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/readable-stream/README.md" afterPath="$PROJECT_DIR$/server/node_modules/readable-stream/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/sliced/README.md" afterPath="$PROJECT_DIR$/server/node_modules/sliced/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bytes/Readme.md" afterPath="$PROJECT_DIR$/server/node_modules/bytes/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_appearance.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_appearance.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/23275fd7aeff0a8831383a21152c9f935a1237a9/_color.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/23275fd7aeff0a8831383a21152c9f935a1237a9/_color.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_columns.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/7eafc0b2c40cdabc9228972602855993a669fd11/_columns.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/f39575b88b5e25d2c60088d10bd08f2676dee163/_compass.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/f39575b88b5e25d2c60088d10bd08f2676dee163/_compass.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/5be6be0baca563e00f409ed4046f98699a7af477/_css3.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/5be6be0baca563e00f409ed4046f98699a7af477/_css3.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/0f6d9be876d71348096b3969a7d4c8b3d48e904f/_ellipsis.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/0f6d9be876d71348096b3969a7d4c8b3d48e904f/_ellipsis.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_links.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_links.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_lists.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_lists.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/29bd9d0976a1eba56b7076d8c2b3cb3a8a91268e/_mixins.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/29bd9d0976a1eba56b7076d8c2b3cb3a8a91268e/_mixins.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/0f6d9be876d71348096b3969a7d4c8b3d48e904f/_nowrap.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/0f6d9be876d71348096b3969a7d4c8b3d48e904f/_nowrap.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_pagination.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/bbec2f8b15b8576230b66596b8eeaf46a6c294d5/_pagination.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_reset.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/9f7b218adbb6a74a917c8b015a54f9c1501829d3/_reset.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/23275fd7aeff0a8831383a21152c9f935a1237a9/_sprites.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/23275fd7aeff0a8831383a21152c9f935a1237a9/_sprites.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_duplex.js" afterPath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_duplex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_passthrough.js" afterPath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_passthrough.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_readable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_transform.js" afterPath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_transform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/server/node_modules/readable-stream/lib/_stream_writable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/23275fd7aeff0a8831383a21152c9f935a1237a9/_tables.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/23275fd7aeff0a8831383a21152c9f935a1237a9/_tables.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_text.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/0706e4a9e8fff381160c8aea188159c77ce30ac6/_text.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_typography.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/4fbbbf5aea6667734770f23145c1425cd20c81f3/_typography.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/5be6be0baca563e00f409ed4046f98699a7af477/_typography.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/5be6be0baca563e00f409ed4046f98699a7af477/_typography.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/aggregate/aggregate.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/aggregate/aggregate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/aggregate.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/aggregate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/express/connection-sharing/app.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/express/connection-sharing/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/array.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/array.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/binary.js" afterPath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/binary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/binary.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/binary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/boolean.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/boolean.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/bson.js" afterPath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/bson.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/buffer.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/buffer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/buffer.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/buffer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/cast.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/cast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/collection.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/collection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/connection.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/connection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/js/controllers.js" afterPath="$PROJECT_DIR$/client/public/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source_js/controllers.js" afterPath="$PROJECT_DIR$/client/source_js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/date.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/date.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/divergentArray.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/divergentArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/doc-methods.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/doc-methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/document.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/document.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/documentarray.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/documentarray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/documentarray.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/documentarray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/embedded.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/embedded.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.sass-cache/794fab87f2d91114b32a24e0ef39365c1a6c738b/foundation.scssc" afterPath="$PROJECT_DIR$/client/.sass-cache/794fab87f2d91114b32a24e0ef39365c1a6c738b/foundation.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/geospatial/geoJSONSchema.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/geospatial/geoJSONSchema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/geospatial/geoJSONexample.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/geospatial/geoJSONexample.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/geospatial/geospatial.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/geospatial/geospatial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/globalschemas/gs_example.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/globalschemas/gs_example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/index.js" afterPath="$PROJECT_DIR$/server/node_modules/body-parser/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/index.js" afterPath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bytes/index.js" afterPath="$PROJECT_DIR$/server/node_modules/bytes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/isarray/index.js" afterPath="$PROJECT_DIR$/server/node_modules/isarray/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mongodb/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/schema/storing-schemas-as-json/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/schema/storing-schemas-as-json/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpath/lib/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mpath/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpath/test/index.js" afterPath="$PROJECT_DIR$/server/node_modules/mpath/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/index.js" afterPath="$PROJECT_DIR$/server/node_modules/raw-body/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/sliced/index.js" afterPath="$PROJECT_DIR$/server/node_modules/sliced/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/internal.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/internal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/lean/lean.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/lean/lean.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/partials/login.html" afterPath="$PROJECT_DIR$/client/public/partials/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/mapreduce/mapreduce.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/mapreduce/mapreduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/messages.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/messages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/missingSchema.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/missingSchema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/mixed.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/mixed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/model.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/express/connection-sharing/modelA.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/express/connection-sharing/modelA.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/number.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/number.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/objectid.js" afterPath="$PROJECT_DIR$/server/node_modules/bson/lib/bson/objectid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/objectid.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/drivers/node-mongodb-native/objectid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/objectid.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/objectid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/objectid.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/types/objectid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/overwriteModel.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/overwriteModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/body-parser/package.json" afterPath="$PROJECT_DIR$/server/node_modules/body-parser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bson/package.json" afterPath="$PROJECT_DIR$/server/node_modules/bson/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/server/node_modules/bytes/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/isarray/package.json" afterPath="$PROJECT_DIR$/server/node_modules/isarray/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongodb/package.json" afterPath="$PROJECT_DIR$/server/node_modules/mongodb/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/package.json" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpath/package.json" afterPath="$PROJECT_DIR$/server/node_modules/mpath/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpromise/package.json" afterPath="$PROJECT_DIR$/server/node_modules/mpromise/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/server/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/raw-body/package.json" afterPath="$PROJECT_DIR$/server/node_modules/raw-body/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/server/node_modules/readable-stream/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/sliced/package.json" afterPath="$PROJECT_DIR$/server/node_modules/sliced/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/aggregate/person.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/aggregate/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/geospatial/person.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/geospatial/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/globalschemas/person.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/globalschemas/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/lean/person.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/lean/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/mapreduce/person.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/mapreduce/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/promises/person.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/promises/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/querybuilder/person.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/querybuilder/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/replicasets/person.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/replicasets/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/statics/person.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/statics/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-across-three-collections.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-across-three-collections.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-basic.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-basic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-of-existing-doc.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-of-existing-doc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-of-multiple-existing-docs.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-of-multiple-existing-docs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-options.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-plain-objects.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/population/population-plain-objects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/partials/profile.html" afterPath="$PROJECT_DIR$/client/public/partials/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpromise/test/promise.domain.test.js" afterPath="$PROJECT_DIR$/server/node_modules/mpromise/test/promise.domain.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/promises/promise.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/promises/promise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/promise.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/promise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpromise/lib/promise.js" afterPath="$PROJECT_DIR$/server/node_modules/mpromise/lib/promise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpromise/test/promise.test.js" afterPath="$PROJECT_DIR$/server/node_modules/mpromise/test/promise.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mpromise/test/promises.Aplus.js" afterPath="$PROJECT_DIR$/server/node_modules/mpromise/test/promises.Aplus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/query.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/query.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/querybuilder/querybuilder.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/querybuilder/querybuilder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/queryhelpers.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/queryhelpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/querystream.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/querystream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/readable-stream/readable.js" afterPath="$PROJECT_DIR$/server/node_modules/readable-stream/readable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/release-items.md" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/release-items.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/replicasets/replica-sets.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/replicasets/replica-sets.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/express/connection-sharing/routes.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/express/connection-sharing/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/schema/schema.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/schema/schema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schematype.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schematype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source_js/services.js" afterPath="$PROJECT_DIR$/client/source_js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/partials/signup.html" afterPath="$PROJECT_DIR$/client/public/partials/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/statemachine.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/statemachine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/static.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/static.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/examples/statics/statics.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/examples/statics/statics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/string.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/schema/string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/models/student.js" afterPath="$PROJECT_DIR$/server/models/student.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/utils.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/validation.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/validator.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/validator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/version.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/error/version.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/lib/virtualtype.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/lib/virtualtype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/node_modules/mongoose/website.js" afterPath="$PROJECT_DIR$/server/node_modules/mongoose/website.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" />
+    </list>
+    <ignored path="rso_organizer.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="rso_organizer" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3064" max-vertical-offset="4086">
+              <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/public/partials/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="504">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/source_js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7164179" vertical-offset="216" max-vertical-offset="900">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2416" max-vertical-offset="3276">
+              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/server/models/student.js" />
+        <option value="$PROJECT_DIR$/client/public/partials/profile.html" />
+        <option value="$PROJECT_DIR$/client/public/partials/signup.html" />
+        <option value="$PROJECT_DIR$/client/source_js/services.js" />
+        <option value="$PROJECT_DIR$/server/client/source_js/controllers.js" />
+        <option value="$PROJECT_DIR$/server/client/source_js/app.js" />
+        <option value="$PROJECT_DIR$/server/client/public/partials/profile.html" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/client/public/partials/login.html" />
+        <option value="$PROJECT_DIR$/client/source_js/controllers.js" />
+        <option value="$PROJECT_DIR$/client/source_js/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="700" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source_js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rso_organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="preferences.sourceCode" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20033c9d-e688-42f0-8420-ef7db050038c" name="Default" comment="" />
+      <created>1461892489549</created>
+      <updated>1461892489549</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1280" height="700" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1638">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1638">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="603">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/organization.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1548">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/student.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1512">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/partials/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3" vertical-offset="0" max-vertical-offset="540">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/partials/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28774422" vertical-offset="0" max-vertical-offset="563">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/partials/studentlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/student.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20895523" vertical-offset="0" max-vertical-offset="603">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/organization.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1926">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source_js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="1692">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/partials/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="504">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2416" max-vertical-offset="3276">
+          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3064" max-vertical-offset="4086">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source_js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7164179" vertical-offset="216" max-vertical-offset="900">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

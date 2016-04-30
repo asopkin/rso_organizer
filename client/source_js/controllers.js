@@ -153,7 +153,7 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
 fp498Controllers.controller('profileController', ['$scope', '$http', function($scope, $http) {
    $scope.profile = false;
    console.log("profile");
-   $http.get('/profile').success(function(data) {
+   $http.get('http://localhost:4000/profile').success(function(data) {
     console.log(data);
     if(!data.error) {
       $scope.profile = true;
