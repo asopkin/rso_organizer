@@ -370,6 +370,30 @@ span{
     border-top:3px solid $pink-color;
     border-bottom:3px solid $pink-color;
 }
+.date{
+	background-color: white;
+	color: $orange-color;
+	font-size: 20px;
+	height: 35px;
+	padding: 3px 3px 3px 3px;
+	border: 2px solid $orange-color;
+	text-transform: uppercase;
+
+	#month{
+		width: 50px;
+		text-transform: uppercase;
+	}
+	#day{
+		width: 35px;
+	}
+	#year{
+		width: 35px;
+	}
+}
+.event-info{
+	list-style-type: none;
+	display: inline-block;
+}
 .crsl{
 
 	/* margins */
@@ -379,6 +403,8 @@ span{
 	/* colors */
 	background-color: white;
 	border: 2px solid $orange-color;
+	list-style-type: none;
+	text-align: center;
 
 	/* margins */
 //	margin-bottom: 150px;
@@ -460,6 +486,7 @@ span{
 		border-radius: 10%;
 		color: white;
 	}
+	list-style-type: none;
 	li{
 		color: red;
 	}

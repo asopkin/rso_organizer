@@ -4509,34 +4509,62 @@ span {
   border-bottom: 3px solid #ECC7C0; }
 
 /* line 373, ../../source_sass/_base.scss */
+.date {
+  background-color: white;
+  color: #FF5722;
+  font-size: 20px;
+  height: 35px;
+  padding: 3px 3px 3px 3px;
+  border: 2px solid #FF5722;
+  text-transform: uppercase; }
+  /* line 382, ../../source_sass/_base.scss */
+  .date #month {
+    width: 50px;
+    text-transform: uppercase; }
+  /* line 386, ../../source_sass/_base.scss */
+  .date #day {
+    width: 35px; }
+  /* line 389, ../../source_sass/_base.scss */
+  .date #year {
+    width: 35px; }
+
+/* line 393, ../../source_sass/_base.scss */
+.event-info {
+  list-style-type: none;
+  display: inline-block; }
+
+/* line 397, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
   width: 100%;
   /* colors */
   background-color: white;
+  border: 2px solid #FF5722;
+  list-style-type: none;
+  text-align: center;
   /* margins */ }
-  /* line 386, ../../source_sass/_base.scss */
+  /* line 413, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-  /* line 392, ../../source_sass/_base.scss */
+  /* line 419, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-  /* line 400, ../../source_sass/_base.scss */
+  /* line 427, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
 
 /** Add student **/
-/* line 406, ../../source_sass/_base.scss */
+/* line 433, ../../source_sass/_base.scss */
 .add-student-view {
   /* button */
   /* form styling */ }
-  /* line 407, ../../source_sass/_base.scss */
+  /* line 434, ../../source_sass/_base.scss */
   .add-student-view h1 {
     text-align: center;
     font-weight: bold;
@@ -4545,7 +4573,7 @@ span {
     color: #3C2E3D;
     margin: auto;
     clear: both; }
-  /* line 417, ../../source_sass/_base.scss */
+  /* line 444, ../../source_sass/_base.scss */
   .add-student-view #submit-button {
     /* placement */
     margin: auto;
@@ -4558,17 +4586,17 @@ span {
     text-align: center;
     font-size: 20px;
     background-color: #3C2E3D; }
-  /* line 432, ../../source_sass/_base.scss */
+  /* line 459, ../../source_sass/_base.scss */
   .add-student-view .required:after {
     content: "*";
     color: red;
     display: inline;
     clear: both; }
-  /* line 434, ../../source_sass/_base.scss */
+  /* line 461, ../../source_sass/_base.scss */
   .add-student-view .required input {
     background-color: rgba(255, 0, 0, 0.1);
     color: black; }
-  /* line 439, ../../source_sass/_base.scss */
+  /* line 466, ../../source_sass/_base.scss */
   .add-student-view input {
     width: 80%;
     margin: 0 auto;
@@ -4576,7 +4604,7 @@ span {
     vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 447, ../../source_sass/_base.scss */
+  /* line 474, ../../source_sass/_base.scss */
   .add-student-view label {
     display: inline-block;
     vertical-align: middle;
@@ -4584,15 +4612,18 @@ span {
     margin-right: 20px; }
 
 /** calendar **/
-/* line 456, ../../source_sass/_base.scss */
-.dropdown-menu a {
-  background-color: #FF5722;
-  padding: 3px 3px 3px 3px;
-  border-radius: 10%;
-  color: white; }
-/* line 462, ../../source_sass/_base.scss */
-.dropdown-menu li {
-  color: red; }
+/* line 482, ../../source_sass/_base.scss */
+.dropdown-menu {
+  list-style-type: none; }
+  /* line 483, ../../source_sass/_base.scss */
+  .dropdown-menu a {
+    background-color: #FF5722;
+    padding: 3px 3px 3px 3px;
+    border-radius: 10%;
+    color: white; }
+  /* line 490, ../../source_sass/_base.scss */
+  .dropdown-menu li {
+    color: red; }
 
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles
