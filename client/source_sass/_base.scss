@@ -127,6 +127,7 @@ body{
 		color: white;
 		font-size: 18px;
 		background-color: $orange-color;
+		border-radius: 10%;
 	}
 }
 .org-list{
@@ -183,14 +184,14 @@ body{
 #addorg{
 	margin-top: 5px;
 	margin: 0 auto;
-	padding: 3px 3px 3px 3px;
+	padding: 5px 5px 5px 5px;
 	width: 40px;
 	border-radius: 10%;
 	cursor: pointer;
 	/* text */
 	color: white;
 	font-size: 18px;
-	background-color: blue;
+	background-color: $orange-color;
 }
 
 /* ==========  Select Field ========== */
@@ -370,6 +371,55 @@ span{
     border-top:3px solid $pink-color;
     border-bottom:3px solid $pink-color;
 }
+.full-date{
+	margin-top: 20px;
+
+	.topdate{
+	}
+}
+.date{
+	background-color: white;
+	color: $orange-color;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 1px 1px 1px 0px;
+	vertical-align: middle;
+	margin-left: 3px;
+	text-align: center;
+
+
+	#month{
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+	#day{
+		vertical-align: bottom;
+		font-size: 40px;
+	}
+	#year{
+		vertical-align: middle;
+	}
+}
+#event-info{
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	margin-top: 40px;
+
+	#cal{
+	font-size: 25px;
+	vertical-align: middle;
+	padding-top: 8px;
+	color: $orange-color;
+	}
+
+	i{
+	font-size: 40px;
+	vertical-align: middle;
+	padding-top: 8px;
+	color: $orange-color;
+	}
+}
 .crsl{
 
 	/* margins */
@@ -378,10 +428,10 @@ span{
 
 	/* colors */
 	background-color: white;
+	list-style-type: none;
+	text-align: center;
 
 	/* margins */
-//	margin-bottom: 150px;
-//	margin-top: 150px;
 
 	img{
 		margin: auto;
@@ -391,7 +441,6 @@ span{
 
 	div{
 		width: 100%;
-
 		/* positioning */
 		margin: 0px auto;
 		text-align: center;
@@ -459,7 +508,22 @@ span{
 		border-radius: 10%;
 		color: white;
 	}
+	list-style-type: none;
 	li{
 		color: red;
 	}
 }
+
+/* profile */
+.well{
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 10px;
+}
+
+/** event list **/
+
+	#cal{
+		margin-left: 5px;
+		color: black;
+	}

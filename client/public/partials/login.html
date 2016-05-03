@@ -5,14 +5,14 @@
     <h1><span class="fa fa-sign-in"></span> Login</h1>
 
     <!-- LOGIN FORM -->
-    <form action="http://localhost:4000/login" method="post">
+    <form ng-submit="submitLogin()">
         <div class="form-group">
             <label>Email</label>
-            <input type="text" class="form-control" name="email">
+            <input type="text" class="form-control" name="email" ng-model="thisUser.email">
         </div>
         <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" name="password">
+            <input type="password" class="form-control" name="password" ng-model="thisUser.password">
         </div>
 
         <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Login</button>

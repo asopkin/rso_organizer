@@ -22,6 +22,49 @@ fp498Controllers.controller('SignupController', ['$scope', 'CommonData' , functi
 
 }]);
 
+/** Home controller **/
+fp498Controllers.controller('HomeController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' , function($scope, $http, $timeout, Events, Organizations, $window) {
+
+  Events.get().success(function(data){
+    $scope.events = data;
+    $timeout(function() {
+    console.log(data);
+      $('.crsl').slick({
+        centerMode: true,
+        centerPadding: '3px',
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: true, /* Just changed this to get the bottom dots navigation */
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        arrows: true
+    });
+      }, 200);
+  });
+
+  Organizations.get().success(function(data){
+    $scope.organizations = data;
+  });
+
+  $scope.searchOrganizations = function (row) {
+      return !!((row.name.indexOf($scope.query || '') !== -1));
+  };
+
+  $scope.search = function (row) {
+      return !!((row.name.indexOf($scope.query || '') !== -1 || row.description.indexOf($scope.query || '') !== -1 || row.date.indexOf($scope.query || '') !== -1));
+  };
+
+  /** slider **/
+    $(document).ready(function(){
+      $("#calendar").kendoCalendar();
+  });
+
+
+
+}]);
+
 /** Organization list **/
 fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '$timeout', 'Organizations', '$window' , function($scope, $http, $timeout, Organizations, $window) {
  $scope.categories = [];
@@ -52,8 +95,8 @@ fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '
 /** Add Organization **/
 fp498Controllers.controller('AddOrganizationController', ['$scope' , '$http', 'Organizations', '$window' , function($scope, $http, Organizations, $window) {
    $scope.newOrg = {
-      name: "New Organization",
-      description: "web-programming",
+      name: "",
+      description: "",
       category: [],
       leaders: [],
       members: [],
@@ -131,7 +174,7 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
     $scope.organizations = data;
   });
 
-  $scope.searchOrganizations = function (row) {
+  $scope.searchEvents = function (row) {
       return !!((row.name.indexOf($scope.query || '') !== -1));
   };
 
@@ -148,7 +191,7 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
 
 }]);
 
-$scope.dateParse = function(value) {
+var dateParse = function(value) {
   console.log('ey');
   var dateObject = new Date(value);
   console.log(dateObject);
@@ -162,8 +205,9 @@ $scope.dateParse = function(value) {
 fp498Controllers.controller('profileController', ['$scope', '$http', function($scope, $http) {
    $scope.profile = false;
    console.log("profile");
-   $http.get('/profile').success(function(data) {
+   $http.get('/#/profile').success(function(data) {
     console.log(data);
+    console.log(data.user);
     if(!data.error) {
       $scope.profile = true;
       $scope.user = data.user;

@@ -14,8 +14,9 @@ var LocalStrategy = require('passport-local').Strategy;
 var bcrypt = require('bcrypt-nodejs');
 //var mongoose2 = require('mongoose');
 //replace this with your Mongolab URL
-//mongoose.connect('mongodb://CS498web:CS498web@ds011291.mlab.com:11291/498final');
-mongoose.connect('mongodb://localhost/passport-demo'); // db connection
+mongoose.connect('mongodb://CS498web:CS498web@ds011291.mlab.com:11291/498final');
+//mongoose.connect('mongodb://localhost/passport-demo'); // db connection
+require('./config/passport')(passport);
 
 // Create our Express application
 var app = express();
@@ -44,8 +45,15 @@ app.use(session({secret: 'passport'})); //credentials saved in session
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use('/api', router);
+require('./routes.js')(app, passport);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 
+/**
 //passport stuff
 var userSchema = mongoose.Schema({
     email		: String,
@@ -123,7 +131,7 @@ passport.use('local-login', new LocalStrategy({
 	}
 ));
 
-
+**/
 
 
 
@@ -138,7 +146,7 @@ passport.use('local-login', new LocalStrategy({
 //}));
 
 // All our routes will start with /api
-app.use('/api', router);
+
 
 
 //Define routes here
@@ -171,6 +179,7 @@ router.delete('/organizations/:id', organization.deleteOne);
 //End routes here
 
 //passport stuff
+/**
 app.post('/signup', passport.authenticate('local-signup'), function(req, res) {
     console.log("come to signup");
 	res.redirect('http://localhost:3000/#/profile');
@@ -210,7 +219,7 @@ function isLoggedIn(req, res, next) {
 	});
 }
 
-
+**/
 
 // Start the server
 app.listen(port);

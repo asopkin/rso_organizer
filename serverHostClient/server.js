@@ -169,7 +169,7 @@ router.delete('/organizations/:id', organization.deleteOne);
 //passport stuff
 app.post('/signup', passport.authenticate('local-signup'), function(req, res) {
     console.log("come to signup");
-	res.redirect('/profile');
+	res.redirect('/#/profile');
 });
 
 app.post('/login', passport.authenticate('local-login'), function(req, res) {
@@ -177,11 +177,12 @@ app.post('/login', passport.authenticate('local-login'), function(req, res) {
     console.log(req.session);
 
 //    req.session.save();
-	res.redirect('/profile');
+	res.redirect('/#/profile');
 });
 
-app.get('/profile', isLoggedIn, function(req, res) {
+app.get('/#/profile', isLoggedIn, function(req, res) {
     console.log("come to profile");
+    console.log("User was:" + req.user);
 	res.json({
 		user: req.user
 	});

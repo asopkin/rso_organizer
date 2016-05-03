@@ -1,30 +1,119 @@
 var fp498Controllers = angular.module('fp498Controllers', ['720kb.datepicker', 'jshor.angular-addtocalendar']);
+var baseUrl = "http://localhost:4000";
 
-fp498Controllers.controller('LoginController', ['$scope', 'CommonData'  , function($scope, CommonData) {
+/** profile **/
+fp498Controllers.controller('profileController', ['$scope', '$http', function($scope, $http) {
+   $scope.profile = false;
+   console.log("profile");
+   $http.get(baseUrl + '/api/profile').success(function(data) {
+    console.log("roseeey");
+    console.log(data);
+    console.log(data.error);
+    console.log(data.user);
+    if(!data.error) {
+      $scope.profile = true;
+      $scope.user = data.user;
+    }
+
+   });
+ }]);
+
+fp498Controllers.controller('LoginController', ['$scope', 'CommonData' , '$http', '$location', function($scope, CommonData, $http, $location) {
   $scope.data = "";
-   $scope.displayText = ""
-
-  $scope.setData = function(){
-    CommonData.setData($scope.data);
-    $scope.displayText = "Data set"
-
+  $scope.newStudent = {
+      netId: "",
+      password: "",
+      name: "",
+      followOrganizationID: []
   };
+  $scope.thisUser = {
+    email: "",
+    password: ""
+  }
+  $scope.submitLogin = function(){
+  console.log($scope.thisUser);
+  $http.post(baseUrl + '/api/login', $scope.thisUser).success(function(data){
+    console.log("got user");
+    console.log(data.user);
+    //res.redirect('/profile');
+    f$location.path('/profile');
+  })
+  }
 
 }]);
 
-fp498Controllers.controller('SignupController', ['$scope', 'CommonData' , function($scope, CommonData) {
+fp498Controllers.controller('SignupController', ['$scope', 'CommonData' , '$http', '$location', function($scope, CommonData, $http, $location) {
   $scope.data = "";
-
-  $scope.getData = function(){
-    $scope.data = CommonData.getData();
-
+  $scope.newStudent = {
+      netId: "",
+      password: "",
+      name: "",
+      followOrganizationID: []
   };
+  $scope.newUser = {
+    email: "",
+    password: ""
+  }
+  $scope.submitSignup = function(){
+  console.log($scope.newUser);
+  $http.post(baseUrl + '/api/signup', $scope.newUser).success(function(data){
+    console.log("got user");
+    console.log(data.user);
+    res.redirect('/profile');
+    //$location.path('/profile');
+  })
+  }
 
 }]);
+
+/** Home controller **/
+fp498Controllers.controller('HomeController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' , function($scope, $http, $timeout, Events, Organizations, $window) {
+
+  Events.get().success(function(data){
+    $scope.events = data;
+    $timeout(function() {
+    console.log(data);
+      $('.crsl').slick({
+        centerMode: true,
+        centerPadding: '3px',
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: true, /* Just changed this to get the bottom dots navigation */
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        arrows: true
+    });
+      }, 200);
+  });
+
+  Organizations.get().success(function(data){
+    $scope.organizations = data;
+  });
+
+  $scope.searchOrganizations = function (row) {
+      return !!((row.name.indexOf($scope.query || '') !== -1));
+  };
+
+  $scope.search = function (row) {
+      return !!((row.name.indexOf($scope.query || '') !== -1 || row.description.indexOf($scope.query || '') !== -1 || row.date.indexOf($scope.query || '') !== -1));
+  };
+
+  /** slider **/
+    $(document).ready(function(){
+      $("#calendar").kendoCalendar();
+  });
+
+
+
+}]);
+
 
 /** Organization list **/
 fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '$timeout', 'Organizations', '$window' , function($scope, $http, $timeout, Organizations, $window) {
  $scope.categories = [];
+
  Organizations.get().success(function(data){
     $scope.organizations = data;
       for(var k in $scope.organizations){
@@ -110,7 +199,6 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
 
   Events.get().success(function(data){
     $scope.events = data;
-    console.log("here");
     $timeout(function() {
     console.log(data);
       $('.crsl').slick({
@@ -132,7 +220,7 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
     $scope.organizations = data;
   });
 
-  $scope.searchOrganizations = function (row) {
+  $scope.searchEvents = function (row) {
       return !!((row.name.indexOf($scope.query || '') !== -1));
   };
 
@@ -149,19 +237,7 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
 
 }]);
 
-/** profile **/
-fp498Controllers.controller('profileController', ['$scope', '$http', function($scope, $http) {
-   $scope.profile = false;
-   console.log("profile");
-   $http.get('http://localhost:4000/profile').success(function(data) {
-    console.log(data);
-    if(!data.error) {
-      $scope.profile = true;
-      $scope.user = data.user;
-    }
 
-   });
- }]);
 
 
 fp498Controllers.controller('SettingsController', ['$scope' , '$window' , function($scope, $window) {
