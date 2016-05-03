@@ -1,16 +1,13 @@
 // Get the packages we need
 var express = require('express');
 var mongoose = require('mongoose');
-var bodyParser = require('body-parser');
-var router = express.Router();
-
-/** passport stuff **/
 var passport = require('passport');
 var morgan = require('morgan');
 var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
 var session = require('express-session');
+var router = express.Router();
 
-var LocalStrategy = require('passport-local').Strategy;
 var bcrypt = require('bcrypt-nodejs');
 //var mongoose2 = require('mongoose');
 //replace this with your Mongolab URL
@@ -40,7 +37,7 @@ app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(bodyParser());
 
-app.use(session({secret: 'passport'})); //credentials saved in session
+app.use(session({secret: 'passport demo'})); //credentials saved in session
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -51,106 +48,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-
-
-/**
-//passport stuff
-var userSchema = mongoose.Schema({
-    email		: String,
-	password	: String
-});
-
-
-var User = mongoose.model('User', userSchema);
-
-passport.serializeUser(function(user, done) {
-	done(null, user.id);
-});
-
-passport.deserializeUser(function(id, done) {
-	User.findById(id, function(err, user) {
-		done(err, user);
-	});
-});
-
-passport.use('local-signup', new LocalStrategy({
-	usernameField : 'email',
-	passwordField : 'password'
-},
-    function(email, password, done) {
-        console.log("come to find one");
-        User.findOne({'email' : email}, function(err, user) {
-			if(err){
-                console.log("have error");
-                return done(err);
-            }
-			if(user) {
-                console.log("already have user");
-				return done(null, false);
-			} else {
-				var newUser = new User();
-
-				newUser.email = email;
-				newUser.password = bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
-
-
-				newUser.save(function(err) {
-					if(err)
-						throw err;
-					return done(null, newUser);
-				});
-			}
-        });
-    }
-));
-
-passport.use('local-login', new LocalStrategy({
-	usernameField: 'email',
-	passwordField: 'password'
-},
-    function(email, password, done) {
-        console.log("in local-login");
-		User.findOne({'email': email}, function(err, user) {
-			if(err){
-                console.log("error in local-login");
-                return done(err);
-            }
-			if(!user){
-                console.log("no user find");
-                return done(null, false);
-            }
-            var valid = bcrypt.compareSync(password, user.password);
-			if(!valid){
-                console.log("wrong password");
-                return done(null, false);
-            }
-            console.log("everything correct in local-login");
-			return done(null, user);
-
-		});
-	}
-));
-
-**/
-
-
-
-
-
-
-
-
-// Use the body-parser package in our application
-//app.use(bodyParser.urlencoded({
-//  extended: true
-//}));
-
-// All our routes will start with /api
-
-
-
-//Define routes here
-
 
 
 var event = require('./api/event');
@@ -176,50 +73,6 @@ router.get('/organizations/:id', organization.getOne);
 router.put('/organizations/:id', organization.replace);
 router.delete('/organizations/:id', organization.deleteOne);
 
-//End routes here
-
-//passport stuff
-/**
-app.post('/signup', passport.authenticate('local-signup'), function(req, res) {
-    console.log("come to signup");
-	res.redirect('http://localhost:3000/#/profile');
-});
-
-app.post('/login', passport.authenticate('local-login'), function(req, res) {
-    console.log("come to login");
-    console.log(req.session);
-
-//    req.session.save();
-	res.redirect('http://localhost:3000/#/profile');
-});
-
-app.get('/profile', isLoggedIn, function(req, res) {
-    console.log("come to profile");
-	res.json({
-		user: req.user
-	});
-});
-
-app.get('/logout', function(req, res) {
-	req.logout();
-	res.redirect('http://localhost:3000/');
-});
-
-function isLoggedIn(req, res, next) {
-    console.log("come to isLogged in");
-    console.log(req.session);
-
-	if(req.isAuthenticated()){
-        console.log("pass authenticate");
-        return next();
-    }
-    console.log("fail authenticate");
-	res.json({
-		error: "User not logged in"
-	});
-}
-
-**/
 
 // Start the server
 app.listen(port);

@@ -47,6 +47,7 @@ module.exports = function(passport) {
 	function(email, password, done){
 		User.findOne({'local.email': email}, function(err, user){
 			console.log("finding for login");
+			console.log(user);
 			if(err)
 				return done(err);
 			if(!user){
@@ -54,6 +55,7 @@ module.exports = function(passport) {
 			}
 			if(!user.validPassword(password))
 				return done(null, false);
+			console.log("login works properly");
 			return done(null, user);
 		});
 	}));

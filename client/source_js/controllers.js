@@ -2,9 +2,22 @@ var fp498Controllers = angular.module('fp498Controllers', ['720kb.datepicker', '
 var baseUrl = "http://localhost:4000";
 
 /** profile **/
-fp498Controllers.controller('profileController', ['$scope', '$http', function($scope, $http) {
+fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http', '$location', function($scope, $rootScope, $http, $location) {
    $scope.profile = false;
    console.log("profile");
+   console.log($scope.user);
+   if($rootScope.user){
+    $scope.user = $rootScope.user['local'];
+    }
+   if($scope.user){
+    $scope.profile = true;
+   }
+   function userLogout(){
+    $rootScope.user = null;
+    console.log("set to none");
+    $location.path('/home');
+   }
+   /**
    $http.get(baseUrl + '/api/profile').success(function(data) {
     console.log("roseeey");
     console.log(data);
@@ -15,10 +28,10 @@ fp498Controllers.controller('profileController', ['$scope', '$http', function($s
       $scope.user = data.user;
     }
 
-   });
+   });**/
  }]);
 
-fp498Controllers.controller('LoginController', ['$scope', 'CommonData' , '$http', '$location', function($scope, CommonData, $http, $location) {
+fp498Controllers.controller('LoginController', ['$scope', '$rootScope', 'CommonData' , '$http', '$location', function($scope, $rootScope, CommonData, $http, $location) {
   $scope.data = "";
   $scope.newStudent = {
       netId: "",
@@ -36,13 +49,17 @@ fp498Controllers.controller('LoginController', ['$scope', 'CommonData' , '$http'
     console.log("got user");
     console.log(data.user);
     //res.redirect('/profile');
-    f$location.path('/profile');
+    $rootScope.user = data.user;
+    console.log("root");
+    console.log($rootScope.user);
+    console.log($rootScope.user['local']);
+    $location.path('/profile');
   })
   }
 
 }]);
 
-fp498Controllers.controller('SignupController', ['$scope', 'CommonData' , '$http', '$location', function($scope, CommonData, $http, $location) {
+fp498Controllers.controller('SignupController', ['$scope', '$rootScope', 'CommonData' , '$http', '$location', function($scope, $rootScope, CommonData, $http, $location) {
   $scope.data = "";
   $scope.newStudent = {
       netId: "",
@@ -59,8 +76,9 @@ fp498Controllers.controller('SignupController', ['$scope', 'CommonData' , '$http
   $http.post(baseUrl + '/api/signup', $scope.newUser).success(function(data){
     console.log("got user");
     console.log(data.user);
-    res.redirect('/profile');
-    //$location.path('/profile');
+    //res.redirect('/profile');
+    $rootScope.user = data.user;
+    $location.path('/profile');
   })
   }
 
