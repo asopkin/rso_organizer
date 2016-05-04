@@ -1,5 +1,5 @@
 var LocalStrategy = require('passport-local').Strategy;
-var User = require('../models/user');
+var User = require('../models/student');
 
 console.log("pport");
 module.exports = function(passport) {
@@ -15,11 +15,11 @@ module.exports = function(passport) {
 
 	// Define local-signup here
 	passport.use('local-signup', new LocalStrategy({
-		usernameField : 'email', 
+		usernameField : 'netId', 
 		password : 'password' 
 	},
-	function(email, password, done){
-		User.findOne({'local.email': email}, function(err, user){
+	function(netId, password, done){
+		User.findOne({'netId': netId}, function(err, user){
 			console.log("find");
 			if(err)
 				return done(err);
@@ -28,8 +28,9 @@ module.exports = function(passport) {
 			}
 			else{
 				var newUser = new User();
-				newUser.local.email = email;
-				newUser.local.password = newUser.generateHash(password);
+				newUser.netId = netId;
+				newUser.name = "";
+				newUser.password = newUser.generateHash(password);
 
 				newUser.save(function(err){
 					if(err)
@@ -41,11 +42,12 @@ module.exports = function(passport) {
 	}));
 
 	passport.use('local-login', new LocalStrategy({
-		usernameField : 'email',
+		usernameField : 'netId',
 		passwordField: 'password'
 	}, 
-	function(email, password, done){
-		User.findOne({'local.email': email}, function(err, user){
+	function(netId, password, done){
+		console.log("loooking");
+		User.findOne({'netId': netId}, function(err, user){
 			console.log("finding for login");
 			console.log(user);
 			if(err)

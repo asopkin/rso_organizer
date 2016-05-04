@@ -49,6 +49,12 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+/**var user = require('./api/user');
+router.get('/users', user.getAll);
+router.post('/users', user.create);
+router.get('/users/:id', user.getOne);
+router.put('/users/:id', user.replace);
+router.delete('/users/:id', user.deleteOne);**/
 
 var event = require('./api/event');
 router.get('/events', event.getAll);

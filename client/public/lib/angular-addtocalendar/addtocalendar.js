@@ -86,15 +86,14 @@ angular
        * @return {String} google cal url
        */
       function getGoogleCalendarUrl() {
-
-        var googleCalendarUrl = 'https://www.google.com/calendar/render?action=TEMPLATE';
-        googleCalendarUrl += '&text=' + encodeURIComponent($scope.title);
-        googleCalendarUrl += '&dates=' + encodeURIComponent($scope.startDate) + '/' + encodeURIComponent($scope.endDate);
-        googleCalendarUrl += '&details=' + encodeURIComponent($scope.description);
-        googleCalendarUrl += '&location=' + encodeURIComponent($scope.location);
-
-        return googleCalendarUrl;
-
+          var googleCalendarUrl = 'https://www.google.com/calendar/render?action=TEMPLATE';
+          googleCalendarUrl += '&text=' + encodeURIComponent($scope.title);
+          googleCalendarUrl += '&dates=' + encodeURIComponent($scope.startDate) + '/' + encodeURIComponent($scope.endDate);
+          googleCalendarUrl += '&details=' + encodeURIComponent($scope.description);
+          googleCalendarUrl += '&location=' + encodeURIComponent($scope.location);
+          console.log('ey gcal');
+          console.log($scope.title);
+          return googleCalendarUrl;
       };
 
       /**
@@ -114,6 +113,14 @@ angular
 
       };
 
+      function x(){
+        console.log("run x");
+        var getGcal = getGoogleCalendarUrl();
+        console.log('my cal');
+        console.log(getGcal);
+        return getGcal;
+      }
+
       function dlIcal() {
 
         // render safe filename for iCal (only \w chars) based on event title
@@ -123,13 +130,13 @@ angular
 
       }
 
-      $scope.calendarUrl = {
-        microsoft: getMicrosoftCalendarUrl(),
-        google: getGoogleCalendarUrl(),
-        yahoo: getYahooCalendarUrl(),
-        icalendar: getIcsCalendar(),
-        dlIcal: dlIcal
-      };
+        $scope.calendarUrl = {
+          microsoft: getMicrosoftCalendarUrl(),
+          google: getGoogleCalendarUrl(),
+          yahoo: getYahooCalendarUrl(),
+          icalendar: getIcsCalendar(),
+          dlIcal: dlIcal
+        };
 
     }
 

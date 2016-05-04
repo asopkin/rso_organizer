@@ -22,6 +22,10 @@ app.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'partials/organizationlist.html',
     controller: 'OrganizationListController'
   }).
+  when('/organizations/display/:orgID',{
+      templateUrl : 'partials/orgdetail.html',
+      controller : 'OrganizationDetailController'
+  }).
   when('/students', {
     templateUrl: 'partials/studentlist.html',
     controller: 'StudentListController'
@@ -29,6 +33,10 @@ app.config(['$routeProvider', function($routeProvider) {
   when('/events', {
     templateUrl: 'partials/eventlist.html',
     controller: 'EventListController'
+  }).
+  when('/events/display/:eventID',{
+      templateUrl : 'partials/eventdetail.html',
+      controller : 'EventDetailController'
   }).
   when('/addstudent', {
     templateUrl: 'partials/addstudent.html',
@@ -43,6 +51,6 @@ app.config(['$routeProvider', function($routeProvider) {
     controller: 'AddOrganizationController'
   }).
   otherwise({
-    redirectTo: '/home'
+    redirectTo: '/events'
   });
 }]);

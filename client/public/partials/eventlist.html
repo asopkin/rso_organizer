@@ -20,12 +20,12 @@
           {{ event.description }}
         </div>
         <div class="mdl-card__supporting-text">
-          {{ event.date  | date:'MM/dd/yyyy' }}<span class="fa fa-calendar" id="cal"></span>
+          {{ event.date  | date:'MM/dd/yyyy' }}<span class="fa fa-calendar-o" id="cal"></span>
         </div>
         <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-            <i class="material-icons">share</i>
-          </button>
+          <a href="#/events/display/{{event._id}}"><button class="mdl-button mdl-button--icon  mdl-js-ripple-effect" id="eventdetailbtn">
+            <span class="fa fa-plus-circle" id="cal"></span>
+          </button></a>
         </div>
       </div>
     </li>
@@ -33,7 +33,7 @@
 
 
   <!-- date pick -->
-<!--<iframe src="http://calendar.google.com/calendar/embed?src=v7pepmi7g8e2pbp1gicuej8h38%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="200" height="400" frameborder="0" scrolling="no"></iframe><br><br>-->
+<iframe src="http://calendar.google.com/calendar/embed?src=v7pepmi7g8e2pbp1gicuej8h38%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="200" height="400" frameborder="0" scrolling="no"></iframe><br><br>
 
 </div>
 </center>

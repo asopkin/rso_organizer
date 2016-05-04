@@ -7,7 +7,8 @@ fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http
    console.log("profile");
    console.log($scope.user);
    if($rootScope.user){
-    $scope.user = $rootScope.user['local'];
+    $scope.user = $rootScope.user;
+    console.log($scope.user);
     }
    if($scope.user){
     $scope.profile = true;
@@ -44,8 +45,8 @@ fp498Controllers.controller('LoginController', ['$scope', '$rootScope', 'CommonD
     password: ""
   }
   $scope.submitLogin = function(){
-  console.log($scope.thisUser);
-  $http.post(baseUrl + '/api/login', $scope.thisUser).success(function(data){
+  console.log($scope.newStudent);
+  $http.post(baseUrl + '/api/login', $scope.newStudent).success(function(data){
     console.log("got user");
     console.log(data.user);
     //res.redirect('/profile');
@@ -72,8 +73,8 @@ fp498Controllers.controller('SignupController', ['$scope', '$rootScope', 'Common
     password: ""
   }
   $scope.submitSignup = function(){
-  console.log($scope.newUser);
-  $http.post(baseUrl + '/api/signup', $scope.newUser).success(function(data){
+  console.log($scope.newStudent);
+  $http.post(baseUrl + '/api/signup', $scope.newStudent).success(function(data){
     console.log("got user");
     console.log(data.user);
     //res.redirect('/profile');
@@ -127,6 +128,50 @@ fp498Controllers.controller('HomeController', ['$scope', '$http', '$timeout', 'E
 
 }]);
 
+/** Org controller **/
+fp498Controllers.controller('OrgFeedController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' , function($scope, $http, $timeout, Events, Organizations, $window) {
+
+  Events.get().success(function(data){
+    $scope.events = data;
+    $timeout(function() {
+    console.log(data);
+      $('.crsl').slick({
+        centerMode: true,
+        centerPadding: '3px',
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: true, /* Just changed this to get the bottom dots navigation */
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        arrows: true
+    });
+      }, 200);
+  });
+
+  Organizations.get().success(function(data){
+    $scope.organizations = data;
+  });
+
+  $scope.searchOrganizations = function (row) {
+      return !!((row.name.indexOf($scope.query || '') !== -1));
+  };
+
+  $scope.search = function (row) {
+      return !!((row.name.indexOf($scope.query || '') !== -1 || row.description.indexOf($scope.query || '') !== -1 || row.date.indexOf($scope.query || '') !== -1));
+  };
+
+  /** slider **/
+    $(document).ready(function(){
+      $("#calendar").kendoCalendar();
+  });
+
+
+
+}]);
+
+
 
 /** Organization list **/
 fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '$timeout', 'Organizations', '$window' , function($scope, $http, $timeout, Organizations, $window) {
@@ -154,6 +199,14 @@ fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '
   name: 'member'
  };
 
+}]);
+
+/** Org detail controller **/
+fp498Controllers.controller('OrganizationDetailController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' , '$routeParams', function($scope, $http, $timeout, Events, Organizations, $window, $routeParams) {
+  $scope.orgid = $routeParams.orgID;
+  Organizations.getOne($scope.orgid).success(function(data){
+    $scope.organization = data;
+  });
 }]);
 
 /** Add Organization **/
@@ -213,7 +266,7 @@ fp498Controllers.controller('StudentAddController', ['$scope' , '$http', 'Studen
 
 
 /** Event list controller **/
-fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' , function($scope, $http, $timeout, Events, Organizations, $window) {
+fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' ,  '$location', function($scope, $http, $timeout, Events, Organizations, $window, $location) {
 
   Events.get().success(function(data){
     $scope.events = data;
@@ -251,8 +304,37 @@ fp498Controllers.controller('EventListController', ['$scope', '$http', '$timeout
       $("#calendar").kendoCalendar();
   });
 
+}]);
 
-
+/** Event detail controller **/
+fp498Controllers.controller('EventDetailController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', '$window' , '$routeParams', function($scope, $http, $timeout, Events, Organizations, $window, $routeParams) {
+  $scope.eventId = $routeParams.eventID;
+  console.log("ey");
+  console.log($scope.eventId);
+  Events.getOne($scope.eventId).success(function(data){
+    $scope.event = data;
+    console.log('wat');
+    console.log(data);
+    
+    var googleCalendarUrl = 'https://www.google.com/calendar/render?action=TEMPLATE';
+    googleCalendarUrl += '&text=' + encodeURIComponent($scope.event.name);
+    googleCalendarUrl += '&dates=' + '20150704T190000' + '/' + '20150704T190000';
+    googleCalendarUrl += '&details=' + encodeURIComponent($scope.event.description);
+    googleCalendarUrl += '&location=' + 'Battery+Park+City,+New+York,+NY';
+    console.log(googleCalendarUrl);
+    $scope.gCal = googleCalendarUrl;
+  });
+  function gCal(){
+    console.log('g cal');
+    console.log(googleCalendarUrl);
+    if(googleCalendarUrl){
+      window.open(googleCalendarUrl);
+      return googleCalendarUrl;
+    }
+    else{
+      return "";
+    }
+  }
 }]);
 
 

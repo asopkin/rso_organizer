@@ -4253,21 +4253,25 @@ body {
   clear: both;
   /*	height: 120px;*/ }
 
+/* line 105, ../../source_sass/_base.scss */
+#org-menu a {
+  color: black; }
+
 /** category searching for organizations */
-/* line 107, ../../source_sass/_base.scss */
+/* line 112, ../../source_sass/_base.scss */
 .category-titles {
   margin-top: 20px;
   text-align: center;
   clear: both;
   /** styling **/ }
-  /* line 111, ../../source_sass/_base.scss */
+  /* line 116, ../../source_sass/_base.scss */
   .category-titles ul {
     list-style: none; }
-  /* line 115, ../../source_sass/_base.scss */
+  /* line 120, ../../source_sass/_base.scss */
   .category-titles .category-tag-mid {
     margin-left: 2px;
     margin-right: 2px; }
-  /* line 119, ../../source_sass/_base.scss */
+  /* line 124, ../../source_sass/_base.scss */
   .category-titles li {
     display: inline-block;
     padding: 10px 10px 10px 10px;
@@ -4280,17 +4284,17 @@ body {
     background-color: #FF5722;
     border-radius: 10%; }
 
-/* line 133, ../../source_sass/_base.scss */
+/* line 138, ../../source_sass/_base.scss */
 .org-list {
   list-style: none;
   overflow: scroll;
   height: 150px;
   margin-top: 50px; }
-  /* line 139, ../../source_sass/_base.scss */
+  /* line 144, ../../source_sass/_base.scss */
   .org-list h2 {
     font-size: 18px;
     text-transform: uppercase; }
-  /* line 143, ../../source_sass/_base.scss */
+  /* line 148, ../../source_sass/_base.scss */
   .org-list li {
     /* margins and padding */
     margin-bottom: 10px;
@@ -4301,7 +4305,7 @@ body {
     border: 2px solid #8BCBC8;
     box-shadow: 2px 2px 1px #888888; }
 
-/* line 157, ../../source_sass/_base.scss */
+/* line 162, ../../source_sass/_base.scss */
 .panel {
   margin-top: 20px; }
 
@@ -4324,12 +4328,12 @@ body {
 //	}
 //
 //}*/
-/* line 180, ../../source_sass/_base.scss */
+/* line 185, ../../source_sass/_base.scss */
 .add-org-form {
   margin: 0 auto;
   width: 400px; }
 
-/* line 184, ../../source_sass/_base.scss */
+/* line 189, ../../source_sass/_base.scss */
 #addorg {
   margin-top: 5px;
   margin: 0 auto;
@@ -4344,7 +4348,7 @@ body {
 
 /* ==========  Select Field ========== */
 /* Style Select Field */
-/* line 200, ../../source_sass/_base.scss */
+/* line 205, ../../source_sass/_base.scss */
 select {
   font-family: inherit;
   background-color: transparent;
@@ -4356,27 +4360,27 @@ select {
   border-bottom: 1px solid black; }
 
 /* Remove focus */
-/* line 212, ../../source_sass/_base.scss */
+/* line 217, ../../source_sass/_base.scss */
 select:focus {
   outline: none; }
 
 /* Hide label */
-/* line 216, ../../source_sass/_base.scss */
+/* line 221, ../../source_sass/_base.scss */
 .mdl-selectfield label {
   display: none; }
 
 /* Use custom arrow */
-/* line 219, ../../source_sass/_base.scss */
+/* line 224, ../../source_sass/_base.scss */
 .mdl-selectfield {
   font-family: 'Roboto','Helvetica','Arial',sans-serif;
   position: relative; }
-  /* line 222, ../../source_sass/_base.scss */
+  /* line 227, ../../source_sass/_base.scss */
   .mdl-selectfield:after {
     position: absolute;
     top: 0.75em; }
 
 /** organization grid **/
-/* line 228, ../../source_sass/_base.scss */
+/* line 233, ../../source_sass/_base.scss */
 #org-bucket {
   /* font */
   font-size: 18px;
@@ -4392,16 +4396,16 @@ select:focus {
   line-height: 60px;
   /** share **/
   /** radio buttons **/ }
-  /* line 247, ../../source_sass/_base.scss */
+  /* line 252, ../../source_sass/_base.scss */
   #org-bucket #share {
     margin-bottom: 2px;
     vertical-align: top;
     text-align: center; }
-  /* line 254, ../../source_sass/_base.scss */
+  /* line 259, ../../source_sass/_base.scss */
   #org-bucket .radio-buttons {
     margin: 0 auto;
     width: 80%; }
-  /* line 258, ../../source_sass/_base.scss */
+  /* line 263, ../../source_sass/_base.scss */
   #org-bucket .options {
     /* alignment */
     vertical-align: top;
@@ -4410,7 +4414,7 @@ select:focus {
     /* padding and margins */
     padding-left: 5px;
     margin: 0 auto; }
-  /* line 269, ../../source_sass/_base.scss */
+  /* line 274, ../../source_sass/_base.scss */
   #org-bucket #leave-button {
     /* placement */
     margin-top: 5px;
@@ -4422,7 +4426,7 @@ select:focus {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 284, ../../source_sass/_base.scss */
+/* line 289, ../../source_sass/_base.scss */
 .org-grid {
   margin: 0 auto;
   width: 100%; }
@@ -4432,11 +4436,11 @@ select:focus {
 //	margin: 0 auto;
 //	width: 80%;
 //}*/
-/* line 295, ../../source_sass/_base.scss */
+/* line 300, ../../source_sass/_base.scss */
 .card {
   margin: 10px; }
 
-/* line 300, ../../source_sass/_base.scss */
+/* line 305, ../../source_sass/_base.scss */
 #stud-bucket {
   margin-left: 5px;
   margin-right: 5px;
@@ -4446,11 +4450,11 @@ select:focus {
   text-align: center;
   line-height: 60px; }
 
-/* line 309, ../../source_sass/_base.scss */
+/* line 314, ../../source_sass/_base.scss */
 #student-page {
   clear: both;
   margin: 0 auto; }
-  /* line 313, ../../source_sass/_base.scss */
+  /* line 318, ../../source_sass/_base.scss */
   #student-page #add-button {
     /* placement */
     margin: 0 auto;
@@ -4467,21 +4471,21 @@ select:focus {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 332, ../../source_sass/_base.scss */
+/* line 337, ../../source_sass/_base.scss */
 .stud-grid {
   margin-top: 50px;
   margin: 0 auto;
   margin-left: 100px;
   width: 100%; }
 
-/* line 339, ../../source_sass/_base.scss */
+/* line 344, ../../source_sass/_base.scss */
 span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal; }
 
 /** slider **/
-/* line 345, ../../source_sass/_base.scss */
+/* line 350, ../../source_sass/_base.scss */
 .event-content {
   /* borders */
   border-top: 3px solid #FDAE84;
@@ -4496,7 +4500,7 @@ span {
   background-color: white;
   color: black; }
 
-/* line 362, ../../source_sass/_base.scss */
+/* line 367, ../../source_sass/_base.scss */
 .event-content :after {
   content: "";
   display: block;
@@ -4509,11 +4513,11 @@ span {
   border-top: 3px solid #ECC7C0;
   border-bottom: 3px solid #ECC7C0; }
 
-/* line 374, ../../source_sass/_base.scss */
+/* line 379, ../../source_sass/_base.scss */
 .full-date {
   margin-top: 20px; }
 
-/* line 380, ../../source_sass/_base.scss */
+/* line 385, ../../source_sass/_base.scss */
 .date {
   background-color: white;
   color: #FF5722;
@@ -4523,38 +4527,81 @@ span {
   vertical-align: middle;
   margin-left: 3px;
   text-align: center; }
-  /* line 391, ../../source_sass/_base.scss */
+  /* line 396, ../../source_sass/_base.scss */
   .date #month {
     text-transform: uppercase;
     font-size: 30px; }
-  /* line 395, ../../source_sass/_base.scss */
+  /* line 400, ../../source_sass/_base.scss */
   .date #day {
     vertical-align: bottom;
     font-size: 40px; }
-  /* line 399, ../../source_sass/_base.scss */
+  /* line 404, ../../source_sass/_base.scss */
   .date #year {
     vertical-align: middle; }
 
-/* line 403, ../../source_sass/_base.scss */
+/* line 408, ../../source_sass/_base.scss */
 #event-info {
   list-style-type: none;
   display: inline-block;
   text-align: center;
   margin-top: 40px; }
-  /* line 409, ../../source_sass/_base.scss */
+  /* line 414, ../../source_sass/_base.scss */
   #event-info #cal {
     font-size: 25px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
-  /* line 416, ../../source_sass/_base.scss */
+  /* line 421, ../../source_sass/_base.scss */
   #event-info i {
     font-size: 40px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
 
-/* line 423, ../../source_sass/_base.scss */
+/* line 429, ../../source_sass/_base.scss */
+.demo-card-event.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: #3E4EB8; }
+
+/* line 434, ../../source_sass/_base.scss */
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2); }
+
+/* line 437, ../../source_sass/_base.scss */
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start; }
+
+/* line 440, ../../source_sass/_base.scss */
+.demo-card-event > .mdl-card__title > h4 {
+  margin-top: 0; }
+
+/* line 443, ../../source_sass/_base.scss */
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center; }
+
+/* line 448, ../../source_sass/_base.scss */
+.demo-card-event > .mdl-card__actions > .material-icons {
+  padding-right: 10px; }
+
+/* line 451, ../../source_sass/_base.scss */
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff; }
+
+/* line 457, ../../source_sass/_base.scss */
+.card {
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center; }
+  /* line 461, ../../source_sass/_base.scss */
+  .card h4 {
+    text-align: center; }
+
+/* line 467, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
@@ -4564,27 +4611,27 @@ span {
   list-style-type: none;
   text-align: center;
   /* margins */ }
-  /* line 436, ../../source_sass/_base.scss */
+  /* line 480, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-  /* line 442, ../../source_sass/_base.scss */
+  /* line 486, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-  /* line 449, ../../source_sass/_base.scss */
+  /* line 493, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
 
 /** Add student **/
-/* line 455, ../../source_sass/_base.scss */
+/* line 499, ../../source_sass/_base.scss */
 .add-student-view {
   /* button */
   /* form styling */ }
-  /* line 456, ../../source_sass/_base.scss */
+  /* line 500, ../../source_sass/_base.scss */
   .add-student-view h1 {
     text-align: center;
     font-weight: bold;
@@ -4593,7 +4640,7 @@ span {
     color: #3C2E3D;
     margin: auto;
     clear: both; }
-  /* line 466, ../../source_sass/_base.scss */
+  /* line 510, ../../source_sass/_base.scss */
   .add-student-view #submit-button {
     /* placement */
     margin: auto;
@@ -4606,17 +4653,17 @@ span {
     text-align: center;
     font-size: 20px;
     background-color: #3C2E3D; }
-  /* line 481, ../../source_sass/_base.scss */
+  /* line 525, ../../source_sass/_base.scss */
   .add-student-view .required:after {
     content: "*";
     color: red;
     display: inline;
     clear: both; }
-  /* line 483, ../../source_sass/_base.scss */
+  /* line 527, ../../source_sass/_base.scss */
   .add-student-view .required input {
     background-color: rgba(255, 0, 0, 0.1);
     color: black; }
-  /* line 488, ../../source_sass/_base.scss */
+  /* line 532, ../../source_sass/_base.scss */
   .add-student-view input {
     width: 80%;
     margin: 0 auto;
@@ -4624,7 +4671,7 @@ span {
     vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 496, ../../source_sass/_base.scss */
+  /* line 540, ../../source_sass/_base.scss */
   .add-student-view label {
     display: inline-block;
     vertical-align: middle;
@@ -4632,28 +4679,28 @@ span {
     margin-right: 20px; }
 
 /** calendar **/
-/* line 504, ../../source_sass/_base.scss */
+/* line 548, ../../source_sass/_base.scss */
 .dropdown-menu {
   list-style-type: none; }
-  /* line 505, ../../source_sass/_base.scss */
+  /* line 549, ../../source_sass/_base.scss */
   .dropdown-menu a {
     background-color: #FF5722;
     padding: 3px 3px 3px 3px;
     border-radius: 10%;
     color: white; }
-  /* line 512, ../../source_sass/_base.scss */
+  /* line 556, ../../source_sass/_base.scss */
   .dropdown-menu li {
     color: red; }
 
 /* profile */
-/* line 518, ../../source_sass/_base.scss */
+/* line 562, ../../source_sass/_base.scss */
 .well {
   margin: 0 auto;
   width: 80%;
   margin-top: 10px; }
 
 /** event list **/
-/* line 526, ../../source_sass/_base.scss */
+/* line 570, ../../source_sass/_base.scss */
 #cal {
   margin-left: 5px;
   color: black; }

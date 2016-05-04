@@ -101,6 +101,11 @@ body{
 /*	height: 120px;*/
 }
 
+#org-menu{
+	a{
+		color: black;
+	}
+}
 
 
 /** category searching for organizations */
@@ -420,6 +425,45 @@ span{
 	color: $orange-color;
 	}
 }
+
+.demo-card-event.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: #3E4EB8;
+}
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start;
+}
+.demo-card-event > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
+
+.card{
+	margin: 0 auto;
+	margin-top: 150px;
+	text-align: center;
+	h4{
+		text-align: center;
+	}
+}
+
+
 .crsl{
 
 	/* margins */
@@ -527,3 +571,4 @@ span{
 		margin-left: 5px;
 		color: black;
 	}
+
