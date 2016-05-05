@@ -7,19 +7,20 @@ fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http
    console.log("profile");
    if($rootScope.user){
     $scope.user = $rootScope.user;
-    console.log($scope.user);
+//    console.log($scope.user);
     }
    if($scope.user){
     $scope.profile = true;
-   }
-   console.log($scope.user);
-   $scope.orgNames = [];
-   for(var k in $scope.user.followOrganizationID){
-    Organizations.getOne($scope.user.followOrganizationID[k]).success(function(data){
-      $scope.orgNames.push(data);
-      console.log(data.name);
-    })
-   }
+
+//       console.log($scope.user);
+       $scope.orgNames = [];
+       for(var k in $scope.user.followOrganizationID){
+        Organizations.getOne($scope.user.followOrganizationID[k]).success(function(data){
+          $scope.orgNames.push(data);
+//          console.log(data.name);
+        })
+       }
+    }
 
    $scope.options = {
     dormVal: true
@@ -35,7 +36,7 @@ fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http
         var idx = $scope.fixedOrg.emails.indexOf(userid);
         $scope.fixedOrg.emails.splice(idx, 1);
         Organizations.put($scope.fixedOrg._id, $scope.fixedOrg).success(function(data){
-          console.log(data.emails);
+//          console.log(data.emails);
         })
       })
     }
@@ -44,11 +45,11 @@ fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http
         $scope.fixedOrg = data;
         $scope.fixedOrg.emails.push(userid);
         Organizations.put($scope.fixedOrg._id, $scope.fixedOrg).success(function(data){
-          console.log(data.emails);
+//          console.log(data.emails);
         })
       })
     }
-   }
+   };
 
    $scope.unfollowOrg = function(netidparam, org, userid){
       Organizations.getOne(org).success(function(data){
@@ -56,28 +57,29 @@ fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http
         var idx = $scope.fixedOrg.members.indexOf(userid);
         $scope.fixedOrg.members.splice(idx, 1);
         Organizations.put($scope.fixedOrg._id, $scope.fixedOrg).success(function(data){
-          console.log(data.members);
+//          console.log(data.members);
           Students.getOne(userid).success(function(data){
             $scope.fixedStudent = data;
-            console.log($scope.fixedStudent.followOrganizationID);
+//            console.log($scope.fixedStudent.followOrganizationID);
             var idx = $scope.fixedStudent.followOrganizationID.indexOf(org);
             $scope.fixedStudent.followOrganizationID.splice(idx, 1);
-            console.log($scope.fixedStudent.followOrganizationID);
+//            console.log($scope.fixedStudent.followOrganizationID);
             Students.put($scope.fixedStudent._id, $scope.fixedStudent).success(function(data){
-              console.log($scope.fixedStudent);
+//              console.log($scope.fixedStudent);
               $location.path('/home');
             })
           })
         })
       })
-   }
+   };
 
 
-   function userLogout(){
+   $scope.userLogout = function(){
     $rootScope.user = null;
     console.log("set to none");
+
     $location.path('/home');
-   }
+   };
    /**
    $http.get(baseUrl + '/api/profile').success(function(data) {
     console.log("roseeey");
@@ -106,17 +108,17 @@ fp498Controllers.controller('LoginController', ['$scope', '$rootScope', 'CommonD
   $scope.thisUser = {
     email: "",
     password: ""
-  }
+  };
   $scope.submitLogin = function(){
-  console.log($scope.newStudent);
+//  console.log($scope.newStudent);
   $http.post(baseUrl + '/api/login', $scope.newStudent).success(function(data){
     console.log("got user");
-    console.log(data.user);
+//    console.log(data.user);
     //res.redirect('/profile');
     $rootScope.user = data.user;
     console.log("root");
-    console.log($rootScope.user);
-    console.log($rootScope.user['local']);
+//    console.log($rootScope.user);
+//    console.log($rootScope.user['local']);
     $location.path('/profile');
   })
   }
