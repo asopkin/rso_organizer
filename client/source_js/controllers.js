@@ -122,7 +122,7 @@ fp498Controllers.controller('leaderController', ['$scope', '$rootScope', '$http'
           $scope.theseOrgs = data;
           for(var k in $scope.theseOrgs){
             if($scope.theseOrgs[k].leaders.indexOf($scope.user._id)>-1){
-              $scope.leaderNames.push($scope.theseOrgs[k].name);
+              $scope.leaderNames.push($scope.theseOrgs[k]);
             }
           }
         })
@@ -399,6 +399,44 @@ fp498Controllers.controller('OrganizationDetailController', ['$scope', '$http', 
     })
 
   }
+}]);
+
+/** Org edit controller **/
+fp498Controllers.controller('OrganizationEditController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', 'Students', '$window' , '$routeParams', '$rootScope', '$location', function($scope, $http, $timeout, Events, Organizations, Students, $window, $routeParams, $rootScope, $location) {
+  $scope.orgid = $routeParams.orgID;
+  console.log("edit org");
+  Organizations.getOne($scope.orgid).success(function(data){
+    $scope.organization = data;
+    $scope.members = $scope.organization.members;
+    console.log($scope.members);
+  });
+  $scope.followers = [];
+  Students.get().success(function(data){
+    $scope.students = data;
+    for(var k in $scope.students){
+      if($scope.students[k].followOrganizationID.indexOf($scope.orgid)>-1){
+        $scope.followers.push($scope.students[k]);
+      }
+    }
+  })
+  $scope.makeCSV = function(){
+    var csvContent = "data:text/csv;charset=utf-8,";
+    $scope.studentemails = [];
+    Students.get().success(function(data){
+      $scope.students = data;
+      for(var k in $scope.students){
+        $scope.studentemails.push($scope.students[k].netId);
+      }
+      //$scope.studentemails.forEach(function(infoArray, index){
+        //dataString = infoArray.join(",");
+        //csvContent += index < data.length ? dataString+ "\n" : dataString;
+      //}); 
+      csvContent += $scope.studentemails.join(",");
+      var encodedUri = encodeURI(csvContent);
+      window.open(encodedUri);
+    })
+  }
+
 }]);
 
 /** Add Organization **/
