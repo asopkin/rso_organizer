@@ -20,6 +20,16 @@ fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http
           console.log(data.name);
         })
        }
+       $scope.leaderNames = [];
+        Organizations.get().success(function(data){
+          $scope.theseOrgs = data;
+          for(var k in $scope.theseOrgs){
+            if($scope.theseOrgs[k].leaders.indexOf($scope.user._id)>-1){
+              console.log($scope.theseOrgs[k].name);
+              $scope.leaderNames.push($scope.theseOrgs[k].name);
+            }
+          }
+        })
     }
 
    $scope.options = {
@@ -97,6 +107,39 @@ fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http
  }]);
 
 
+/** profile **/
+fp498Controllers.controller('leaderController', ['$scope', '$rootScope', '$http', '$location', 'Organizations', 'Students', '$location', '$route', function($scope, $rootScope, $http, $location, Organizations, Students, $location, $route) {
+   $scope.profile = false;
+   console.log("profile");
+   if($rootScope.user){
+    $scope.user = $rootScope.user;
+//    console.log($scope.user);
+    }
+   if($scope.user){
+    $scope.profile = true;
+       $scope.leaderNames = [];
+        Organizations.get().success(function(data){
+          $scope.theseOrgs = data;
+          for(var k in $scope.theseOrgs){
+            if($scope.theseOrgs[k].leaders.indexOf($scope.user._id)>-1){
+              $scope.leaderNames.push($scope.theseOrgs[k].name);
+            }
+          }
+        })
+    }
+
+
+
+   $scope.userLogout = function(){
+    $rootScope.user = null;
+    console.log("set to none");
+
+    $location.path('/home');
+   };
+
+ }]);
+
+
 
 fp498Controllers.controller('LoginController', ['$scope', '$rootScope', 'CommonData' , '$http', '$location', function($scope, $rootScope, CommonData, $http, $location) {
   $scope.data = "";
@@ -128,7 +171,7 @@ fp498Controllers.controller('LoginController', ['$scope', '$rootScope', 'CommonD
 
 fp498Controllers.controller('SignupController', ['$scope', '$rootScope', 'CommonData', 'Organizations', '$http', '$location', function($scope, $rootScope, CommonData, Organizations, $http, $location) {
   Organizations.get().success(function(data){
-    $scope.orgs = data;
+    $scope.orgs2 = data;
     console.log($scope.orgs);
     console.log($scope.orgs[0].name);
   })

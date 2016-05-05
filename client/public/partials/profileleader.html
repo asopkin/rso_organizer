@@ -1,7 +1,7 @@
 <div class="container">
 
     <div class="page-header text-center">
-        <h1><span class="fa fa-user"></span> My RSOs </h1>
+        <h1><span class="fa fa-user"></span> RSOs I lead </h1>
     </div>
 
     <div class="row">
@@ -14,37 +14,16 @@
               </p>
               <br>
               <ul class="mdl-grid">
-              <li ng-repeat="org in orgNames" class="mdl-list__item mdl-cell mdl-cell--4-col">
+              <li ng-repeat="org in leaderNames" class="mdl-list__item mdl-cell mdl-cell--4-col">
                 <div class="demo-card-square mdl-card mdl-shadow--4dp">
                   <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="mdl-card__title-text">{{ org.name }}</h2>
+                    <h2 class="mdl-card__title-text">{{ org }}</h2>
                   </div>
                   <div class="mdl-card__supporting-text">
                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-                      <input type="checkbox" ng-model="options.dormVal" class="mdl-checkbox__input" ng-click="changeUserInfo(user.netId, org._id, user._id, options.dormVal)">
+                      <input type="checkbox" ng-model="options.dormVal" class="mdl-checkbox__input">
                       <span class="mdl-checkbox__label">Subscribe</span>
                     </label>
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="unfollowOrg(user.netId, org._id, user._id, options.dormVal)">
-                      Leave
-                    </a>
-                  </div>
-                  <div class="mdl-card__menu" id="org-menu">
-                    <a href="#/organizations/display/{{org._id}}"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                      <i class="material-icons">info outline</i>
-                    </button></a>
-                  </div>
-                </div>
-              </li>
-            </ul><br>
-            <h4>RSOs I Lead</h4>
-            <br>
-              <ul class="mdl-grid">
-              <li ng-repeat="orgName in leaderNames" class="mdl-list__item mdl-cell mdl-cell--4-col">
-                <div class="demo-card-square mdl-card mdl-shadow--4dp">
-                  <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="mdl-card__title-text">{{ orgName }}</h2>
                   </div>
                   <div class="mdl-card__actions mdl-card--border">
                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -52,7 +31,7 @@
                     </a>
                   </div>
                   <div class="mdl-card__menu" id="org-menu">
-                    <a href="#/organizations/display/{{org}Name}"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <a href="#/organizations/display/{{org}}"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                       <i class="material-icons">info outline</i>
                     </button></a>
                   </div>
