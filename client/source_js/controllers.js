@@ -132,6 +132,7 @@ fp498Controllers.controller('SignupController', ['$scope', '$rootScope', 'Common
     console.log($scope.orgs);
     console.log($scope.orgs[0].name);
   })
+
   $scope.data = "";
   $scope.newStudent = {
       netId: "",

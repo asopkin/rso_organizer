@@ -15,7 +15,7 @@
             <input type="password" class="form-control" name="password" ng-model="newStudent.password">
         </div>
         <div class="dropdown">
-        <select class="ui fluid search dropdown" multiple="" ng-options="org.value as org.label for org in orgs">
+        <select class="ui fluid search dropdown" id="org-select" multiple="" ng-options="org as org.name for org in orgs" ng-model="selected">
         </select>
         </div><br><br>
 
