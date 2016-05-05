@@ -2,10 +2,9 @@ var fp498Controllers = angular.module('fp498Controllers', ['720kb.datepicker', '
 var baseUrl = "http://localhost:4000";
 
 /** profile **/
-fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http', '$location', function($scope, $rootScope, $http, $location) {
+fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http', '$location', 'Organizations', 'Students', '$location', function($scope, $rootScope, $http, $location, Organizations, Students, $location) {
    $scope.profile = false;
    console.log("profile");
-   console.log($scope.user);
    if($rootScope.user){
     $scope.user = $rootScope.user;
     console.log($scope.user);
@@ -13,6 +12,67 @@ fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http
    if($scope.user){
     $scope.profile = true;
    }
+   console.log($scope.user);
+   $scope.orgNames = [];
+   for(var k in $scope.user.followOrganizationID){
+    Organizations.getOne($scope.user.followOrganizationID[k]).success(function(data){
+      $scope.orgNames.push(data);
+      console.log(data.name);
+    })
+   }
+
+   $scope.options = {
+    dormVal: true
+   };
+
+   $scope.$watch('options.dormVal', function(changed) {
+      console.log("watch");
+    });
+    $scope.changeUserInfo = function(netidparam, org, userid, emailVal){
+    if(emailVal==false){
+      Organizations.getOne(org).success(function(data){
+        $scope.fixedOrg = data;
+        var idx = $scope.fixedOrg.emails.indexOf(userid);
+        $scope.fixedOrg.emails.splice(idx, 1);
+        Organizations.put($scope.fixedOrg._id, $scope.fixedOrg).success(function(data){
+          console.log(data.emails);
+        })
+      })
+    }
+    else if(emailVal==true){
+        Organizations.getOne(org).success(function(data){
+        $scope.fixedOrg = data;
+        $scope.fixedOrg.emails.push(userid);
+        Organizations.put($scope.fixedOrg._id, $scope.fixedOrg).success(function(data){
+          console.log(data.emails);
+        })
+      })
+    }
+   }
+
+   $scope.unfollowOrg = function(netidparam, org, userid){
+      Organizations.getOne(org).success(function(data){
+        $scope.fixedOrg = data;
+        var idx = $scope.fixedOrg.members.indexOf(userid);
+        $scope.fixedOrg.members.splice(idx, 1);
+        Organizations.put($scope.fixedOrg._id, $scope.fixedOrg).success(function(data){
+          console.log(data.members);
+          Students.getOne(userid).success(function(data){
+            $scope.fixedStudent = data;
+            console.log($scope.fixedStudent.followOrganizationID);
+            var idx = $scope.fixedStudent.followOrganizationID.indexOf(org);
+            $scope.fixedStudent.followOrganizationID.splice(idx, 1);
+            console.log($scope.fixedStudent.followOrganizationID);
+            Students.put($scope.fixedStudent._id, $scope.fixedStudent).success(function(data){
+              console.log($scope.fixedStudent);
+              $location.path('/home');
+            })
+          })
+        })
+      })
+   }
+
+
    function userLogout(){
     $rootScope.user = null;
     console.log("set to none");
@@ -30,7 +90,10 @@ fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http
     }
 
    });**/
+
  }]);
+
+
 
 fp498Controllers.controller('LoginController', ['$scope', '$rootScope', 'CommonData' , '$http', '$location', function($scope, $rootScope, CommonData, $http, $location) {
   $scope.data = "";
@@ -60,7 +123,12 @@ fp498Controllers.controller('LoginController', ['$scope', '$rootScope', 'CommonD
 
 }]);
 
-fp498Controllers.controller('SignupController', ['$scope', '$rootScope', 'CommonData' , '$http', '$location', function($scope, $rootScope, CommonData, $http, $location) {
+fp498Controllers.controller('SignupController', ['$scope', '$rootScope', 'CommonData', 'Organizations', '$http', '$location', function($scope, $rootScope, CommonData, Organizations, $http, $location) {
+  Organizations.get().success(function(data){
+    $scope.orgs = data;
+    console.log($scope.orgs);
+    console.log($scope.orgs[0].name);
+  })
   $scope.data = "";
   $scope.newStudent = {
       netId: "",
@@ -149,9 +217,16 @@ fp498Controllers.controller('OrgFeedController', ['$scope', '$http', '$timeout',
     });
       }, 200);
   });
-
+  $scope.categories = [];
   Organizations.get().success(function(data){
     $scope.organizations = data;
+      for(var k in $scope.organizations){
+        for(var l in $scope.organizations[k].category){
+          if($scope.categories.indexOf($scope.organizations[k].category[l])==-1){
+            $scope.categories.push($scope.organizations[k].category[l]);
+          }
+        }
+      }
   });
 
   $scope.searchOrganizations = function (row) {
@@ -167,6 +242,17 @@ fp498Controllers.controller('OrgFeedController', ['$scope', '$http', '$timeout',
       $("#calendar").kendoCalendar();
   });
 
+  $scope.catFilter = function(value){
+      console.log("cat filter");
+      $scope.myFilter = {category: value};
+    }
+
+   document.getElementById("addorg").onclick = function () {
+          location.href = "/#/addorganization";
+    }
+ $scope.option = {
+  name: 'member'
+ };
 
 
 }]);
@@ -212,8 +298,8 @@ fp498Controllers.controller('OrganizationDetailController', ['$scope', '$http', 
 /** Add Organization **/
 fp498Controllers.controller('AddOrganizationController', ['$scope' , '$http', 'Organizations', '$window' , function($scope, $http, Organizations, $window) {
    $scope.newOrg = {
-      name: "New Organization",
-      description: "web-programming",
+      name: "",
+      description: "",
       category: [],
       leaders: [],
       members: [],

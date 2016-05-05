@@ -14,6 +14,10 @@
             <label>Password</label>
             <input type="password" class="form-control" name="password" ng-model="newStudent.password">
         </div>
+        <div class="dropdown">
+        <select class="ui fluid search dropdown" multiple="" ng-options="org.value as org.label for org in orgs">
+        </select>
+        </div><br><br>
 
         <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Signup</button><a href="#/login" class="mdl-button mdl-js-button mdl-button--primary">Login</a>
     </form>

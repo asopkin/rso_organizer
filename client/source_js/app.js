@@ -15,8 +15,8 @@ app.config(['$routeProvider', function($routeProvider) {
     controller: 'SettingsController'
   }).
   when('/home', {
-    templateUrl: 'partials/home.html',
-    controller: 'HomeController'
+    templateUrl: 'partials/organizationlist.html',
+    controller: 'OrgFeedController'
   }).
   when('/organizations', {
     templateUrl: 'partials/organizationlist.html',

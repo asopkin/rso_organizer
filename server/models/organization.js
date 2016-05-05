@@ -6,6 +6,7 @@ var schema = {
     category    :  [String],
 	leaders     :  [String],
     members     :  [String],
+    emails		:  [String],
     events      :  [String]
 };
 

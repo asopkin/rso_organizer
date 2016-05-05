@@ -67,7 +67,8 @@ var organization = {
                   category    :   req.body.category,
                   leaders     :   req.body.leaders,
                   members     :   req.body.members,
-                  events      :   req.body.events
+                  events      :   req.body.events,
+                  emails      :   req.body.emails
               }
           },
           function(err,data){
