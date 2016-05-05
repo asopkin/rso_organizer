@@ -281,6 +281,28 @@ fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '
    document.getElementById("addorg").onclick = function () {
           location.href = "/#/addorganization";
     }
+  $scope.getCategoryName = function(raw_name){
+    raw_name = String(raw_name);
+    return raw_name.replace('"', '');
+  }
+ $scope.getIcon = function(cat_name){
+  cat_name = String(cat_name);
+  if(cat_name=="social"){
+    return "users";
+  }
+  else if(cat_name=="professional"){
+    return "briefcase";
+  }
+  else if(cat_name=="active"){
+    return "stethoscope";
+  }
+  else if(cat_name=="greek"){
+    return "trophy";
+  }
+  else{
+    return "globe";
+  }
+ }   
  $scope.option = {
   name: 'member'
  };

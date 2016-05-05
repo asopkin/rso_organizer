@@ -4438,9 +4438,13 @@ select:focus {
 //}*/
 /* line 300, ../../source_sass/_base.scss */
 .card {
-  margin: 10px; }
+  margin: 10px;
+  overflow: scroll; }
+  /* line 303, ../../source_sass/_base.scss */
+  .card #descrip {
+    overflow: scroll; }
 
-/* line 305, ../../source_sass/_base.scss */
+/* line 309, ../../source_sass/_base.scss */
 #stud-bucket {
   margin-left: 5px;
   margin-right: 5px;
@@ -4450,11 +4454,11 @@ select:focus {
   text-align: center;
   line-height: 60px; }
 
-/* line 314, ../../source_sass/_base.scss */
+/* line 318, ../../source_sass/_base.scss */
 #student-page {
   clear: both;
   margin: 0 auto; }
-  /* line 318, ../../source_sass/_base.scss */
+  /* line 322, ../../source_sass/_base.scss */
   #student-page #add-button {
     /* placement */
     margin: 0 auto;
@@ -4471,21 +4475,21 @@ select:focus {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 337, ../../source_sass/_base.scss */
+/* line 341, ../../source_sass/_base.scss */
 .stud-grid {
   margin-top: 50px;
   margin: 0 auto;
   margin-left: 100px;
   width: 100%; }
 
-/* line 344, ../../source_sass/_base.scss */
+/* line 348, ../../source_sass/_base.scss */
 span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal; }
 
 /** slider **/
-/* line 350, ../../source_sass/_base.scss */
+/* line 354, ../../source_sass/_base.scss */
 .event-content {
   /* borders */
   border-top: 3px solid #FDAE84;
@@ -4500,7 +4504,7 @@ span {
   background-color: white;
   color: black; }
 
-/* line 367, ../../source_sass/_base.scss */
+/* line 371, ../../source_sass/_base.scss */
 .event-content :after {
   content: "";
   display: block;
@@ -4513,11 +4517,11 @@ span {
   border-top: 3px solid #ECC7C0;
   border-bottom: 3px solid #ECC7C0; }
 
-/* line 379, ../../source_sass/_base.scss */
+/* line 383, ../../source_sass/_base.scss */
 .full-date {
   margin-top: 20px; }
 
-/* line 385, ../../source_sass/_base.scss */
+/* line 389, ../../source_sass/_base.scss */
 .date {
   background-color: white;
   color: #FF5722;
@@ -4527,81 +4531,80 @@ span {
   vertical-align: middle;
   margin-left: 3px;
   text-align: center; }
-  /* line 396, ../../source_sass/_base.scss */
+  /* line 400, ../../source_sass/_base.scss */
   .date #month {
     text-transform: uppercase;
     font-size: 30px; }
-  /* line 400, ../../source_sass/_base.scss */
+  /* line 404, ../../source_sass/_base.scss */
   .date #day {
     vertical-align: bottom;
     font-size: 40px; }
-  /* line 404, ../../source_sass/_base.scss */
+  /* line 408, ../../source_sass/_base.scss */
   .date #year {
     vertical-align: middle; }
 
-/* line 408, ../../source_sass/_base.scss */
+/* line 412, ../../source_sass/_base.scss */
 #event-info {
   list-style-type: none;
   display: inline-block;
   text-align: center;
   margin-top: 40px; }
-  /* line 414, ../../source_sass/_base.scss */
+  /* line 418, ../../source_sass/_base.scss */
   #event-info #cal {
     font-size: 25px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
-  /* line 421, ../../source_sass/_base.scss */
+  /* line 425, ../../source_sass/_base.scss */
   #event-info i {
     font-size: 40px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
 
-/* line 429, ../../source_sass/_base.scss */
+/* line 433, ../../source_sass/_base.scss */
 .demo-card-event.mdl-card {
-  width: 256px;
-  height: 256px;
-  background: #3E4EB8; }
+  background: #3E4EB8;
+  margin-bottom: 70px; }
 
-/* line 434, ../../source_sass/_base.scss */
+/* line 437, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions {
   border-color: rgba(255, 255, 255, 0.2); }
 
-/* line 437, ../../source_sass/_base.scss */
+/* line 440, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title {
   align-items: flex-start; }
 
-/* line 440, ../../source_sass/_base.scss */
+/* line 443, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title > h4 {
   margin-top: 0; }
 
-/* line 443, ../../source_sass/_base.scss */
+/* line 446, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
   align-items: center; }
 
-/* line 448, ../../source_sass/_base.scss */
+/* line 451, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions > .material-icons {
   padding-right: 10px; }
 
-/* line 451, ../../source_sass/_base.scss */
+/* line 454, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title,
 .demo-card-event > .mdl-card__actions,
 .demo-card-event > .mdl-card__actions > .mdl-button {
   color: #fff; }
 
-/* line 457, ../../source_sass/_base.scss */
+/* line 460, ../../source_sass/_base.scss */
 .card {
   margin: 0 auto;
   margin-top: 150px;
   text-align: center; }
-  /* line 461, ../../source_sass/_base.scss */
+  /* line 464, ../../source_sass/_base.scss */
   .card h4 {
     text-align: center; }
 
-/* line 467, ../../source_sass/_base.scss */
+/* line 470, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
@@ -4611,27 +4614,27 @@ span {
   list-style-type: none;
   text-align: center;
   /* margins */ }
-  /* line 480, ../../source_sass/_base.scss */
+  /* line 483, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-  /* line 486, ../../source_sass/_base.scss */
+  /* line 489, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-  /* line 493, ../../source_sass/_base.scss */
+  /* line 496, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
 
 /** Add student **/
-/* line 499, ../../source_sass/_base.scss */
+/* line 502, ../../source_sass/_base.scss */
 .add-student-view {
   /* button */
   /* form styling */ }
-  /* line 500, ../../source_sass/_base.scss */
+  /* line 503, ../../source_sass/_base.scss */
   .add-student-view h1 {
     text-align: center;
     font-weight: bold;
@@ -4640,7 +4643,7 @@ span {
     color: #3C2E3D;
     margin: auto;
     clear: both; }
-  /* line 510, ../../source_sass/_base.scss */
+  /* line 513, ../../source_sass/_base.scss */
   .add-student-view #submit-button {
     /* placement */
     margin: auto;
@@ -4653,17 +4656,17 @@ span {
     text-align: center;
     font-size: 20px;
     background-color: #3C2E3D; }
-  /* line 525, ../../source_sass/_base.scss */
+  /* line 528, ../../source_sass/_base.scss */
   .add-student-view .required:after {
     content: "*";
     color: red;
     display: inline;
     clear: both; }
-  /* line 527, ../../source_sass/_base.scss */
+  /* line 530, ../../source_sass/_base.scss */
   .add-student-view .required input {
     background-color: rgba(255, 0, 0, 0.1);
     color: black; }
-  /* line 532, ../../source_sass/_base.scss */
+  /* line 535, ../../source_sass/_base.scss */
   .add-student-view input {
     width: 80%;
     margin: 0 auto;
@@ -4671,7 +4674,7 @@ span {
     vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 540, ../../source_sass/_base.scss */
+  /* line 543, ../../source_sass/_base.scss */
   .add-student-view label {
     display: inline-block;
     vertical-align: middle;
@@ -4679,28 +4682,28 @@ span {
     margin-right: 20px; }
 
 /** calendar **/
-/* line 548, ../../source_sass/_base.scss */
+/* line 551, ../../source_sass/_base.scss */
 .dropdown-menu {
   list-style-type: none; }
-  /* line 549, ../../source_sass/_base.scss */
+  /* line 552, ../../source_sass/_base.scss */
   .dropdown-menu a {
     background-color: #FF5722;
     padding: 3px 3px 3px 3px;
     border-radius: 10%;
     color: white; }
-  /* line 556, ../../source_sass/_base.scss */
+  /* line 559, ../../source_sass/_base.scss */
   .dropdown-menu li {
     color: red; }
 
 /* profile */
-/* line 562, ../../source_sass/_base.scss */
+/* line 565, ../../source_sass/_base.scss */
 .well {
   margin: 0 auto;
   width: 80%;
   margin-top: 10px; }
 
 /** event list **/
-/* line 570, ../../source_sass/_base.scss */
+/* line 573, ../../source_sass/_base.scss */
 #cal {
   margin-left: 5px;
   color: black; }
