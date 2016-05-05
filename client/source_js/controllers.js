@@ -171,7 +171,7 @@ fp498Controllers.controller('LoginController', ['$scope', '$rootScope', 'CommonD
 
 fp498Controllers.controller('SignupController', ['$scope', '$rootScope', 'CommonData', 'Organizations', '$http', '$location', function($scope, $rootScope, CommonData, Organizations, $http, $location) {
   Organizations.get().success(function(data){
-    $scope.orgs2 = data;
+    $scope.orgs = data;
     console.log($scope.orgs);
     console.log($scope.orgs[0].name);
   })
