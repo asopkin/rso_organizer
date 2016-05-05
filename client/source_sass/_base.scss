@@ -291,6 +291,15 @@ select:focus {
 	width: 100%;
 }
 
+#org-grid{
+	height: 1000px;
+	overflow: scroll;
+}
+
+#event-grid{
+	height:1000px;
+	overflow: scroll;
+}
 /** student grid **/
 /*//.org-grid{
 //	margin: 0 auto;

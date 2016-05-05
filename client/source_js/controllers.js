@@ -281,6 +281,7 @@ fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '
    document.getElementById("addorg").onclick = function () {
           location.href = "/#/addorganization";
     }
+   /** names and icons **/ 
   $scope.getCategoryName = function(raw_name){
     raw_name = String(raw_name);
     return raw_name.replace('"', '');
@@ -306,6 +307,7 @@ fp498Controllers.controller('OrganizationListController', ['$scope' , '$http', '
  $scope.option = {
   name: 'member'
  };
+
 
 }]);
 

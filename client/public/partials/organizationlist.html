@@ -19,37 +19,10 @@
 
 <div class="add-button" id="addorg">Add</div>
   
-<!-- slider -->
-<!--
-<div class="slide-container">
-  <div class="crsl" >
-    <div ng-repeat="event in events">
-      <div class="demo-card-square mdl-card mdl-shadow--2dp" id="event-info">
-      <div>{{event.name }}</div>
-      <div class="full-date">
-      <div class="topdate">
-      <span class="date" id="month">{{ event.date | date:'MMM' }}</span>
-      <span class="date" id="day">{{ event.date | date:'dd' }}</span>
-      <div class="fa fa-calendar" id="cal"></div>
-      </div>
-      </div>
-      <addtocalendar
-      start-date="20150704T190000"
-      end-date="20150704T210000"
-      title="{{ event.name }}"
-      location="Battery Park City, New York, NY"
-      class-name="mui-dropdown_menu"
-      description="{{ event.description }}"
-      btn-text="">
-      </addtocalendar>
-      </div>
-  </div>
-</div>-->
-<!-- end slider -->
 
 </div>
 <div class="row">
-  <ul class="mdl-grid">
+  <ul class="mdl-grid" id="org-grid">
     <li ng-repeat="org in organizations | filter: searchOrganizations  | filter: myFilter" class="mdl-list__item mdl-cell mdl-cell--4-col">
       <div class="demo-card-square mdl-card mdl-shadow--4dp">
         <div class="mdl-card__title mdl-card--expand">
@@ -69,8 +42,12 @@
       </div>
     </li>
   </ul><br><br>
-  <!-- date pick -->
-<!--<iframe src="http://calendar.google.com/calendar/embed?src=v7pepmi7g8e2pbp1gicuej8h38%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="200" height="400" frameborder="0" scrolling="no"></iframe><br><br>-->
+    <pagination 
+      ng-model="currentPage"
+      total-items="todos.length"
+      max-size="maxSize"  
+      boundary-links="true">
+    </pagination>
 
 </div>
 </center>
