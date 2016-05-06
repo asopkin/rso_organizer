@@ -4310,7 +4310,7 @@ body {
   margin-top: 20px; }
 
 /*//.org-list{
-//	list-style: none;
+//	list-stfyle: none;
 //	h2{
 //	font-size: 18px;
 //	text-transform: uppercase;
@@ -4331,9 +4331,15 @@ body {
 /* line 185, ../../source_sass/_base.scss */
 .add-org-form {
   margin: 0 auto;
-  width: 400px; }
+  margin-top: 80px;
+  width: 300px;
+  color: black; }
+  /* line 190, ../../source_sass/_base.scss */
+  .add-org-form #submit-button {
+    margin-top: 10px;
+    border: 1px solid #FF5722; }
 
-/* line 189, ../../source_sass/_base.scss */
+/* line 195, ../../source_sass/_base.scss */
 #addorg {
   margin-top: 5px;
   margin: 0 auto;
@@ -4349,7 +4355,7 @@ body {
 
 /* ==========  Select Field ========== */
 /* Style Select Field */
-/* line 206, ../../source_sass/_base.scss */
+/* line 212, ../../source_sass/_base.scss */
 select {
   font-family: inherit;
   background-color: transparent;
@@ -4361,27 +4367,27 @@ select {
   border-bottom: 1px solid black; }
 
 /* Remove focus */
-/* line 218, ../../source_sass/_base.scss */
+/* line 224, ../../source_sass/_base.scss */
 select:focus {
   outline: none; }
 
 /* Hide label */
-/* line 222, ../../source_sass/_base.scss */
+/* line 228, ../../source_sass/_base.scss */
 .mdl-selectfield label {
   display: none; }
 
 /* Use custom arrow */
-/* line 225, ../../source_sass/_base.scss */
+/* line 231, ../../source_sass/_base.scss */
 .mdl-selectfield {
   font-family: 'Roboto','Helvetica','Arial',sans-serif;
   position: relative; }
-  /* line 228, ../../source_sass/_base.scss */
+  /* line 234, ../../source_sass/_base.scss */
   .mdl-selectfield:after {
     position: absolute;
     top: 0.75em; }
 
 /** organization grid **/
-/* line 234, ../../source_sass/_base.scss */
+/* line 240, ../../source_sass/_base.scss */
 #org-bucket {
   /* font */
   font-size: 18px;
@@ -4397,16 +4403,16 @@ select:focus {
   line-height: 60px;
   /** share **/
   /** radio buttons **/ }
-  /* line 253, ../../source_sass/_base.scss */
+  /* line 259, ../../source_sass/_base.scss */
   #org-bucket #share {
     margin-bottom: 2px;
     vertical-align: top;
     text-align: center; }
-  /* line 260, ../../source_sass/_base.scss */
+  /* line 266, ../../source_sass/_base.scss */
   #org-bucket .radio-buttons {
     margin: 0 auto;
     width: 80%; }
-  /* line 264, ../../source_sass/_base.scss */
+  /* line 270, ../../source_sass/_base.scss */
   #org-bucket .options {
     /* alignment */
     vertical-align: top;
@@ -4415,7 +4421,7 @@ select:focus {
     /* padding and margins */
     padding-left: 5px;
     margin: 0 auto; }
-  /* line 275, ../../source_sass/_base.scss */
+  /* line 281, ../../source_sass/_base.scss */
   #org-bucket #leave-button {
     /* placement */
     margin-top: 5px;
@@ -4427,17 +4433,17 @@ select:focus {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 290, ../../source_sass/_base.scss */
+/* line 296, ../../source_sass/_base.scss */
 .org-grid {
   margin: 0 auto;
   width: 100%; }
 
-/* line 295, ../../source_sass/_base.scss */
+/* line 301, ../../source_sass/_base.scss */
 #org-grid {
   /**height: 1000px;
   overflow: scroll;**/ }
 
-/* line 300, ../../source_sass/_base.scss */
+/* line 306, ../../source_sass/_base.scss */
 #event-grid {
   height: 1000px;
   overflow: scroll; }
@@ -4447,24 +4453,24 @@ select:focus {
 //	margin: 0 auto;
 //	width: 80%;
 //}*/
-/* line 310, ../../source_sass/_base.scss */
+/* line 316, ../../source_sass/_base.scss */
 .card {
   margin: 10px;
   overflow: scroll; }
-  /* line 313, ../../source_sass/_base.scss */
+  /* line 319, ../../source_sass/_base.scss */
   .card #descrip {
     overflow: scroll; }
 
 /** edit org **/
-/* line 319, ../../source_sass/_base.scss */
+/* line 325, ../../source_sass/_base.scss */
 .edit-org-card {
   margin-top: 40px; }
-  /* line 321, ../../source_sass/_base.scss */
+  /* line 327, ../../source_sass/_base.scss */
   .edit-org-card input {
     color: black;
     background-color: white; }
 
-/* line 327, ../../source_sass/_base.scss */
+/* line 333, ../../source_sass/_base.scss */
 #stud-bucket {
   margin-left: 5px;
   margin-right: 5px;
@@ -4474,11 +4480,11 @@ select:focus {
   text-align: center;
   line-height: 60px; }
 
-/* line 336, ../../source_sass/_base.scss */
+/* line 342, ../../source_sass/_base.scss */
 #student-page {
   clear: both;
   margin: 0 auto; }
-  /* line 340, ../../source_sass/_base.scss */
+  /* line 346, ../../source_sass/_base.scss */
   #student-page #add-button {
     /* placement */
     margin: 0 auto;
@@ -4495,21 +4501,21 @@ select:focus {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 359, ../../source_sass/_base.scss */
+/* line 365, ../../source_sass/_base.scss */
 .stud-grid {
   margin-top: 50px;
   margin: 0 auto;
   margin-left: 100px;
   width: 100%; }
 
-/* line 366, ../../source_sass/_base.scss */
+/* line 372, ../../source_sass/_base.scss */
 span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal; }
 
 /** slider **/
-/* line 372, ../../source_sass/_base.scss */
+/* line 378, ../../source_sass/_base.scss */
 .event-content {
   /* borders */
   border-top: 3px solid #FDAE84;
@@ -4524,7 +4530,7 @@ span {
   background-color: white;
   color: black; }
 
-/* line 389, ../../source_sass/_base.scss */
+/* line 395, ../../source_sass/_base.scss */
 .event-content :after {
   content: "";
   display: block;
@@ -4537,11 +4543,11 @@ span {
   border-top: 3px solid #ECC7C0;
   border-bottom: 3px solid #ECC7C0; }
 
-/* line 401, ../../source_sass/_base.scss */
+/* line 407, ../../source_sass/_base.scss */
 .full-date {
   margin-top: 20px; }
 
-/* line 407, ../../source_sass/_base.scss */
+/* line 413, ../../source_sass/_base.scss */
 .date {
   background-color: white;
   color: #FF5722;
@@ -4551,80 +4557,80 @@ span {
   vertical-align: middle;
   margin-left: 3px;
   text-align: center; }
-  /* line 418, ../../source_sass/_base.scss */
+  /* line 424, ../../source_sass/_base.scss */
   .date #month {
     text-transform: uppercase;
     font-size: 30px; }
-  /* line 422, ../../source_sass/_base.scss */
+  /* line 428, ../../source_sass/_base.scss */
   .date #day {
     vertical-align: bottom;
     font-size: 40px; }
-  /* line 426, ../../source_sass/_base.scss */
+  /* line 432, ../../source_sass/_base.scss */
   .date #year {
     vertical-align: middle; }
 
-/* line 430, ../../source_sass/_base.scss */
+/* line 436, ../../source_sass/_base.scss */
 #event-info {
   list-style-type: none;
   display: inline-block;
   text-align: center;
   margin-top: 40px; }
-  /* line 436, ../../source_sass/_base.scss */
+  /* line 442, ../../source_sass/_base.scss */
   #event-info #cal {
     font-size: 25px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
-  /* line 443, ../../source_sass/_base.scss */
+  /* line 449, ../../source_sass/_base.scss */
   #event-info i {
     font-size: 40px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
 
-/* line 451, ../../source_sass/_base.scss */
+/* line 457, ../../source_sass/_base.scss */
 .demo-card-event.mdl-card {
   background: #3E4EB8;
   margin-bottom: 70px; }
 
-/* line 455, ../../source_sass/_base.scss */
+/* line 461, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions {
   border-color: rgba(255, 255, 255, 0.2); }
 
-/* line 458, ../../source_sass/_base.scss */
+/* line 464, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title {
   align-items: flex-start; }
 
-/* line 461, ../../source_sass/_base.scss */
+/* line 467, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title > h4 {
   margin-top: 0; }
 
-/* line 464, ../../source_sass/_base.scss */
+/* line 470, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
   align-items: center; }
 
-/* line 469, ../../source_sass/_base.scss */
+/* line 475, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions > .material-icons {
   padding-right: 10px; }
 
-/* line 472, ../../source_sass/_base.scss */
+/* line 478, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title,
 .demo-card-event > .mdl-card__actions,
 .demo-card-event > .mdl-card__actions > .mdl-button {
   color: #fff; }
 
-/* line 478, ../../source_sass/_base.scss */
+/* line 484, ../../source_sass/_base.scss */
 .card {
   margin: 0 auto;
   margin-top: 150px;
   text-align: center; }
-  /* line 482, ../../source_sass/_base.scss */
+  /* line 488, ../../source_sass/_base.scss */
   .card h4 {
     text-align: center; }
 
-/* line 488, ../../source_sass/_base.scss */
+/* line 494, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
@@ -4634,27 +4640,27 @@ span {
   list-style-type: none;
   text-align: center;
   /* margins */ }
-  /* line 501, ../../source_sass/_base.scss */
+  /* line 507, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-  /* line 507, ../../source_sass/_base.scss */
+  /* line 513, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-  /* line 514, ../../source_sass/_base.scss */
+  /* line 520, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
 
 /** Add student **/
-/* line 520, ../../source_sass/_base.scss */
+/* line 526, ../../source_sass/_base.scss */
 .add-student-view {
   /* button */
   /* form styling */ }
-  /* line 521, ../../source_sass/_base.scss */
+  /* line 527, ../../source_sass/_base.scss */
   .add-student-view h1 {
     text-align: center;
     font-weight: bold;
@@ -4663,12 +4669,13 @@ span {
     color: #3C2E3D;
     margin: auto;
     clear: both; }
-  /* line 531, ../../source_sass/_base.scss */
+  /* line 537, ../../source_sass/_base.scss */
   .add-student-view #submit-button {
     /* placement */
     margin: auto;
     width: 100px;
     padding: 2px 2px 2px 2px;
+    border: 2px solid #FF5722;
     margin-top: 15px;
     clear: both;
     /* text */
@@ -4676,17 +4683,17 @@ span {
     text-align: center;
     font-size: 20px;
     background-color: #3C2E3D; }
-  /* line 546, ../../source_sass/_base.scss */
+  /* line 553, ../../source_sass/_base.scss */
   .add-student-view .required:after {
     content: "*";
     color: red;
     display: inline;
     clear: both; }
-  /* line 548, ../../source_sass/_base.scss */
+  /* line 555, ../../source_sass/_base.scss */
   .add-student-view .required input {
     background-color: rgba(255, 0, 0, 0.1);
     color: black; }
-  /* line 553, ../../source_sass/_base.scss */
+  /* line 560, ../../source_sass/_base.scss */
   .add-student-view input {
     width: 80%;
     margin: 0 auto;
@@ -4694,7 +4701,7 @@ span {
     vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 561, ../../source_sass/_base.scss */
+  /* line 568, ../../source_sass/_base.scss */
   .add-student-view label {
     display: inline-block;
     vertical-align: middle;
@@ -4702,36 +4709,152 @@ span {
     margin-right: 20px; }
 
 /** select **/
-/* line 570, ../../source_sass/_base.scss */
+/* line 577, ../../source_sass/_base.scss */
 #org-select {
   height: 70px; }
 
 /** calendar **/
-/* line 574, ../../source_sass/_base.scss */
+/* line 581, ../../source_sass/_base.scss */
 .dropdown-menu {
   list-style-type: none; }
-  /* line 575, ../../source_sass/_base.scss */
+  /* line 582, ../../source_sass/_base.scss */
   .dropdown-menu a {
     background-color: #FF5722;
     padding: 3px 3px 3px 3px;
     border-radius: 10%;
     color: white; }
-  /* line 582, ../../source_sass/_base.scss */
+  /* line 589, ../../source_sass/_base.scss */
   .dropdown-menu li {
     color: red; }
 
 /* profile */
-/* line 588, ../../source_sass/_base.scss */
+/* line 595, ../../source_sass/_base.scss */
 .well {
   margin: 0 auto;
   width: 80%;
   margin-top: 10px; }
 
 /** event list **/
-/* line 596, ../../source_sass/_base.scss */
+/* line 603, ../../source_sass/_base.scss */
 #cal {
   margin-left: 5px;
   color: black; }
+
+/** styling for form **/
+/*Disable MDL validation styles*/
+/* line 611, ../../source_sass/_base.scss */
+.mdl-textfield.is-invalid .mdl-textfield__input {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+
+/* line 615, ../../source_sass/_base.scss */
+.mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
+  color: rgba(0, 0, 0, 0.26); }
+
+/* line 619, ../../source_sass/_base.scss */
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label,
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label {
+  color: #3f51b5; }
+
+/* line 624, ../../source_sass/_base.scss */
+.mdl-textfield.is-invalid .mdl-textfield__label:after {
+  background-color: #3f51b5; }
+
+/*Validation styles based on MDL*/
+/* line 629, ../../source_sass/_base.scss */
+.ng-invalid.ng-invalid.ng-touched {
+  border-color: #de3226;
+  box-shadow: none; }
+
+/* line 634, ../../source_sass/_base.scss */
+.ng-invalid.ng-invalid.ng-touched + label {
+  color: #de3226;
+  font-size: 12px; }
+
+/* line 639, ../../source_sass/_base.scss */
+.ng-invalid.ng-invalid.ng-touched + label:after {
+  background-color: #de3226; }
+
+/* line 643, ../../source_sass/_base.scss */
+.ng-invalid.ng-invalid.ng-touched ~ .mdl-tooltip--validation {
+  background-color: #de3226; }
+
+/* line 647, ../../source_sass/_base.scss */
+.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus {
+  border-color: #ffc107;
+  box-shadow: none; }
+
+/* line 652, ../../source_sass/_base.scss */
+.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label {
+  color: #ffc107;
+  font-size: 12px; }
+
+/* line 657, ../../source_sass/_base.scss */
+.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label:after {
+  background-color: #ffc107; }
+
+/* line 661, ../../source_sass/_base.scss */
+.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus ~ .mdl-tooltip--validation {
+  background-color: #ffc107; }
+
+/* line 665, ../../source_sass/_base.scss */
+.ng-invalid.ng-touched:not(:focus) + label::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: "warning";
+  position: absolute;
+  right: 0;
+  bottom: 20px; }
+
+/* line 697, ../../source_sass/_base.scss */
+.ng-valid.ng-touched:not(:focus) + label::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  content: "done";
+  position: absolute;
+  right: 0;
+  bottom: 20px; }
+
+/*Basic styles*/
+/* line 730, ../../source_sass/_base.scss */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none; }
 
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles
