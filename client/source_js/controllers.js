@@ -375,6 +375,21 @@ fp498Controllers.controller('OrganizationDetailController', ['$scope', '$http', 
   Organizations.getOne($scope.orgid).success(function(data){
     $scope.organization = data;
   });
+  $scope.orgevents = [];
+  Events.get().success(function(data){
+    $scope.events = data;
+    for(var k in $scope.events){
+      console.log($scope.orgid);
+      console.log($scope.events[k].organizationID);
+      var searchVal = $scope.events[k].organizationID.replace(']', '');
+      searchVal = searchVal.replace('[', '');
+      searchVal = searchVal.replace(/'/g, '');
+      if(searchVal==$scope.orgid){
+        console.log("pushed in");
+        $scope.orgevents.push($scope.events[k]);
+      }
+    }
+  })
   $scope.followOrg = function(orgID){
     console.log(orgID);
     console.log($rootScope.user);
