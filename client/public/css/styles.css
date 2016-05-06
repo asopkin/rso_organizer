@@ -4624,13 +4624,9 @@ span {
 /* line 484, ../../source_sass/_base.scss */
 .card {
   margin: 0 auto;
-  margin-top: 150px;
-  text-align: center; }
-  /* line 488, ../../source_sass/_base.scss */
-  .card h4 {
-    text-align: center; }
+  margin-top: 150px; }
 
-/* line 494, ../../source_sass/_base.scss */
+/* line 492, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
@@ -4640,27 +4636,27 @@ span {
   list-style-type: none;
   text-align: center;
   /* margins */ }
-  /* line 507, ../../source_sass/_base.scss */
+  /* line 505, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-  /* line 513, ../../source_sass/_base.scss */
+  /* line 511, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-  /* line 520, ../../source_sass/_base.scss */
+  /* line 518, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
 
 /** Add student **/
-/* line 526, ../../source_sass/_base.scss */
+/* line 524, ../../source_sass/_base.scss */
 .add-student-view {
   /* button */
   /* form styling */ }
-  /* line 527, ../../source_sass/_base.scss */
+  /* line 525, ../../source_sass/_base.scss */
   .add-student-view h1 {
     text-align: center;
     font-weight: bold;
@@ -4669,7 +4665,7 @@ span {
     color: #3C2E3D;
     margin: auto;
     clear: both; }
-  /* line 537, ../../source_sass/_base.scss */
+  /* line 535, ../../source_sass/_base.scss */
   .add-student-view #submit-button {
     /* placement */
     margin: auto;
@@ -4683,17 +4679,17 @@ span {
     text-align: center;
     font-size: 20px;
     background-color: #3C2E3D; }
-  /* line 553, ../../source_sass/_base.scss */
+  /* line 551, ../../source_sass/_base.scss */
   .add-student-view .required:after {
     content: "*";
     color: red;
     display: inline;
     clear: both; }
-  /* line 555, ../../source_sass/_base.scss */
+  /* line 553, ../../source_sass/_base.scss */
   .add-student-view .required input {
     background-color: rgba(255, 0, 0, 0.1);
     color: black; }
-  /* line 560, ../../source_sass/_base.scss */
+  /* line 558, ../../source_sass/_base.scss */
   .add-student-view input {
     width: 80%;
     margin: 0 auto;
@@ -4701,7 +4697,7 @@ span {
     vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 568, ../../source_sass/_base.scss */
+  /* line 566, ../../source_sass/_base.scss */
   .add-student-view label {
     display: inline-block;
     vertical-align: middle;
@@ -4709,94 +4705,94 @@ span {
     margin-right: 20px; }
 
 /** select **/
-/* line 577, ../../source_sass/_base.scss */
+/* line 575, ../../source_sass/_base.scss */
 #org-select {
   height: 70px; }
 
 /** calendar **/
-/* line 581, ../../source_sass/_base.scss */
+/* line 579, ../../source_sass/_base.scss */
 .dropdown-menu {
   list-style-type: none; }
-  /* line 582, ../../source_sass/_base.scss */
+  /* line 580, ../../source_sass/_base.scss */
   .dropdown-menu a {
     background-color: #FF5722;
     padding: 3px 3px 3px 3px;
     border-radius: 10%;
     color: white; }
-  /* line 589, ../../source_sass/_base.scss */
+  /* line 587, ../../source_sass/_base.scss */
   .dropdown-menu li {
     color: red; }
 
 /* profile */
-/* line 595, ../../source_sass/_base.scss */
+/* line 593, ../../source_sass/_base.scss */
 .well {
   margin: 0 auto;
   width: 80%;
   margin-top: 10px; }
 
 /** event list **/
-/* line 603, ../../source_sass/_base.scss */
+/* line 601, ../../source_sass/_base.scss */
 #cal {
   margin-left: 5px;
   color: black; }
 
 /** styling for form **/
 /*Disable MDL validation styles*/
-/* line 611, ../../source_sass/_base.scss */
+/* line 609, ../../source_sass/_base.scss */
 .mdl-textfield.is-invalid .mdl-textfield__input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
 
-/* line 615, ../../source_sass/_base.scss */
+/* line 613, ../../source_sass/_base.scss */
 .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
   color: rgba(0, 0, 0, 0.26); }
 
-/* line 619, ../../source_sass/_base.scss */
+/* line 617, ../../source_sass/_base.scss */
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
 .mdl-textfield--floating-label.is-dirty .mdl-textfield__label {
   color: #3f51b5; }
 
-/* line 624, ../../source_sass/_base.scss */
+/* line 622, ../../source_sass/_base.scss */
 .mdl-textfield.is-invalid .mdl-textfield__label:after {
   background-color: #3f51b5; }
 
 /*Validation styles based on MDL*/
-/* line 629, ../../source_sass/_base.scss */
+/* line 627, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched {
   border-color: #de3226;
   box-shadow: none; }
 
-/* line 634, ../../source_sass/_base.scss */
+/* line 632, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched + label {
   color: #de3226;
   font-size: 12px; }
 
-/* line 639, ../../source_sass/_base.scss */
+/* line 637, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched + label:after {
   background-color: #de3226; }
 
-/* line 643, ../../source_sass/_base.scss */
+/* line 641, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched ~ .mdl-tooltip--validation {
   background-color: #de3226; }
 
-/* line 647, ../../source_sass/_base.scss */
+/* line 645, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus {
   border-color: #ffc107;
   box-shadow: none; }
 
-/* line 652, ../../source_sass/_base.scss */
+/* line 650, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label {
   color: #ffc107;
   font-size: 12px; }
 
-/* line 657, ../../source_sass/_base.scss */
+/* line 655, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label:after {
   background-color: #ffc107; }
 
-/* line 661, ../../source_sass/_base.scss */
+/* line 659, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus ~ .mdl-tooltip--validation {
   background-color: #ffc107; }
 
-/* line 665, ../../source_sass/_base.scss */
+/* line 663, ../../source_sass/_base.scss */
 .ng-invalid.ng-touched:not(:focus) + label::before {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -4823,7 +4819,7 @@ span {
   right: 0;
   bottom: 20px; }
 
-/* line 697, ../../source_sass/_base.scss */
+/* line 695, ../../source_sass/_base.scss */
 .ng-valid.ng-touched:not(:focus) + label::before {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -4851,12 +4847,12 @@ span {
   bottom: 20px; }
 
 /*Basic styles*/
-/* line 730, ../../source_sass/_base.scss */
+/* line 728, ../../source_sass/_base.scss */
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
 
-/* line 736, ../../source_sass/_base.scss */
+/* line 734, ../../source_sass/_base.scss */
 .sameSize {
   display: flex;
   flex-wrap: flex; }
