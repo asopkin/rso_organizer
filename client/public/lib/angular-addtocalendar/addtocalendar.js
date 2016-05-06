@@ -90,7 +90,7 @@ angular
           googleCalendarUrl += '&text=' + encodeURIComponent($scope.title);
           googleCalendarUrl += '&dates=' + encodeURIComponent($scope.startDate) + '/' + encodeURIComponent($scope.endDate);
           googleCalendarUrl += '&details=' + encodeURIComponent($scope.description);
-          googleCalendarUrl += '&location=' + encodeURIComponent($scope.location);
+          googleCalendarUrl += '&location=' + "University of Illinois at Urbana-Champaign" + "Champaign"+ "Illinois" + "United States";
           console.log('ey gcal');
           console.log($scope.title);
           return googleCalendarUrl;

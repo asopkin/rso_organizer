@@ -599,14 +599,17 @@ fp498Controllers.controller('EventDetailController', ['$scope', '$http', '$timeo
   console.log($scope.eventId);
   Events.getOne($scope.eventId).success(function(data){
     $scope.event = data;
-    console.log('wat');
-    console.log(data);
-    
     var googleCalendarUrl = 'https://www.google.com/calendar/render?action=TEMPLATE';
     googleCalendarUrl += '&text=' + encodeURIComponent($scope.event.name);
-    googleCalendarUrl += '&dates=' + '20150704T190000' + '/' + '20150704T190000';
+    var encodedDate = String($scope.event.date);
+    //googleCalendarUrl += '&dates=' + '20150704T190000' + '/' + '20150704T190000';
+    encodedDate = encodedDate.replace(/-/g,'');
+    encodedDate = encodedDate.replace('.','');
+    encodedDate = encodedDate.replace(/:/g,'');
+    encodedDate = encodedDate.slice(0,-4);
+    googleCalendarUrl += '&dates=' + encodeURIComponent(encodedDate) + '/' + encodeURIComponent(encodedDate);
     googleCalendarUrl += '&details=' + encodeURIComponent($scope.event.description);
-    googleCalendarUrl += '&location=' + 'Battery+Park+City,+New+York,+NY';
+    googleCalendarUrl += '&location=' + 'University+of+Illinois+at+Urbana-Champaign,+Champaign,+Illinois,+UnitedStates';
     console.log(googleCalendarUrl);
     $scope.gCal = googleCalendarUrl;
   });
