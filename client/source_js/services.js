@@ -1,5 +1,5 @@
 var fp498Services = angular.module('fp498Services', []);
-var baseUrl = "http://localhost:4000";
+var baseUrl = "http://162.243.29.34:4000";
 
 fp498Services.factory('CommonData', function(){
     var data = "";

@@ -1,5 +1,5 @@
 var fp498Controllers = angular.module('fp498Controllers', ['720kb.datepicker', 'jshor.angular-addtocalendar']);
-var baseUrl = "http://localhost:4000";
+var baseUrl = "http://162.243.29.34:4000";
 
 /** profile **/
 fp498Controllers.controller('profileController', ['$scope', '$rootScope', '$http', '$location', 'Organizations', 'Students', '$location', '$route', function($scope, $rootScope, $http, $location, Organizations, Students, $location, $route) {
