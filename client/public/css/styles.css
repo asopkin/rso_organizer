@@ -4456,25 +4456,26 @@ select:focus {
 /* line 316, ../../source_sass/_base.scss */
 .card {
   margin: 5px;
-  overflow: hidden; }
-  /* line 319, ../../source_sass/_base.scss */
+  overflow: hidden;
+  color: #B0C4DE; }
+  /* line 321, ../../source_sass/_base.scss */
   .card #descrip {
     overflow: hidden; }
 
 /** edit org **/
-/* line 325, ../../source_sass/_base.scss */
+/* line 327, ../../source_sass/_base.scss */
 .edit-org-card {
   margin-top: 40px; }
-  /* line 327, ../../source_sass/_base.scss */
+  /* line 329, ../../source_sass/_base.scss */
   .edit-org-card input {
     color: black;
     background-color: white; }
 
-/* line 333, ../../source_sass/_base.scss */
+/* line 335, ../../source_sass/_base.scss */
 #org-card {
   min-width: 450px; }
 
-/* line 336, ../../source_sass/_base.scss */
+/* line 338, ../../source_sass/_base.scss */
 #stud-bucket {
   margin-left: 5px;
   margin-right: 5px;
@@ -4484,11 +4485,11 @@ select:focus {
   text-align: center;
   line-height: 60px; }
 
-/* line 345, ../../source_sass/_base.scss */
+/* line 347, ../../source_sass/_base.scss */
 #student-page {
   clear: both;
   margin: 0 auto; }
-  /* line 349, ../../source_sass/_base.scss */
+  /* line 351, ../../source_sass/_base.scss */
   #student-page #add-button {
     /* placement */
     margin: 0 auto;
@@ -4505,21 +4506,21 @@ select:focus {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 368, ../../source_sass/_base.scss */
+/* line 370, ../../source_sass/_base.scss */
 .stud-grid {
   margin-top: 50px;
   margin: 0 auto;
   margin-left: 100px;
   width: 100%; }
 
-/* line 375, ../../source_sass/_base.scss */
+/* line 377, ../../source_sass/_base.scss */
 span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal; }
 
 /** slider **/
-/* line 381, ../../source_sass/_base.scss */
+/* line 383, ../../source_sass/_base.scss */
 .event-content {
   /* borders */
   border-top: 3px solid #FDAE84;
@@ -4534,7 +4535,7 @@ span {
   background-color: white;
   color: black; }
 
-/* line 398, ../../source_sass/_base.scss */
+/* line 400, ../../source_sass/_base.scss */
 .event-content :after {
   content: "";
   display: block;
@@ -4547,11 +4548,11 @@ span {
   border-top: 3px solid #ECC7C0;
   border-bottom: 3px solid #ECC7C0; }
 
-/* line 410, ../../source_sass/_base.scss */
+/* line 412, ../../source_sass/_base.scss */
 .full-date {
   margin-top: 20px; }
 
-/* line 416, ../../source_sass/_base.scss */
+/* line 418, ../../source_sass/_base.scss */
 .date {
   background-color: white;
   color: #FF5722;
@@ -4561,109 +4562,78 @@ span {
   vertical-align: middle;
   margin-left: 3px;
   text-align: center; }
-  /* line 427, ../../source_sass/_base.scss */
+  /* line 429, ../../source_sass/_base.scss */
   .date #month {
     text-transform: uppercase;
     font-size: 30px; }
-  /* line 431, ../../source_sass/_base.scss */
+  /* line 433, ../../source_sass/_base.scss */
   .date #day {
     vertical-align: bottom;
     font-size: 40px; }
-  /* line 435, ../../source_sass/_base.scss */
+  /* line 437, ../../source_sass/_base.scss */
   .date #year {
     vertical-align: middle; }
 
-/* line 439, ../../source_sass/_base.scss */
+/* line 441, ../../source_sass/_base.scss */
 #event-info {
   list-style-type: none;
   display: inline-block;
   text-align: center;
   margin-top: 40px; }
-  /* line 445, ../../source_sass/_base.scss */
+  /* line 447, ../../source_sass/_base.scss */
   #event-info #cal {
     font-size: 25px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
-  /* line 452, ../../source_sass/_base.scss */
+  /* line 454, ../../source_sass/_base.scss */
   #event-info i {
     font-size: 40px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
 
-/* line 460, ../../source_sass/_base.scss */
+/* line 462, ../../source_sass/_base.scss */
 .demo-card-event.mdl-card {
   background: #3E4EB8;
   margin-bottom: 30px;
   width: 700px; }
 
-<<<<<<< HEAD
-/* line 462, ../../source_sass/_base.scss */
-.demo-card-event > .mdl-card__actions {
-  border-color: rgba(255, 255, 255, 0.2); }
-
-/* line 465, ../../source_sass/_base.scss */
-.demo-card-event > .mdl-card__title {
-  align-items: flex-start; }
-
-/* line 468, ../../source_sass/_base.scss */
-.demo-card-event > .mdl-card__title > h4 {
-  margin-top: 0; }
-
-/* line 471, ../../source_sass/_base.scss */
-=======
-/* line 464, ../../source_sass/_base.scss */
-.demo-card-event > .mdl-card__actions {
-  border-color: rgba(255, 255, 255, 0.2); }
-
 /* line 467, ../../source_sass/_base.scss */
-.demo-card-event > .mdl-card__title {
-  align-items: flex-start; }
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2); }
 
 /* line 470, ../../source_sass/_base.scss */
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start; }
+
+/* line 473, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title > h4 {
   margin-top: 0; }
 
-/* line 473, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 476, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
   align-items: center; }
 
-<<<<<<< HEAD
-/* line 476, ../../source_sass/_base.scss */
-.demo-card-event > .mdl-card__actions > .material-icons {
-  padding-right: 10px; }
-
-/* line 479, ../../source_sass/_base.scss */
-=======
-/* line 478, ../../source_sass/_base.scss */
-.demo-card-event > .mdl-card__actions > .material-icons {
-  padding-right: 10px; }
-
 /* line 481, ../../source_sass/_base.scss */
->>>>>>> origin/master
+.demo-card-event > .mdl-card__actions > .material-icons {
+  padding-right: 10px; }
+
+/* line 484, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title,
 .demo-card-event > .mdl-card__actions,
 .demo-card-event > .mdl-card__actions > .mdl-button {
   color: #fff; }
 
-<<<<<<< HEAD
-/* line 485, ../../source_sass/_base.scss */
-=======
-/* line 487, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 490, ../../source_sass/_base.scss */
 .card {
   margin: 0 auto;
-  margin-top: 150px; }
+  margin-top: 150px;
+  color: #B0C4DE; }
 
-<<<<<<< HEAD
-/* line 493, ../../source_sass/_base.scss */
-=======
-/* line 495, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 499, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
@@ -4673,47 +4643,27 @@ span {
   list-style-type: none;
   text-align: center;
   /* margins */ }
-<<<<<<< HEAD
-  /* line 506, ../../source_sass/_base.scss */
-=======
-  /* line 508, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 512, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-<<<<<<< HEAD
-  /* line 512, ../../source_sass/_base.scss */
-=======
-  /* line 514, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 518, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-<<<<<<< HEAD
-  /* line 519, ../../source_sass/_base.scss */
-=======
-  /* line 521, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 525, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
 
 /** Add student **/
-<<<<<<< HEAD
-/* line 525, ../../source_sass/_base.scss */
+/* line 531, ../../source_sass/_base.scss */
 .add-student-view {
   /* button */
   /* form styling */ }
-  /* line 526, ../../source_sass/_base.scss */
-=======
-/* line 527, ../../source_sass/_base.scss */
-.add-student-view {
-  /* button */
-  /* form styling */ }
-  /* line 528, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 532, ../../source_sass/_base.scss */
   .add-student-view h1 {
     text-align: center;
     font-weight: bold;
@@ -4722,11 +4672,7 @@ span {
     color: #3C2E3D;
     margin: auto;
     clear: both; }
-<<<<<<< HEAD
-  /* line 536, ../../source_sass/_base.scss */
-=======
-  /* line 538, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 542, ../../source_sass/_base.scss */
   .add-student-view #submit-button {
     /* placement */
     margin: auto;
@@ -4740,29 +4686,17 @@ span {
     text-align: center;
     font-size: 20px;
     background-color: #3C2E3D; }
-<<<<<<< HEAD
-  /* line 552, ../../source_sass/_base.scss */
-=======
-  /* line 554, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 558, ../../source_sass/_base.scss */
   .add-student-view .required:after {
     content: "*";
     color: red;
     display: inline;
     clear: both; }
-<<<<<<< HEAD
-  /* line 554, ../../source_sass/_base.scss */
+  /* line 560, ../../source_sass/_base.scss */
   .add-student-view .required input {
     background-color: rgba(255, 0, 0, 0.1);
     color: black; }
-  /* line 559, ../../source_sass/_base.scss */
-=======
-  /* line 556, ../../source_sass/_base.scss */
-  .add-student-view .required input {
-    background-color: rgba(255, 0, 0, 0.1);
-    color: black; }
-  /* line 561, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 565, ../../source_sass/_base.scss */
   .add-student-view input {
     width: 80%;
     margin: 0 auto;
@@ -4770,11 +4704,7 @@ span {
     vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 5px; }
-<<<<<<< HEAD
-  /* line 567, ../../source_sass/_base.scss */
-=======
-  /* line 569, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 573, ../../source_sass/_base.scss */
   .add-student-view label {
     display: inline-block;
     vertical-align: middle;
@@ -4782,169 +4712,94 @@ span {
     margin-right: 20px; }
 
 /** select **/
-<<<<<<< HEAD
-/* line 576, ../../source_sass/_base.scss */
-=======
-/* line 578, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 582, ../../source_sass/_base.scss */
 #org-select {
   height: 70px; }
 
 /** calendar **/
-<<<<<<< HEAD
-/* line 580, ../../source_sass/_base.scss */
+/* line 586, ../../source_sass/_base.scss */
 .dropdown-menu {
   list-style-type: none; }
-  /* line 581, ../../source_sass/_base.scss */
-=======
-/* line 582, ../../source_sass/_base.scss */
-.dropdown-menu {
-  list-style-type: none; }
-  /* line 583, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 587, ../../source_sass/_base.scss */
   .dropdown-menu a {
     background-color: #FF5722;
     padding: 3px 3px 3px 3px;
     border-radius: 10%;
     color: white; }
-<<<<<<< HEAD
-  /* line 588, ../../source_sass/_base.scss */
-=======
-  /* line 590, ../../source_sass/_base.scss */
->>>>>>> origin/master
+  /* line 594, ../../source_sass/_base.scss */
   .dropdown-menu li {
     color: red; }
 
 /* profile */
-<<<<<<< HEAD
-/* line 594, ../../source_sass/_base.scss */
-=======
-/* line 596, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 600, ../../source_sass/_base.scss */
 .well {
   margin: 0 auto;
   width: 80%;
   margin-top: 10px; }
 
 /** event list **/
-<<<<<<< HEAD
-/* line 602, ../../source_sass/_base.scss */
-=======
-/* line 604, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 608, ../../source_sass/_base.scss */
 #cal {
   margin-left: 5px;
   color: black; }
 
 /** styling for form **/
 /*Disable MDL validation styles*/
-<<<<<<< HEAD
-/* line 610, ../../source_sass/_base.scss */
-.mdl-textfield.is-invalid .mdl-textfield__input {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
-
-/* line 614, ../../source_sass/_base.scss */
-.mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
-  color: rgba(0, 0, 0, 0.26); }
-
-/* line 618, ../../source_sass/_base.scss */
-=======
-/* line 612, ../../source_sass/_base.scss */
-.mdl-textfield.is-invalid .mdl-textfield__input {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
-
 /* line 616, ../../source_sass/_base.scss */
-.mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
-  color: rgba(0, 0, 0, 0.26); }
+.mdl-textfield.is-invalid .mdl-textfield__input {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
 
 /* line 620, ../../source_sass/_base.scss */
->>>>>>> origin/master
+.mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
+  color: rgba(0, 0, 0, 0.26); }
+
+/* line 624, ../../source_sass/_base.scss */
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
 .mdl-textfield--floating-label.is-dirty .mdl-textfield__label {
   color: #3f51b5; }
 
-<<<<<<< HEAD
-/* line 623, ../../source_sass/_base.scss */
-=======
-/* line 625, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 629, ../../source_sass/_base.scss */
 .mdl-textfield.is-invalid .mdl-textfield__label:after {
   background-color: #3f51b5; }
 
 /*Validation styles based on MDL*/
-<<<<<<< HEAD
-/* line 628, ../../source_sass/_base.scss */
-=======
-/* line 630, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 634, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched {
   border-color: #de3226;
   box-shadow: none; }
 
-<<<<<<< HEAD
-/* line 633, ../../source_sass/_base.scss */
-=======
-/* line 635, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 639, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched + label {
   color: #de3226;
   font-size: 12px; }
 
-<<<<<<< HEAD
-/* line 638, ../../source_sass/_base.scss */
-.ng-invalid.ng-invalid.ng-touched + label:after {
-  background-color: #de3226; }
-
-/* line 642, ../../source_sass/_base.scss */
-.ng-invalid.ng-invalid.ng-touched ~ .mdl-tooltip--validation {
-  background-color: #de3226; }
-
-/* line 646, ../../source_sass/_base.scss */
-=======
-/* line 640, ../../source_sass/_base.scss */
-.ng-invalid.ng-invalid.ng-touched + label:after {
-  background-color: #de3226; }
-
 /* line 644, ../../source_sass/_base.scss */
-.ng-invalid.ng-invalid.ng-touched ~ .mdl-tooltip--validation {
+.ng-invalid.ng-invalid.ng-touched + label:after {
   background-color: #de3226; }
 
 /* line 648, ../../source_sass/_base.scss */
->>>>>>> origin/master
+.ng-invalid.ng-invalid.ng-touched ~ .mdl-tooltip--validation {
+  background-color: #de3226; }
+
+/* line 652, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus {
   border-color: #ffc107;
   box-shadow: none; }
 
-<<<<<<< HEAD
-/* line 651, ../../source_sass/_base.scss */
-=======
-/* line 653, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 657, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label {
   color: #ffc107;
   font-size: 12px; }
 
-<<<<<<< HEAD
-/* line 656, ../../source_sass/_base.scss */
-.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label:after {
-  background-color: #ffc107; }
-
-/* line 660, ../../source_sass/_base.scss */
-.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus ~ .mdl-tooltip--validation {
-  background-color: #ffc107; }
-
-/* line 664, ../../source_sass/_base.scss */
-=======
-/* line 658, ../../source_sass/_base.scss */
-.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label:after {
-  background-color: #ffc107; }
-
 /* line 662, ../../source_sass/_base.scss */
-.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus ~ .mdl-tooltip--validation {
+.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label:after {
   background-color: #ffc107; }
 
 /* line 666, ../../source_sass/_base.scss */
->>>>>>> origin/master
+.ng-invalid.ng-invalid.ng-touched.ng-dirty:focus ~ .mdl-tooltip--validation {
+  background-color: #ffc107; }
+
+/* line 670, ../../source_sass/_base.scss */
 .ng-invalid.ng-touched:not(:focus) + label::before {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -4971,11 +4826,7 @@ span {
   right: 0;
   bottom: 20px; }
 
-<<<<<<< HEAD
-/* line 696, ../../source_sass/_base.scss */
-=======
-/* line 698, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 702, ../../source_sass/_base.scss */
 .ng-valid.ng-touched:not(:focus) + label::before {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -5003,20 +4854,12 @@ span {
   bottom: 20px; }
 
 /*Basic styles*/
-<<<<<<< HEAD
-/* line 729, ../../source_sass/_base.scss */
-=======
-/* line 731, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 735, ../../source_sass/_base.scss */
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
 
-<<<<<<< HEAD
-/* line 735, ../../source_sass/_base.scss */
-=======
-/* line 737, ../../source_sass/_base.scss */
->>>>>>> origin/master
+/* line 741, ../../source_sass/_base.scss */
 .sameSize {
   display: flex;
   flex-wrap: flex; }
