@@ -4856,6 +4856,11 @@ span {
   padding-left: 0;
   list-style: none; }
 
+/* line 736, ../../source_sass/_base.scss */
+.sameSize {
+  display: flex;
+  flex-wrap: flex; }
+
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles
   in _base.scss

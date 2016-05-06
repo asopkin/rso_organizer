@@ -11,10 +11,10 @@
 </div>
 <div class="row">
   <ul class="mdl-grid" id="event-grid">
-    <li ng-repeat="event in events | filter:searchEvents" class="mdl-list__item mdl-cell mdl-cell--4-col">
-      <div class="demo-card-square mdl-card mdl-shadow--4dp">
-        <div class="mdl-card__title mdl-card--expand">
-          <h2 class="mdl-card__title-text">{{ event.name }}</h2>
+    <ul ng-repeat="event in events | filter:searchEvents" class="mdl-cell mdl-cell--4-col">
+      <div style="height: 230px;margin-bottom: 20px" class="demo-card-square mdl-card mdl-shadow--4dp">
+        <div class="text-center mdl-card__title mdl-card--expand">
+          <h2 class=" mdl-card__title-text">{{ event.name }}</h2>
         </div>
         <div class="mdl-card__supporting-text">
           {{ event.description }}
@@ -31,7 +31,7 @@
           </button></a>
         </div>
       </div>
-    </li>
+    </ul>
   </ul><br><br>
 
 

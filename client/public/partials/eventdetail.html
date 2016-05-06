@@ -2,12 +2,12 @@
 <center>
 <!-- Event card -->
 <div class="demo-card-event mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand">
+  <div style="width: 700px" class="mdl-card__title mdl-card--expand">
     <h4>
       <center>
-      {{ event.name }} <br>
-      {{ event.description }} <br>
-      {{ event.date  | date:'MM/dd/yyyy' }} <br>
+      Event Name: {{ event.name }} <br>
+      Event Description:  {{ event.description }} <br>
+      Event Date:  {{ event.date  | date:'MM/dd/yyyy' }} <br>
       </center>
     </h4>
   </div>

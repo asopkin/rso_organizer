@@ -18,7 +18,7 @@ var event = {
 
   getAll: function(req, res){
       var where=eval("("+req.query.where+")");
-      Event.find(where).exec(function(err,data){
+      Event.find(where).sort({"date": 1}).exec(function(err,data){
           res.json(data);
       });
 
@@ -50,11 +50,11 @@ var event = {
   replace: function(req, res){
       Event.findByIdAndUpdate(req.params.id, {
               $set: {
-                  name             : req.body.name,
-                  description      : req.body.description,
-                  date             : req.body.date,
-                  organizationID   : req.body.organizationID,
-                  organizationName : req.body.organizationName
+//                  name             : req.body.name,
+//                  description      : req.body.description,
+                  date             : req.body.date
+//                  organizationID   : req.body.organizationID,
+//                  organizationName : req.body.organizationName
               }
           },
           function(err,data){
