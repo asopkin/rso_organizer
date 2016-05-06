@@ -4455,11 +4455,11 @@ select:focus {
 //}*/
 /* line 316, ../../source_sass/_base.scss */
 .card {
-  margin: 10px;
-  overflow: scroll; }
+  margin: 5px;
+  overflow: hidden; }
   /* line 319, ../../source_sass/_base.scss */
   .card #descrip {
-    overflow: scroll; }
+    overflow: hidden; }
 
 /** edit org **/
 /* line 325, ../../source_sass/_base.scss */
@@ -4591,42 +4591,43 @@ span {
 /* line 457, ../../source_sass/_base.scss */
 .demo-card-event.mdl-card {
   background: #3E4EB8;
-  margin-bottom: 70px; }
+  margin-bottom: 30px;
+  width: 700px; }
 
-/* line 461, ../../source_sass/_base.scss */
+/* line 462, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions {
   border-color: rgba(255, 255, 255, 0.2); }
 
-/* line 464, ../../source_sass/_base.scss */
+/* line 465, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title {
   align-items: flex-start; }
 
-/* line 467, ../../source_sass/_base.scss */
+/* line 468, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title > h4 {
   margin-top: 0; }
 
-/* line 470, ../../source_sass/_base.scss */
+/* line 471, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
   align-items: center; }
 
-/* line 475, ../../source_sass/_base.scss */
+/* line 476, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions > .material-icons {
   padding-right: 10px; }
 
-/* line 478, ../../source_sass/_base.scss */
+/* line 479, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title,
 .demo-card-event > .mdl-card__actions,
 .demo-card-event > .mdl-card__actions > .mdl-button {
   color: #fff; }
 
-/* line 484, ../../source_sass/_base.scss */
+/* line 485, ../../source_sass/_base.scss */
 .card {
   margin: 0 auto;
   margin-top: 150px; }
 
-/* line 492, ../../source_sass/_base.scss */
+/* line 493, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
@@ -4636,27 +4637,27 @@ span {
   list-style-type: none;
   text-align: center;
   /* margins */ }
-  /* line 505, ../../source_sass/_base.scss */
+  /* line 506, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-  /* line 511, ../../source_sass/_base.scss */
+  /* line 512, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-  /* line 518, ../../source_sass/_base.scss */
+  /* line 519, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
 
 /** Add student **/
-/* line 524, ../../source_sass/_base.scss */
+/* line 525, ../../source_sass/_base.scss */
 .add-student-view {
   /* button */
   /* form styling */ }
-  /* line 525, ../../source_sass/_base.scss */
+  /* line 526, ../../source_sass/_base.scss */
   .add-student-view h1 {
     text-align: center;
     font-weight: bold;
@@ -4665,7 +4666,7 @@ span {
     color: #3C2E3D;
     margin: auto;
     clear: both; }
-  /* line 535, ../../source_sass/_base.scss */
+  /* line 536, ../../source_sass/_base.scss */
   .add-student-view #submit-button {
     /* placement */
     margin: auto;
@@ -4679,17 +4680,17 @@ span {
     text-align: center;
     font-size: 20px;
     background-color: #3C2E3D; }
-  /* line 551, ../../source_sass/_base.scss */
+  /* line 552, ../../source_sass/_base.scss */
   .add-student-view .required:after {
     content: "*";
     color: red;
     display: inline;
     clear: both; }
-  /* line 553, ../../source_sass/_base.scss */
+  /* line 554, ../../source_sass/_base.scss */
   .add-student-view .required input {
     background-color: rgba(255, 0, 0, 0.1);
     color: black; }
-  /* line 558, ../../source_sass/_base.scss */
+  /* line 559, ../../source_sass/_base.scss */
   .add-student-view input {
     width: 80%;
     margin: 0 auto;
@@ -4697,7 +4698,7 @@ span {
     vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 566, ../../source_sass/_base.scss */
+  /* line 567, ../../source_sass/_base.scss */
   .add-student-view label {
     display: inline-block;
     vertical-align: middle;
@@ -4705,94 +4706,94 @@ span {
     margin-right: 20px; }
 
 /** select **/
-/* line 575, ../../source_sass/_base.scss */
+/* line 576, ../../source_sass/_base.scss */
 #org-select {
   height: 70px; }
 
 /** calendar **/
-/* line 579, ../../source_sass/_base.scss */
+/* line 580, ../../source_sass/_base.scss */
 .dropdown-menu {
   list-style-type: none; }
-  /* line 580, ../../source_sass/_base.scss */
+  /* line 581, ../../source_sass/_base.scss */
   .dropdown-menu a {
     background-color: #FF5722;
     padding: 3px 3px 3px 3px;
     border-radius: 10%;
     color: white; }
-  /* line 587, ../../source_sass/_base.scss */
+  /* line 588, ../../source_sass/_base.scss */
   .dropdown-menu li {
     color: red; }
 
 /* profile */
-/* line 593, ../../source_sass/_base.scss */
+/* line 594, ../../source_sass/_base.scss */
 .well {
   margin: 0 auto;
   width: 80%;
   margin-top: 10px; }
 
 /** event list **/
-/* line 601, ../../source_sass/_base.scss */
+/* line 602, ../../source_sass/_base.scss */
 #cal {
   margin-left: 5px;
   color: black; }
 
 /** styling for form **/
 /*Disable MDL validation styles*/
-/* line 609, ../../source_sass/_base.scss */
+/* line 610, ../../source_sass/_base.scss */
 .mdl-textfield.is-invalid .mdl-textfield__input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
 
-/* line 613, ../../source_sass/_base.scss */
+/* line 614, ../../source_sass/_base.scss */
 .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
   color: rgba(0, 0, 0, 0.26); }
 
-/* line 617, ../../source_sass/_base.scss */
+/* line 618, ../../source_sass/_base.scss */
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
 .mdl-textfield--floating-label.is-dirty .mdl-textfield__label {
   color: #3f51b5; }
 
-/* line 622, ../../source_sass/_base.scss */
+/* line 623, ../../source_sass/_base.scss */
 .mdl-textfield.is-invalid .mdl-textfield__label:after {
   background-color: #3f51b5; }
 
 /*Validation styles based on MDL*/
-/* line 627, ../../source_sass/_base.scss */
+/* line 628, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched {
   border-color: #de3226;
   box-shadow: none; }
 
-/* line 632, ../../source_sass/_base.scss */
+/* line 633, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched + label {
   color: #de3226;
   font-size: 12px; }
 
-/* line 637, ../../source_sass/_base.scss */
+/* line 638, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched + label:after {
   background-color: #de3226; }
 
-/* line 641, ../../source_sass/_base.scss */
+/* line 642, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched ~ .mdl-tooltip--validation {
   background-color: #de3226; }
 
-/* line 645, ../../source_sass/_base.scss */
+/* line 646, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus {
   border-color: #ffc107;
   box-shadow: none; }
 
-/* line 650, ../../source_sass/_base.scss */
+/* line 651, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label {
   color: #ffc107;
   font-size: 12px; }
 
-/* line 655, ../../source_sass/_base.scss */
+/* line 656, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus + label:after {
   background-color: #ffc107; }
 
-/* line 659, ../../source_sass/_base.scss */
+/* line 660, ../../source_sass/_base.scss */
 .ng-invalid.ng-invalid.ng-touched.ng-dirty:focus ~ .mdl-tooltip--validation {
   background-color: #ffc107; }
 
-/* line 663, ../../source_sass/_base.scss */
+/* line 664, ../../source_sass/_base.scss */
 .ng-invalid.ng-touched:not(:focus) + label::before {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -4819,7 +4820,7 @@ span {
   right: 0;
   bottom: 20px; }
 
-/* line 695, ../../source_sass/_base.scss */
+/* line 696, ../../source_sass/_base.scss */
 .ng-valid.ng-touched:not(:focus) + label::before {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -4847,12 +4848,12 @@ span {
   bottom: 20px; }
 
 /*Basic styles*/
-/* line 728, ../../source_sass/_base.scss */
+/* line 729, ../../source_sass/_base.scss */
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
 
-/* line 734, ../../source_sass/_base.scss */
+/* line 735, ../../source_sass/_base.scss */
 .sameSize {
   display: flex;
   flex-wrap: flex; }

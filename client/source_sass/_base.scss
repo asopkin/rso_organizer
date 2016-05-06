@@ -314,10 +314,10 @@ select:focus {
 //}*/
 
 .card {
-  margin: 10px;
-  overflow: scroll;
+  margin: 5px;
+  overflow: hidden;
   #descrip{
-  	overflow: scroll;
+  	overflow: hidden;
   }
 }
 
@@ -456,7 +456,8 @@ span{
 
 .demo-card-event.mdl-card {
   background: #3E4EB8;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+  width: 700px;
 }
 .demo-card-event > .mdl-card__actions {
   border-color: rgba(255, 255, 255, 0.2);
