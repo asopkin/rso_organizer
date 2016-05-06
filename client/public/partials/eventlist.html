@@ -20,6 +20,9 @@
           {{ event.description }}
         </div>
         <div class="mdl-card__supporting-text">
+          By: {{ event.organizationName | eventNameFilter }}
+        </div>
+        <div class="mdl-card__supporting-text">
           {{ event.date  | date:'MM/dd/yyyy' }}<span class="fa fa-calendar-o" id="cal"></span>
         </div>
         <div class="mdl-card__menu">

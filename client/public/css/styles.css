@@ -4337,18 +4337,19 @@ body {
 #addorg {
   margin-top: 5px;
   margin: 0 auto;
-  padding: 5px 5px 5px 5px;
-  width: 40px;
+  padding: 10px 10px 10px 10px;
+  width: 110px;
   border-radius: 10%;
   cursor: pointer;
   /* text */
   color: white;
   font-size: 18px;
-  background-color: #FF5722; }
+  background-color: #FF5722;
+  vertical-align: text-top; }
 
 /* ==========  Select Field ========== */
 /* Style Select Field */
-/* line 205, ../../source_sass/_base.scss */
+/* line 206, ../../source_sass/_base.scss */
 select {
   font-family: inherit;
   background-color: transparent;
@@ -4360,27 +4361,27 @@ select {
   border-bottom: 1px solid black; }
 
 /* Remove focus */
-/* line 217, ../../source_sass/_base.scss */
+/* line 218, ../../source_sass/_base.scss */
 select:focus {
   outline: none; }
 
 /* Hide label */
-/* line 221, ../../source_sass/_base.scss */
+/* line 222, ../../source_sass/_base.scss */
 .mdl-selectfield label {
   display: none; }
 
 /* Use custom arrow */
-/* line 224, ../../source_sass/_base.scss */
+/* line 225, ../../source_sass/_base.scss */
 .mdl-selectfield {
   font-family: 'Roboto','Helvetica','Arial',sans-serif;
   position: relative; }
-  /* line 227, ../../source_sass/_base.scss */
+  /* line 228, ../../source_sass/_base.scss */
   .mdl-selectfield:after {
     position: absolute;
     top: 0.75em; }
 
 /** organization grid **/
-/* line 233, ../../source_sass/_base.scss */
+/* line 234, ../../source_sass/_base.scss */
 #org-bucket {
   /* font */
   font-size: 18px;
@@ -4396,16 +4397,16 @@ select:focus {
   line-height: 60px;
   /** share **/
   /** radio buttons **/ }
-  /* line 252, ../../source_sass/_base.scss */
+  /* line 253, ../../source_sass/_base.scss */
   #org-bucket #share {
     margin-bottom: 2px;
     vertical-align: top;
     text-align: center; }
-  /* line 259, ../../source_sass/_base.scss */
+  /* line 260, ../../source_sass/_base.scss */
   #org-bucket .radio-buttons {
     margin: 0 auto;
     width: 80%; }
-  /* line 263, ../../source_sass/_base.scss */
+  /* line 264, ../../source_sass/_base.scss */
   #org-bucket .options {
     /* alignment */
     vertical-align: top;
@@ -4414,7 +4415,7 @@ select:focus {
     /* padding and margins */
     padding-left: 5px;
     margin: 0 auto; }
-  /* line 274, ../../source_sass/_base.scss */
+  /* line 275, ../../source_sass/_base.scss */
   #org-bucket #leave-button {
     /* placement */
     margin-top: 5px;
@@ -4426,17 +4427,17 @@ select:focus {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 289, ../../source_sass/_base.scss */
+/* line 290, ../../source_sass/_base.scss */
 .org-grid {
   margin: 0 auto;
   width: 100%; }
 
-/* line 294, ../../source_sass/_base.scss */
+/* line 295, ../../source_sass/_base.scss */
 #org-grid {
   /**height: 1000px;
   overflow: scroll;**/ }
 
-/* line 299, ../../source_sass/_base.scss */
+/* line 300, ../../source_sass/_base.scss */
 #event-grid {
   height: 1000px;
   overflow: scroll; }
@@ -4446,24 +4447,24 @@ select:focus {
 //	margin: 0 auto;
 //	width: 80%;
 //}*/
-/* line 309, ../../source_sass/_base.scss */
+/* line 310, ../../source_sass/_base.scss */
 .card {
   margin: 10px;
   overflow: scroll; }
-  /* line 312, ../../source_sass/_base.scss */
+  /* line 313, ../../source_sass/_base.scss */
   .card #descrip {
     overflow: scroll; }
 
 /** edit org **/
-/* line 318, ../../source_sass/_base.scss */
+/* line 319, ../../source_sass/_base.scss */
 .edit-org-card {
   margin-top: 40px; }
-  /* line 320, ../../source_sass/_base.scss */
+  /* line 321, ../../source_sass/_base.scss */
   .edit-org-card input {
     color: black;
     background-color: white; }
 
-/* line 326, ../../source_sass/_base.scss */
+/* line 327, ../../source_sass/_base.scss */
 #stud-bucket {
   margin-left: 5px;
   margin-right: 5px;
@@ -4473,11 +4474,11 @@ select:focus {
   text-align: center;
   line-height: 60px; }
 
-/* line 335, ../../source_sass/_base.scss */
+/* line 336, ../../source_sass/_base.scss */
 #student-page {
   clear: both;
   margin: 0 auto; }
-  /* line 339, ../../source_sass/_base.scss */
+  /* line 340, ../../source_sass/_base.scss */
   #student-page #add-button {
     /* placement */
     margin: 0 auto;
@@ -4494,21 +4495,21 @@ select:focus {
     font-size: 18px;
     background-color: #3C2E3D; }
 
-/* line 358, ../../source_sass/_base.scss */
+/* line 359, ../../source_sass/_base.scss */
 .stud-grid {
   margin-top: 50px;
   margin: 0 auto;
   margin-left: 100px;
   width: 100%; }
 
-/* line 365, ../../source_sass/_base.scss */
+/* line 366, ../../source_sass/_base.scss */
 span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal; }
 
 /** slider **/
-/* line 371, ../../source_sass/_base.scss */
+/* line 372, ../../source_sass/_base.scss */
 .event-content {
   /* borders */
   border-top: 3px solid #FDAE84;
@@ -4523,7 +4524,7 @@ span {
   background-color: white;
   color: black; }
 
-/* line 388, ../../source_sass/_base.scss */
+/* line 389, ../../source_sass/_base.scss */
 .event-content :after {
   content: "";
   display: block;
@@ -4536,11 +4537,11 @@ span {
   border-top: 3px solid #ECC7C0;
   border-bottom: 3px solid #ECC7C0; }
 
-/* line 400, ../../source_sass/_base.scss */
+/* line 401, ../../source_sass/_base.scss */
 .full-date {
   margin-top: 20px; }
 
-/* line 406, ../../source_sass/_base.scss */
+/* line 407, ../../source_sass/_base.scss */
 .date {
   background-color: white;
   color: #FF5722;
@@ -4550,80 +4551,80 @@ span {
   vertical-align: middle;
   margin-left: 3px;
   text-align: center; }
-  /* line 417, ../../source_sass/_base.scss */
+  /* line 418, ../../source_sass/_base.scss */
   .date #month {
     text-transform: uppercase;
     font-size: 30px; }
-  /* line 421, ../../source_sass/_base.scss */
+  /* line 422, ../../source_sass/_base.scss */
   .date #day {
     vertical-align: bottom;
     font-size: 40px; }
-  /* line 425, ../../source_sass/_base.scss */
+  /* line 426, ../../source_sass/_base.scss */
   .date #year {
     vertical-align: middle; }
 
-/* line 429, ../../source_sass/_base.scss */
+/* line 430, ../../source_sass/_base.scss */
 #event-info {
   list-style-type: none;
   display: inline-block;
   text-align: center;
   margin-top: 40px; }
-  /* line 435, ../../source_sass/_base.scss */
+  /* line 436, ../../source_sass/_base.scss */
   #event-info #cal {
     font-size: 25px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
-  /* line 442, ../../source_sass/_base.scss */
+  /* line 443, ../../source_sass/_base.scss */
   #event-info i {
     font-size: 40px;
     vertical-align: middle;
     padding-top: 8px;
     color: #FF5722; }
 
-/* line 450, ../../source_sass/_base.scss */
+/* line 451, ../../source_sass/_base.scss */
 .demo-card-event.mdl-card {
   background: #3E4EB8;
   margin-bottom: 70px; }
 
-/* line 454, ../../source_sass/_base.scss */
+/* line 455, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions {
   border-color: rgba(255, 255, 255, 0.2); }
 
-/* line 457, ../../source_sass/_base.scss */
+/* line 458, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title {
   align-items: flex-start; }
 
-/* line 460, ../../source_sass/_base.scss */
+/* line 461, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title > h4 {
   margin-top: 0; }
 
-/* line 463, ../../source_sass/_base.scss */
+/* line 464, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
   align-items: center; }
 
-/* line 468, ../../source_sass/_base.scss */
+/* line 469, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__actions > .material-icons {
   padding-right: 10px; }
 
-/* line 471, ../../source_sass/_base.scss */
+/* line 472, ../../source_sass/_base.scss */
 .demo-card-event > .mdl-card__title,
 .demo-card-event > .mdl-card__actions,
 .demo-card-event > .mdl-card__actions > .mdl-button {
   color: #fff; }
 
-/* line 477, ../../source_sass/_base.scss */
+/* line 478, ../../source_sass/_base.scss */
 .card {
   margin: 0 auto;
   margin-top: 150px;
   text-align: center; }
-  /* line 481, ../../source_sass/_base.scss */
+  /* line 482, ../../source_sass/_base.scss */
   .card h4 {
     text-align: center; }
 
-/* line 487, ../../source_sass/_base.scss */
+/* line 488, ../../source_sass/_base.scss */
 .crsl {
   /* margins */
   margin: 0px auto;
@@ -4633,27 +4634,27 @@ span {
   list-style-type: none;
   text-align: center;
   /* margins */ }
-  /* line 500, ../../source_sass/_base.scss */
+  /* line 501, ../../source_sass/_base.scss */
   .crsl img {
     margin: auto;
     width: 400px;
     height: 800px; }
-  /* line 506, ../../source_sass/_base.scss */
+  /* line 507, ../../source_sass/_base.scss */
   .crsl div {
     width: 100%;
     /* positioning */
     margin: 0px auto;
     text-align: center; }
-  /* line 513, ../../source_sass/_base.scss */
+  /* line 514, ../../source_sass/_base.scss */
   .crsl .slick-prev:before, .crsl .slick-next:before {
     color: white; }
 
 /** Add student **/
-/* line 519, ../../source_sass/_base.scss */
+/* line 520, ../../source_sass/_base.scss */
 .add-student-view {
   /* button */
   /* form styling */ }
-  /* line 520, ../../source_sass/_base.scss */
+  /* line 521, ../../source_sass/_base.scss */
   .add-student-view h1 {
     text-align: center;
     font-weight: bold;
@@ -4662,7 +4663,7 @@ span {
     color: #3C2E3D;
     margin: auto;
     clear: both; }
-  /* line 530, ../../source_sass/_base.scss */
+  /* line 531, ../../source_sass/_base.scss */
   .add-student-view #submit-button {
     /* placement */
     margin: auto;
@@ -4675,17 +4676,17 @@ span {
     text-align: center;
     font-size: 20px;
     background-color: #3C2E3D; }
-  /* line 545, ../../source_sass/_base.scss */
+  /* line 546, ../../source_sass/_base.scss */
   .add-student-view .required:after {
     content: "*";
     color: red;
     display: inline;
     clear: both; }
-  /* line 547, ../../source_sass/_base.scss */
+  /* line 548, ../../source_sass/_base.scss */
   .add-student-view .required input {
     background-color: rgba(255, 0, 0, 0.1);
     color: black; }
-  /* line 552, ../../source_sass/_base.scss */
+  /* line 553, ../../source_sass/_base.scss */
   .add-student-view input {
     width: 80%;
     margin: 0 auto;
@@ -4693,7 +4694,7 @@ span {
     vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 5px; }
-  /* line 560, ../../source_sass/_base.scss */
+  /* line 561, ../../source_sass/_base.scss */
   .add-student-view label {
     display: inline-block;
     vertical-align: middle;
@@ -4701,33 +4702,33 @@ span {
     margin-right: 20px; }
 
 /** select **/
-/* line 569, ../../source_sass/_base.scss */
+/* line 570, ../../source_sass/_base.scss */
 #org-select {
   height: 70px; }
 
 /** calendar **/
-/* line 573, ../../source_sass/_base.scss */
+/* line 574, ../../source_sass/_base.scss */
 .dropdown-menu {
   list-style-type: none; }
-  /* line 574, ../../source_sass/_base.scss */
+  /* line 575, ../../source_sass/_base.scss */
   .dropdown-menu a {
     background-color: #FF5722;
     padding: 3px 3px 3px 3px;
     border-radius: 10%;
     color: white; }
-  /* line 581, ../../source_sass/_base.scss */
+  /* line 582, ../../source_sass/_base.scss */
   .dropdown-menu li {
     color: red; }
 
 /* profile */
-/* line 587, ../../source_sass/_base.scss */
+/* line 588, ../../source_sass/_base.scss */
 .well {
   margin: 0 auto;
   width: 80%;
   margin-top: 10px; }
 
 /** event list **/
-/* line 595, ../../source_sass/_base.scss */
+/* line 596, ../../source_sass/_base.scss */
 #cal {
   margin-left: 5px;
   color: black; }

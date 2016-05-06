@@ -172,6 +172,7 @@ fp498Controllers.controller('LoginController', ['$scope', '$rootScope', 'CommonD
 fp498Controllers.controller('SignupController', ['$scope', '$rootScope', 'CommonData', 'Organizations', '$http', '$location', function($scope, $rootScope, CommonData, Organizations, $http, $location) {
   Organizations.get().success(function(data){
     $scope.orgs = data;
+    console.log(data);
     console.log($scope.orgs);
     console.log($scope.orgs[0].name);
   })
@@ -425,7 +426,9 @@ fp498Controllers.controller('OrganizationEditController', ['$scope', '$http', '$
     Students.get().success(function(data){
       $scope.students = data;
       for(var k in $scope.students){
-        $scope.studentemails.push($scope.students[k].netId);
+        if($scope.students[k].followOrganizationID.indexOf($scope.orgid)>-1){
+          $scope.studentemails.push($scope.students[k].netId);
+        }
       }
       //$scope.studentemails.forEach(function(infoArray, index){
         //dataString = infoArray.join(",");
@@ -436,6 +439,33 @@ fp498Controllers.controller('OrganizationEditController', ['$scope', '$http', '$
       window.open(encodedUri);
     })
   }
+
+}]);
+
+/** Org event controller **/
+fp498Controllers.controller('OrganizationEventsController', ['$scope', '$http', '$timeout', 'Events', 'Organizations', 'Students', '$window' , '$routeParams', '$rootScope', '$location', function($scope, $http, $timeout, Events, Organizations, Students, $window, $routeParams, $rootScope, $location) {
+  $scope.orgid = $routeParams.orgID;
+  console.log("edit org");
+  Organizations.getOne($scope.orgid).success(function(data){
+    $scope.organization = data;
+    $scope.members = $scope.organization.members;
+    console.log($scope.members);
+  });
+  $scope.orgevents = [];
+  Events.get().success(function(data){
+    $scope.events = data;
+    for(var k in $scope.events){
+      console.log($scope.orgid);
+      console.log($scope.events[k].organizationID);
+      var searchVal = $scope.events[k].organizationID.replace(']', '');
+      searchVal = searchVal.replace('[', '');
+      searchVal = searchVal.replace(/'/g, '');
+      if(searchVal==$scope.orgid){
+        console.log("pushed in");
+        $scope.orgevents.push($scope.events[k]);
+      }
+    }
+  })
 
 }]);
 
@@ -480,6 +510,17 @@ fp498Controllers.filter('netIdFilter', function() {
     return function(input) {
         if(input!=null){
           return input.replace(/ /g, '_');
+        }
+    }
+});
+
+/* Filter for netids */
+fp498Controllers.filter('eventNameFilter', function() {
+    return function(input) {
+        if(input!=null){
+          input = input.replace('[', '');
+          input = input.replace(']', '');
+          return input.replace(/'/g, '');
         }
     }
 });

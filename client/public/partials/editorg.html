@@ -10,8 +10,12 @@
       </center>
     </h4>
   </div>
-</div>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ng-click="makeCSV()">CSV</button>
+</div><br><br>
+<div class="jumbotron text-center">
+  <a href="#/organizations/display/{{organization._id}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Users</a>
+  <a href="#/organization/events/display/{{organization._id}}" class="mdl-button mdl-js-button mdl-button--primary">Events</a>
+</div><br><br>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ng-click="makeCSV()">Download user information as CSV</button>
         <ul class="mdl-grid">
               <li ng-repeat="member in followers" class="mdl-list__item mdl-cell mdl-cell--4-col">
                 <div class="demo-card-square mdl-card mdl-shadow--4dp">

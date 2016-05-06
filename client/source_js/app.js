@@ -30,6 +30,10 @@ app.config(['$routeProvider', function($routeProvider) {
       templateUrl : 'partials/editorg.html',
       controller : 'OrganizationEditController'
   }).
+  when('/organization/events/display/:orgID',{
+      templateUrl : 'partials/orgevents.html',
+      controller : 'OrganizationEventsController'
+  }).
   when('/students', {
     templateUrl: 'partials/studentlist.html',
     controller: 'StudentListController'
